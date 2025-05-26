@@ -31,29 +31,66 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 
 ## Approach and Methodology
 
-### 1. Store Performance Analysis
-- Applied Pareto analysis to determine that 12% of stores generate 80% of sales.
-- Identified 96.6% of stores as underperforming due to sub-9.3% monthly growth.
+1. Data Collection and Understanding
+Imported the Dunnhumby dataset consisting of over 2.5 million transaction records at the household level.
 
-### 2. Customer Segmentation using RFM Model
-- Segmented customers based on Recency, Frequency, and Monetary values.
-- Identified "Best Customers" as those with:
-  - Lowest recency (recent transactions)
-  - Highest frequency (repeat purchases)
-  - Highest monetary value (total spend)
+Key files loaded include:
 
-### 3. Campaign Analysis
-- Evaluated 30 promotional campaigns using conversion rate, ROI, and product engagement metrics.
-- Campaign 18 emerged as the most effective:
-  - 486.6% total performance score
-  - 10.8% revenue increase during the 55-day campaign
-  - 0.19% average daily sales growth
+hh_demographic.csv: Household demographic data
 
-### 4. Time-Based Campaign Targeting
-- Analyzed the timing of sales before and after Campaign 18.
-- Afternoon campaigns led to:
-  - 17% growth in average sales
-  - 46% share of daily sales volume
+campaign_table.csv: Campaign metadata
+
+coupon_redempt.csv: Coupon redemption records
+
+campaign_desc.csv: Campaign descriptions
+
+product.csv: Product-level information
+
+transaction_data.csv: Detailed purchase history
+
+2. Data Preprocessing and Cleaning (data_cleaning.ipynb)
+This notebook focuses on preparing the dataset for analysis. Major steps:
+
+a. Handling Missing Values
+Checked all files for nulls using isnull().sum() and handled as follows:
+
+Removed rows with excessive missing demographic fields.
+
+Verified missing values in non-critical fields did not affect segmentation or campaign analysis.
+
+b. Standardizing Column Names
+Converted column names to lowercase.
+
+Replaced spaces with underscores for consistency across joins and transformations.
+
+c. Data Type Conversion
+Converted date strings to datetime format in:
+
+transaction_data["BASKET_DT"] → datetime
+
+campaign_table["START_DT"] and ["END_DT"] → datetime
+
+d. Merging Datasets
+Merged household, product, campaign, and transaction data using keys such as:
+
+household_key
+
+PRODUCT_ID
+
+CAMPAIGN
+
+Resulted in a unified dataframe for segmentation and campaign effectiveness analysis.
+
+e. Feature Engineering
+Created RFM (Recency, Frequency, Monetary) variables per household:
+
+recency: days since last purchase
+
+frequency: number of transactions
+
+monetary: total spend
+
+Assigned each customer a segment score based on quantiles of R, F, and M.
 
 ---
 
