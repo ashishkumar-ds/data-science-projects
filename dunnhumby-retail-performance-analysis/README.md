@@ -31,7 +31,8 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 
 ## Approach and Methodology
 
-1. Data Collection and Understanding
+- Data Collection and Understanding
+
 Imported the Dunnhumby dataset consisting of over 2.5 million transaction records at the household level.
 
 Key files loaded include:
@@ -49,9 +50,11 @@ product.csv: Product-level information
 transaction_data.csv: Detailed purchase history
 
 2. Data Preprocessing and Cleaning (data_cleaning.ipynb)
+   
 This notebook focuses on preparing the dataset for analysis. Major steps:
 
 a. Handling Missing Values
+
 Checked all files for nulls using isnull().sum() and handled as follows:
 
 Removed rows with excessive missing demographic fields.
@@ -59,11 +62,13 @@ Removed rows with excessive missing demographic fields.
 Verified missing values in non-critical fields did not affect segmentation or campaign analysis.
 
 b. Standardizing Column Names
+
 Converted column names to lowercase.
 
 Replaced spaces with underscores for consistency across joins and transformations.
 
 c. Data Type Conversion
+
 Converted date strings to datetime format in:
 
 transaction_data["BASKET_DT"] → datetime
@@ -71,6 +76,7 @@ transaction_data["BASKET_DT"] → datetime
 campaign_table["START_DT"] and ["END_DT"] → datetime
 
 d. Merging Datasets
+
 Merged household, product, campaign, and transaction data using keys such as:
 
 household_key
@@ -82,6 +88,7 @@ CAMPAIGN
 Resulted in a unified dataframe for segmentation and campaign effectiveness analysis.
 
 e. Feature Engineering
+
 Created RFM (Recency, Frequency, Monetary) variables per household:
 
 recency: days since last purchase
