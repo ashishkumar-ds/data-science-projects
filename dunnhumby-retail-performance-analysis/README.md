@@ -31,73 +31,57 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 
 ## Approach and Methodology
 
-- Data Collection and Understanding
+### 1. Data Collection and Understanding
 
 Imported the Dunnhumby dataset consisting of over 2.5 million transaction records at the household level.
 
 Key files loaded include:
 
-hh_demographic.csv: Household demographic data
+- `hh_demographic.csv`: Household demographic data  
+- `campaign_table.csv`: Campaign metadata  
+- `coupon_redempt.csv`: Coupon redemption records  
+- `campaign_desc.csv`: Campaign descriptions  
+- `product.csv`: Product-level information  
+- `transaction_data.csv`: Detailed purchase history  
 
-campaign_table.csv: Campaign metadata
+---
 
-coupon_redempt.csv: Coupon redemption records
+### 2. Data Preprocessing and Cleaning (`data_cleaning.ipynb`)
 
-campaign_desc.csv: Campaign descriptions
-
-product.csv: Product-level information
-
-transaction_data.csv: Detailed purchase history
-
-2. Data Preprocessing and Cleaning (data_cleaning.ipynb)
-   
 This notebook focuses on preparing the dataset for analysis. Major steps:
 
-a. Handling Missing Values
+#### a. Handling Missing Values
 
-Checked all files for nulls using isnull().sum() and handled as follows:
+- Checked all files for nulls using `isnull().sum()`  
+- Removed rows with excessive missing demographic fields  
+- Verified missing values in non-critical fields did not affect segmentation or campaign analysis  
 
-Removed rows with excessive missing demographic fields.
+#### b. Standardizing Column Names
 
-Verified missing values in non-critical fields did not affect segmentation or campaign analysis.
+- Converted all column names to lowercase  
+- Replaced spaces with underscores for consistency across joins and transformations  
 
-b. Standardizing Column Names
+#### c. Data Type Conversion
 
-Converted column names to lowercase.
+- Converted date strings to datetime format:  
+  - `transaction_data["BASKET_DT"]` → datetime  
+  - `campaign_table["START_DT"]`, `["END_DT"]` → datetime  
 
-Replaced spaces with underscores for consistency across joins and transformations.
+#### d. Merging Datasets
 
-c. Data Type Conversion
+- Merged datasets on relevant keys such as:  
+  - `household_key`  
+  - `PRODUCT_ID`  
+  - `CAMPAIGN`  
+- Resulted in a unified dataframe for segmentation and campaign analysis  
 
-Converted date strings to datetime format in:
+#### e. Feature Engineering
 
-transaction_data["BASKET_DT"] → datetime
-
-campaign_table["START_DT"] and ["END_DT"] → datetime
-
-d. Merging Datasets
-
-Merged household, product, campaign, and transaction data using keys such as:
-
-household_key
-
-PRODUCT_ID
-
-CAMPAIGN
-
-Resulted in a unified dataframe for segmentation and campaign effectiveness analysis.
-
-e. Feature Engineering
-
-Created RFM (Recency, Frequency, Monetary) variables per household:
-
-recency: days since last purchase
-
-frequency: number of transactions
-
-monetary: total spend
-
-Assigned each customer a segment score based on quantiles of R, F, and M.
+- Created RFM (Recency, Frequency, Monetary) variables for each household:  
+  - **Recency**: Days since last purchase  
+  - **Frequency**: Number of transactions  
+  - **Monetary**: Total spend  
+- Assigned customer segments using quantiles of R, F, and M scores  
 
 ---
 
@@ -115,17 +99,17 @@ Assigned each customer a segment score based on quantiles of R, F, and M.
 
 ## Recommendations
 
-1. Prioritize Campaign 18 for stores identified as underperforming.  
-2. Target the Best Customer segment to maximize campaign effectiveness.  
-3. Schedule campaigns in the afternoon to leverage peak engagement and conversion.  
-4. Monitor uplift and performance using forecasting models to refine strategies.
+1. Prioritize Campaign 18 for stores identified as underperforming  
+2. Target the Best Customer segment to maximize campaign effectiveness  
+3. Schedule campaigns in the afternoon to leverage peak engagement and conversion  
+4. Monitor uplift and performance using forecasting models to refine strategies  
 
 ---
 
 ## Tools and Technologies
 
-- Python (Pandas, NumPy, Matplotlib, Seaborn)  
-- Tableau
+- Python: Pandas, NumPy, Matplotlib, Seaborn  
+- Tableau  
 - RFM Segmentation  
 - ROI and Campaign Analytics  
 - Trend-Based Forecasting  
