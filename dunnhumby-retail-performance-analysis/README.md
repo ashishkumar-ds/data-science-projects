@@ -61,7 +61,7 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 
 ---
 
-# Project Structure
+## Project Structure
 
 ```bash
 dunnhumby-retail-performance/
