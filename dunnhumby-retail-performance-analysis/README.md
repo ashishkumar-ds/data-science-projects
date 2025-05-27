@@ -30,21 +30,6 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 
 ---
 
-# Project Structure
-
-```bash
-dunnhumby-retail-performance/
-│
-├── notebooks/
-│   ├── data_cleaning.ipynb         # Preprocessing and data preparation steps
-│   └── main_analysis.ipynb         # Segmentation, campaign analysis, forecasting
-│
-├── presentation/
-│   └── Group-N Final Project_Dunnhumby Dataset.pdf
-│
-└── README.md
----
-
 ## Key Findings
 
 | Focus Area               | Insight                                                                 |
@@ -73,3 +58,19 @@ dunnhumby-retail-performance/
 - RFM Segmentation  
 - ROI and Campaign Analytics  
 - Trend-Based Forecasting  
+
+---
+
+# Project Structure
+
+```bash
+dunnhumby-retail-performance/
+│
+├── notebooks/
+│   ├── data_cleaning.ipynb         # Preprocessing and data preparation steps
+│   └── main_analysis.ipynb         # Segmentation, campaign analysis, forecasting
+│
+├── presentation/
+│   └── Group-N Final Project_Dunnhumby Dataset.pdf
+│
+└── README.md
