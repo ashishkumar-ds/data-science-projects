@@ -2,13 +2,14 @@
 
 ## Project Summary
 
-This project explores store-level transaction data from Dunnhumby, a global customer data science company. By identifying underperforming stores and analyzing customer behavior, the analysis reveals data-driven strategies to increase sales. Through RFM-based segmentation, campaign effectiveness analysis, and time-based targeting, the project recommends using Campaign 18 to reach the Best Customer segment during high-engagement time slots, with the goal of boosting revenue in underperforming stores.
+This project analyzes over 2.5 million household-level transactions from Dunnhumby to uncover data-driven strategies that improve sales in underperforming retail stores. By combining customer segmentation (RFM analysis), campaign effectiveness evaluation, and time-based engagement insights, the analysis identifies actionable recommendations to target the right customers with the right campaigns at the right time.
 
 ---
 
 ## Problem Statement
 
-Approximately 80% of the total sales come from just 12% of stores. The remaining 96.6% of stores are considered underperforming, with monthly sales growth below the company average of 9.3%.
+Only 12% of stores account for 80% of total revenue. The remaining 96.6% are underperforming with monthly sales growth below 9.3%.
+
 
 **Business Question:**  
 How can Dunnhumby increase the sales value of underperforming stores within a two-month period through better targeting and campaign strategies?
@@ -29,60 +30,19 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 
 ---
 
-## Approach and Methodology
+# Project Structure
 
-### 1. Data Collection and Understanding
-
-Imported the Dunnhumby dataset consisting of over 2.5 million transaction records at the household level.
-
-Key files loaded include:
-
-- `hh_demographic.csv`: Household demographic data  
-- `campaign_table.csv`: Campaign metadata  
-- `coupon_redempt.csv`: Coupon redemption records  
-- `campaign_desc.csv`: Campaign descriptions  
-- `product.csv`: Product-level information  
-- `transaction_data.csv`: Detailed purchase history  
-
----
-
-### 2. Data Preprocessing and Cleaning (`data_cleaning.ipynb`)
-
-This notebook focuses on preparing the dataset for analysis. Major steps:
-
-#### a. Handling Missing Values
-
-- Checked all files for nulls using `isnull().sum()`  
-- Removed rows with excessive missing demographic fields  
-- Verified missing values in non-critical fields did not affect segmentation or campaign analysis  
-
-#### b. Standardizing Column Names
-
-- Converted all column names to lowercase  
-- Replaced spaces with underscores for consistency across joins and transformations  
-
-#### c. Data Type Conversion
-
-- Converted date strings to datetime format:  
-  - `transaction_data["BASKET_DT"]` → datetime  
-  - `campaign_table["START_DT"]`, `["END_DT"]` → datetime  
-
-#### d. Merging Datasets
-
-- Merged datasets on relevant keys such as:  
-  - `household_key`  
-  - `PRODUCT_ID`  
-  - `CAMPAIGN`  
-- Resulted in a unified dataframe for segmentation and campaign analysis  
-
-#### e. Feature Engineering
-
-- Created RFM (Recency, Frequency, Monetary) variables for each household:  
-  - **Recency**: Days since last purchase  
-  - **Frequency**: Number of transactions  
-  - **Monetary**: Total spend  
-- Assigned customer segments using quantiles of R, F, and M scores  
-
+```bash
+dunnhumby-retail-performance/
+│
+├── notebooks/
+│   ├── data_cleaning.ipynb         # Preprocessing and data preparation steps
+│   └── main_analysis.ipynb         # Segmentation, campaign analysis, forecasting
+│
+├── presentation/
+│   └── Group-N Final Project_Dunnhumby Dataset.pdf
+│
+└── README.md
 ---
 
 ## Key Findings
