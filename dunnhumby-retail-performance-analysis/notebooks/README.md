@@ -1,6 +1,7 @@
 # Notebooks: Dunnhumby Retail Store Performance Analysis
 
-This folder contains two Jupyter notebooks that document the full analytics workflow — from raw data to business recommendations — for improving retail store performance using customer segmentation and campaign data.
+This folder contains two Jupyter notebooks that document the complete workflow of the project - from raw data preparation to business insight generation.
+
 
 ---
 
