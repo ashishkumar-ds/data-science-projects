@@ -17,16 +17,27 @@ This folder contains two Jupyter notebooks that document the complete workflow o
 
 ## Data Preparation Summary (`data_cleaning.ipynb`)
 
-The following issues were addressed to prepare the dataset:
+This notebook focuses on preparing the data for analysis by merging raw tables, fixing inconsistencies, and engineering helpful features.
 
-| Task                        | Why It Was Needed                                     | Before Example             | After Example              |
-|-----------------------------|-------------------------------------------------------|----------------------------|----------------------------|
-| **Column renaming**         | Ensure consistency and ease of use                    | `"Product Name"`           | `product_name`             |
-| **Handling missing values** | Clean incomplete demographic records                  | `NaN` in `AGE_DESC`        | Dropped 90 rows            |
-| **Date formatting**         | Enable time-based filtering and recency calculation   | `"2018-01-15"` (string)    | `2018-01-15` (datetime)    |
-| **Standardizing categories**| Remove inconsistent formatting                        | `"45 - 54"`                | `"45-54"`                  |
-| **Data merging**            | Create a unified view across households, products, and campaigns | Separate files | Consolidated master dataframe |
-| **Feature engineering**     | Create RFM metrics for segmentation                   | Raw transaction totals     | `recency`, `frequency`, `monetary`, `rfm_score` |
+### What Was Done
+
+- Combined multiple datasets: products, campaigns, coupons, transactions, and households
+- Converted data types (e.g., `household_key` from integer to string)
+- Created two new features from the `DAY` field:  
+  - `month_no`: to group transactions by month  
+  - `day_no`: to understand day-of-week trends  
+- Renamed columns for consistency (e.g., `BASKET_ID` → `TOTAL_BASKET`)
+- Removed unnecessary fields like `RETAIL_DISC`
+
+### Before vs After Summary
+
+| Step                  | Column(s)         | Before                          | After                              |
+|-----------------------|-------------------|----------------------------------|------------------------------------|
+| Merging datasets      | All major tables  | Separate files                  | Combined into a master dataset     |
+| Data type formatting  | `household_key`   | Integer                          | String                             |
+| Feature creation      | `DAY`             | Raw day value                    | Added `month_no`, `day_no`         |
+| Column renaming       | `BASKET_ID`       | `BASKET_ID`                      | `TOTAL_BASKET`                     |
+| Dropping columns      | `RETAIL_DISC`     | Present                          | Removed                            |
 
 
 After cleaning, the data was ready for segmentation and campaign evaluation.
