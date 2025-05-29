@@ -63,5 +63,3 @@ This notebook applies analytics to drive business insights and recommendations:
 
 ### 5. Forecasting Sales Impact
 - Trend-based forecast showed a **12.06% projected uplift** over 60 days for Store 289 if the recommendations are applied.
-
----
