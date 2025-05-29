@@ -15,7 +15,7 @@ This folder contains two Jupyter notebooks that document the complete workflow o
 
 ---
 
-## Data Preparation Summary (`data_cleaning.ipynb`)
+## Data Preparation Summary (data_cleaning.ipynb)
 
 This notebook focuses on preparing the data for analysis by merging raw tables, fixing inconsistencies, and engineering helpful features.
 
@@ -44,7 +44,7 @@ After cleaning, the data was ready for segmentation and campaign evaluation.
 
 ---
 
-## Analysis Workflow Summary (`main_analysis.ipynb`)
+## Analysis Workflow Summary (main_analysis.ipynb)
 
 This notebook applies analytics to drive business insights and recommendations:
 
