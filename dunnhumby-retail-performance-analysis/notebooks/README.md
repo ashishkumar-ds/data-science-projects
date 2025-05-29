@@ -10,7 +10,7 @@ This folder contains two Jupyter notebooks that document the complete workflow o
 ### 1.[`data_cleaning.ipynb`](https://github.com/ashishkumar-ds/data-science-projects/blob/main/dunnhumby-retail-performance-analysis/notebooks/data%20cleaning.ipynb) 
 **Purpose:** Transform raw datasets into a clean, analysis-ready format by resolving data quality issues and engineering features for segmentation.
 
-### 2. `main_analysis.ipynb`  
+### 2. [`main_analysis.ipynb`](https://github.com/ashishkumar-ds/data-science-projects/blob/main/dunnhumby-retail-performance-analysis/notebooks/main%20analysis.ipynb) 
 **Purpose:** Perform business analysis using the cleaned dataset to uncover insights, evaluate marketing campaigns, and forecast potential revenue uplift.
 
 ---
