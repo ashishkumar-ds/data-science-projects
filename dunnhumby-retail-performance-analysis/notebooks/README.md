@@ -27,7 +27,8 @@ The following issues were addressed to prepare the dataset:
 | **Data merging**            | Create a unified view across households, products, and campaigns | Separate files | Consolidated master dataframe |
 | **Feature engineering**     | Create RFM metrics for segmentation                   | Raw transaction totals     | `recency`, `frequency`, `monetary`, `rfm_score` |
 
-> 📌 Result: A consolidated dataset with household-level RFM scores, campaign metadata, and product info, ready for analysis.
+
+After cleaning, the data was ready for segmentation and campaign evaluation.
 
 ---
 
@@ -64,17 +65,3 @@ This notebook applies analytics to drive business insights and recommendations:
 - Trend-based forecast showed a **12.06% projected uplift** over 60 days for Store 289 if the recommendations are applied.
 
 ---
-
-## Summary
-
-These two notebooks together deliver a full project pipeline:
-
-- `data_cleaning.ipynb`:  
-  - Transforms raw, fragmented datasets into a structured and enriched format  
-  - Prepares features that fuel meaningful segmentation  
-
-- `main_analysis.ipynb`:  
-  - Leverages that structure to uncover deep customer and campaign insights  
-  - Offers data-backed strategies to drive sales growth in underperforming stores  
-
-This modular approach makes the project easy to understand, scalable, and reusable across similar business problems.
