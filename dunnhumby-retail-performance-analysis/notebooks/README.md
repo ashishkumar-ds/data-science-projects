@@ -29,7 +29,7 @@ This notebook focuses on preparing the data for analysis by merging raw tables, 
 - Renamed columns for consistency (e.g., `BASKET_ID` → `TOTAL_BASKET`)
 - Removed unnecessary fields like `RETAIL_DISC`
 
-### Before vs After Summary
+### Before vs After
 
 | Step                  | Column(s)         | Before                          | After                              |
 |-----------------------|-------------------|----------------------------------|------------------------------------|
@@ -74,4 +74,5 @@ This notebook applies analytics to drive business insights and recommendations:
   - **46% of total daily revenue**
 
 ### 5. Forecasting Sales Impact
-- Trend-based forecast showed a **12.06% projected uplift** over 60 days for Store 289 if the recommendations are applied.
+- Used **linear trend projection** to estimate impact on a test store.
+- Predicted **12.06% sales growth** over 60 days if recommendations are applied.
