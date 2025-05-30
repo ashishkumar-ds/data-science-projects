@@ -71,6 +71,6 @@ dunnhumby-retail-performance/
 │   └── main_analysis.ipynb         # Segmentation, campaign analysis, forecasting
 │
 ├── presentation/
-│   └── Group-N Final Project_Dunnhumby Dataset.pdf
+│   └── presentation_deck.pdf
 │
 └── README.md
