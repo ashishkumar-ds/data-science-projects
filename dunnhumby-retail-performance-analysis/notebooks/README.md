@@ -49,30 +49,30 @@ After cleaning, the data was ready for segmentation and campaign evaluation.
 This notebook applies analytics to drive business insights and recommendations:
 
 ### 1. Store Performance Evaluation
-- Used Pareto analysis to show that **12% of stores generate 80% of revenue**
-- Identified **96.6% of stores as underperforming** (monthly growth < 9.3%)
+- Used Pareto analysis to show that 12% of stores generate 80% of revenue
+- Identified 96.6% of stores as underperforming (monthly growth < 9.3%)
 
 ### 2. Customer Segmentation (RFM)
 - Grouped customers by Recency, Frequency, and Monetary value
-- Highlighted **Best Customers** with high spend and frequent visits:
+- Highlighted Best Customers with high spend and frequent visits:
   - Age: 45–54  
   - Income: $50K–$74K  
   - Household: Two adults, no kids
 
 ### 3. Campaign Effectiveness Analysis
-- Compared **30 campaigns** by:
+- Compared 30 campaigns by:
   - Conversion Rate
   - Coupon Redemption
   - ROI
-- **Campaign 18** stood out:
-  - Drove **10.8% revenue growth** over 55 days
+- Campaign 18 stood out:
+  - Drove 10.8% revenue growth over 55 days
   - Increased daily sales by 0.19%
 
 ### 4. Time-of-Day Sales Analysis
 - Afternoon campaigns produced:
-  - **17% uplift**
-  - **46% of total daily revenue**
+  - 17% uplift
+  - 46% of total daily revenue
 
 ### 5. Forecasting Sales Impact
-- Used **linear trend projection** to estimate impact on a test store.
-- Predicted **12.06% sales growth** over 60 days if recommendations are applied.
+- Used linear trend projection to estimate impact on a test store.
+- Predicted 12.06% sales growth over 60 days if recommendations are applied.
