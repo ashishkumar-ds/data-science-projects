@@ -18,7 +18,7 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 
 ## Dataset Description
 
-- **Source**: Dunnhumby (via Kaggle)  
+- **Source**: Dunnhumby 
 - **Scope**: 2,500,000 transaction records  
 - **Time Frame**: 2017–2018  
 - **Key Features**:
