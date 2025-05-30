@@ -4,6 +4,8 @@
 
 This project analyzes over 2.5 million household-level transactions from Dunnhumby to uncover data-driven strategies that improve sales in underperforming retail stores. By combining customer segmentation (RFM analysis), campaign effectiveness evaluation, and time-based engagement insights, the analysis identifies actionable recommendations to target the right customers with the right campaigns at the right time.
 
+To support decision-makers, a Tableau dashboard was developed to help store managers track performance, compare regions, and monitor the impact of recommended strategies in real time.
+
 ---
 
 ## Problem Statement
@@ -67,10 +69,14 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 dunnhumby-retail-performance/
 │
 ├── notebooks/
-│   ├── data_cleaning.ipynb         # Preprocessing and data preparation steps
+│   ├── data_cleaning.ipynb         # Preprocessing and data preparation
 │   └── main_analysis.ipynb         # Segmentation, campaign analysis, forecasting
 │
 ├── presentation/
 │   └── presentation_deck.pdf
+│
+├── dashboard/
+│   ├── dunnhumby_dashboard.twbx     # Tableau workbook
+│   └── dashboard_screenshot.png     # Visual preview of the dashboard
 │
 └── README.md
