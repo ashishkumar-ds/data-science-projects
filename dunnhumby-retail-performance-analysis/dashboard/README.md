@@ -18,4 +18,4 @@ The dashboard helps business teams and store managers:
 
 ## Dashboard Preview
 
-![Store Performance Dashboard](./dashboard_screenshot.png)
+[Store Performance Dashboard](dunnhumby-retail-performance-analysis/dashboard/dashboard_screenshot.PNG)
