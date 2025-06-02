@@ -12,7 +12,7 @@ The dashboard helps business teams and store managers:
 
 ## Live Dashboard Link
 
-▶️ [View the Tableau Dashboard](https://public.tableau.com/views/DunnhumbyStorePerformanceDashboard/Dashboard1)
+[View the Tableau Dashboard](https://public.tableau.com/views/DunnhumbyStorePerformanceReportwithfilter/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
