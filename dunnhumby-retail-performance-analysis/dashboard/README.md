@@ -4,7 +4,7 @@ This dashboard was created as part of the Dunnhumby retail analytics project to 
 
 ---
 
-## Dashboard Purpose & Design Framework
+## Purpose & Design Framework
 
 Built using stakeholder-first principles and following the standard dashboard design process (Who → Why → What → How → When):
 
@@ -33,7 +33,7 @@ Each metric included in the dashboard was intentionally selected to answer a key
 
 [Dashboard Live](https://public.tableau.com/views/DunnhumbyStorePerformanceReportwithfilter/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-## Preview
+## Dashboard Preview
 
 [Dashboard Preview](https://github.com/ashishkumar-ds/data-science-projects/blob/main/dunnhumby-retail-performance-analysis/dashboard/dashboard_screenshot.PNG)
 
