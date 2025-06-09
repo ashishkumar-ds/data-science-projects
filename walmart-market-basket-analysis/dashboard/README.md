@@ -15,11 +15,24 @@ Built using stakeholder-first principles and following the standard **Dashboard 
 | **3. What** | Metrics Displayed | Total Sales, Transactions, AOV, Customer Segments, Category Sales, Store Comparison |
 | **4. How** | Visualization Logic | Line charts, bar charts, and tree maps comparing trends, segments, and store rankings |
 | **5. When** | Usage Frequency | Ideal for weekly/monthly business reviews and post-campaign impact checks |
-| **6. Dashboard Design** | Final Output | A clear, actionable Tableau dashboard for operational and strategic use |
 
 ---
+
+## Why These Metrics?
+
+Each metric included in the dashboard was intentionally selected to answer a key business question:
+
+- **Total Sales & Transactions** – Are we growing in revenue and traffic?
+- **Average Order Value (AOV)** – Are customers spending more per visit?
+- **Customer Segments (RFM)** – Which customers are loyal, at risk, or promising?
+- **Category Sales** – What departments drive revenue, and which need attention?
+- **Store Comparison** – Which locations are underperforming or improving?
+- **Sales Trend** – How have campaigns or seasons impacted weekly performance?
 
 ## Interactive Dashboard Link
 
 ▶[View Live Tableau Dashboard](https://public.tableau.com/views/DunnhumbyStorePerformanceDashboard/Dashboard1)
 
+## Preview
+
+![Dashboard Preview](./dashboard_screenshot.png)
