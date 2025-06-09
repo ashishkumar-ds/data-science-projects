@@ -6,7 +6,7 @@ This dashboard was created as part of the Dunnhumby retail analytics project to 
 
 ## Dashboard Purpose & Design Framework
 
-Built using stakeholder-first principles and following the standard **Dashboard Design Process** (Who → Why → What → How → When → Design):
+Built using stakeholder-first principles and following the standard dashboard design process (Who → Why → What → How → When → Design):
 
 | Step | Focus | Details |
 |------|-------|---------|
@@ -31,8 +31,14 @@ Each metric included in the dashboard was intentionally selected to answer a key
 
 ## Interactive Dashboard Link
 
-▶[View Live Tableau Dashboard](https://public.tableau.com/views/DunnhumbyStorePerformanceDashboard/Dashboard1)
+[View Live Tableau Dashboard](https://public.tableau.com/views/DunnhumbyStorePerformanceDashboard/Dashboard1)
 
 ## Preview
 
-![Dashboard Preview](./dashboard_screenshot.png)
+[Dashboard Preview](./dashboard_screenshot.png)
+
+---
+
+## About This Dashboard
+
+This is the final delivery layer of the Dunnhumby retail performance project, created to translate deep analysis into an interactive, stakeholder-friendly format for tracking and action.
