@@ -51,10 +51,10 @@ How can Walmart use product co-purchase patterns to create a more personalized s
 
 ## Tools and Technologies
 
-- Python: pandas, NumPy, matplotlib, seaborn  
+- Python 
 - Market Basket Modeling: Apriori (via apyori)  
 - Association Metrics: Support, Confidence, Lift   
-- Tableau: Product Performance Dashboard  
+- Tableau  
 
 ---
 
