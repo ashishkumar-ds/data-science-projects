@@ -1,5 +1,6 @@
 # Dashboard – Store Performance Tracking
 
+---
 
 ## Purpose 
 
