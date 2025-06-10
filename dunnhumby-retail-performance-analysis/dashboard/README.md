@@ -6,7 +6,7 @@ This dashboard was created as part of the Dunnhumby retail analytics project to 
 
 ## Purpose & Design Framework
 
-Built using stakeholder-first principles and following the standard dashboard design process (Who → Why → What → How → When):
+Built using stakeholder-first principles and following the standard dashboard design process:
 
 | Step | Focus | Details |
 |------|-------|---------|
