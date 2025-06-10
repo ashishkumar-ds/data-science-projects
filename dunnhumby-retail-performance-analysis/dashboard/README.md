@@ -1,4 +1,4 @@
-# Dashboard – Store Performance Tracking
+# Store Performance Tracking - Dashboard
 
 
 ## Purpose 
