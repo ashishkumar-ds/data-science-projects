@@ -1,13 +1,10 @@
 # Store Performance Tracking - Dashboard
 
-
-## Purpose 
-
 This dashboard was created as part of the Dunnhumby retail analytics project to help stakeholders monitor underperforming stores, customer segments, and the impact of campaign recommendations in real time.
 
 ---
 
-## Design Framework
+## Purpose & Design Framework
 
 Built using stakeholder-first principles and following the standard dashboard design process:
 
