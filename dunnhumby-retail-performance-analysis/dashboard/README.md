@@ -1,12 +1,5 @@
 # Dashboard – Store Performance Tracking
 
-## Table of Contents
-- [Purpose](#purpose)
-- [Design Framework](#design-framework)
-- [Why These Metrics?](#why-these-metrics)
-- [Interactive Dashboard](#interactive-dashboard-link)
-- [Dashboard Preview](#dashboard-preview)
-
 
 ## Purpose 
 
