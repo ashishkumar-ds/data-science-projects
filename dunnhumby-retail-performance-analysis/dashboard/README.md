@@ -22,12 +22,12 @@ Built using stakeholder-first principles and following the standard dashboard de
 
 Each metric included in the dashboard was intentionally selected to answer a key business question:
 
-- **Total Sales & Transactions** – Are we growing in revenue and traffic?
-- **Average Order Value (AOV)** – Are customers spending more per visit?
-- **Customer Segments (RFM)** – Which customers are loyal, at risk, or promising?
-- **Category Sales** – What departments drive revenue, and which need attention?
-- **Store Comparison** – Which locations are underperforming or improving?
-- **Sales Trend** – How have campaigns or seasons impacted weekly performance?
+- **Total Sales & Transactions** –  Are we seeing growth in store activity and order volume?
+- **Average Order Value (AOV)** – How much are customers spending per visit?
+- **Customer Segments (RFM)** – How many customers are loyal, at risk, or promising?
+- **Category Sales** – Which product departments are driving revenue, and which need attention?
+- **Store Comparison** – Which store are underperforming or improving?
+- **Sales Trend** – How is daily or weekly performance trending, and what is the impact of active campaigns?
 
 ## Interactive Dashboard Link
 
