@@ -37,9 +37,4 @@ Each metric included in the dashboard was intentionally selected to answer a key
 
 [Dashboard Preview](https://github.com/ashishkumar-ds/data-science-projects/blob/main/dunnhumby-retail-performance-analysis/dashboard/dashboard_screenshot.PNG)
 
----
-
-## Note
-
-This is the final delivery layer of the Dunnhumby retail performance project, created to translate deep analysis into an interactive, stakeholder-friendly format for tracking and action.
 
