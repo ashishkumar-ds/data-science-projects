@@ -14,7 +14,7 @@ Built using stakeholder-first principles and following the standard dashboard de
 | **2. Why** | Purpose | Track store performance, understand campaign impact, support data-driven decisions |
 | **3. What** | Metrics Displayed | Total Sales, Transactions, AOV, Customer Segments, Category Sales, Store Comparison |
 | **4. How** | Visualization Logic | Line charts, bar charts, and tree maps comparing trends, segments, and store rankings |
-| **5. When** | Usage Frequency | Ideal for weekly/monthly business reviews and post-campaign impact checks |
+| **5. When** | Usage Frequency | Ideal for daily/weekly business reviews and post-campaign impact checks |
 
 ---
 
