@@ -1,4 +1,4 @@
-# Store Performance Tracking - Dashboard
+# Dashboard - Store Performance Tracking 
 
 This dashboard is created as part of the Dunnhumby retail analytics project to help stakeholders monitor underperforming stores, customer segments, and the impact of campaign recommendations in real time.
 
