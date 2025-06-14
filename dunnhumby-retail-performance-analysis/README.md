@@ -56,7 +56,7 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 
 ## Tools and Technologies
 
-- Python: Pandas, NumPy, Matplotlib, Seaborn  
+- Python: Pandas, NumPy, Matplotlib, Seaborn 
 - Tableau  
 - RFM Segmentation  
 - ROI and Campaign Analytics  
@@ -66,6 +66,7 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 
 ## Project Structure
 
+```bash
 dunnhumby-retail-performance/
 │
 ├── notebooks/        # Data cleaning, segmentation, campaign analysis, forecasting
@@ -79,4 +80,3 @@ dunnhumby-retail-performance/
 │   └── dunnhumby_retail_performance_analysis_presentation_deck.pdf
 │
 └── README.md
-
