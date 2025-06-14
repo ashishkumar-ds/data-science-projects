@@ -1,4 +1,4 @@
-# Store Performance Tracking – KPI Dashboard
+# Product Performance – KPI Dashboard
 
 This dashboard was created as the final delivery layer of the Walmart Market Basket Analysis project.  
 It visualizes key product-level KPIs and simulates the potential impact of bundling, co-placement, and promotional strategies using historical transaction data.
