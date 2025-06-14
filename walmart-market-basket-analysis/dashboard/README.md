@@ -1,7 +1,7 @@
 # Product Performance – KPI Dashboard
 
-This dashboard was created as the final delivery layer of the Walmart Market Basket Analysis project.  
-It visualizes key product-level KPIs and simulates the potential impact of bundling, co-placement, and promotional strategies using historical transaction data.
+This dashboard was created as the final delivery layer of the Walmart Market Basket Analysis project.
+It visualizes key product-level KPIs alongside supporting charts to simulate the potential impact of bundling, co-placement, and promotional strategies using historical transaction data.
 
 To make the insights more actionable, the dashboard includes interactive filters for **Year** and **District (store location)** — enabling stakeholders to explore how performance and strategy effectiveness vary across time and geography.
 
@@ -21,7 +21,7 @@ This KPI dashboard is built using a stakeholder-first approach and follows the s
 
 ---
 
-## Why These KPIs?
+## Why These KPIs and Charts?
 
 Each KPI and chart was carefully selected to illustrate how insights from Market Basket Analysis can support business decisions:
 
