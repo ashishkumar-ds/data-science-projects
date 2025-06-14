@@ -40,7 +40,7 @@ Each KPI and chart was carefully selected to illustrate how insights from Market
 
 ## Dashboard Preview
 
-[Dashboard Preview](./dashboard_screenshot.png)
+[Dashboard Preview](walmart-market-basket-analysis/dashboard/dashboard_screenshot.png)
 
 ---
 
