@@ -66,7 +66,6 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 
 ## Project Structure
 
-```bash
 dunnhumby-retail-performance/
 │
 ├── notebooks/        # Data cleaning, segmentation, campaign analysis, forecasting
@@ -74,10 +73,10 @@ dunnhumby-retail-performance/
 │   └── main_analysis.ipynb
 │
 ├── dashboard/        # Tableau dashboard files for store performance tracking
-│   ├── dunnhumby_dashboard.twbx
 │   └── dashboard_screenshot.png
 │
 ├── presentation/     # Final business presentation for non-technical stakeholders
 │   └── dunnhumby_retail_performance_analysis_presentation_deck.pdf
 │
-└── README.md  
+└── README.md
+
