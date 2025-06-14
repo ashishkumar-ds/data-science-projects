@@ -34,7 +34,7 @@ Each KPI and chart was carefully selected to illustrate how insights from Market
 
 ## Interactive Dashboard Link
 
-[View Tableau KPI Dashboard](https://public.tableau.com/views/WalmartProductPerformanceDashboard/Dashboard1)
+[View Interactive Dashboard](https://public.tableau.com/views/WalmartProductPerformanceDashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
@@ -47,4 +47,4 @@ Each KPI and chart was carefully selected to illustrate how insights from Market
 ## Note
 
 This dashboard does not track real-time post-implementation results.  
-Instead, it uses historical data to simulate and visualize how the recommended strategies — such as bundling frequently bought items or improving product placement — could impact key retail KPIs.
+Instead, it uses historical data to simulate and visualize how the recommended strategies such as bundling frequently bought items or improving product placement could impact key retail KPIs.
