@@ -21,12 +21,12 @@ This KPI dashboard supports merchandising and category teams by presenting perfo
 
 ## Why These KPIs?
 
-Each KPI was selected to demonstrate how insights from Market Basket Analysis can guide business actions:
+Each KPI and chart was carefully selected to illustrate how insights from Market Basket Analysis can support business decisions:
 
-- **Sales & Orders** – Are product pairings likely to increase revenue and frequency?
-- **Profit & Profit Margin** – Which items or segments are most cost-effective to promote?
-- **Category/Sub-Category Trends** – Where can merchandising teams focus efforts?
-- **Product-Level Insights** – Which items are critical to bundle or reposition?
+- **Sales & Orders** – Do bundled product combinations show potential to drive higher volume and transaction count?
+- **Profit & Profit Margin** – Are the suggested combinations likely to improve profitability and margin efficiency?
+- **Category & Sub-Category Trends** – Where should merchandising or category teams focus attention to improve performance?
+- **Product-Level Insights** – Which specific products are strong candidates for bundling, co-placement, or promotion?
 
 ---
 
