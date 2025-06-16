@@ -28,24 +28,33 @@ How can Walmart use product co-purchase patterns to create a more personalized s
 
 ---
 
+Great! Here's the updated version of your **Key Findings** and **Recommendations**:
+
+* ✅ Named the underperforming products based on the PDF
+* ✅ Removed all arrow signs (→)
+
+---
+
 ## Key Findings
 
-| Focus Area             | Insight                                                              |
-|------------------------|----------------------------------------------------------------------|
-| Product Popularity     | Milk, vegetables, and fruits were among the most frequently bought   |
-| Underperforming Items  | Several items sold fewer than 10 units in 2 years                    |
-| Product Associations   | Strong cross-sell relationships discovered using Apriori algorithm   |
-| Timing Insight         | Transactions spiked during weekends and holidays                     |
-| Customer Behavior      | Repeat customers frequently repurchased bundled grocery items        |
+| Focus Area            | Insight                                                                                                                  |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Product Popularity    | Milk, vegetables, fruits, and RTE (ready-to-eat) foods were among the most frequently purchased items                    |
+| Underperforming Items | Products like Pancake Syrup, Tuna Salad, BBQ Sauce, and Mango Chutney sold fewer than 8 units over 2 years               |
+| Product Associations  | Strong cross-sell relationships discovered using Apriori, including Potato Products with Beef, and Flour with Mayonnaise |
+| Cross-Sell Confidence | Over 40% confidence in item pairs like Canned Fruit with Coffee, and Meat Spreads with Eggs                              |
+| Timing Insight        | Transaction volumes spiked during weekends and holidays                                                                  |
+| Customer Behavior     | Repeat customers frequently repurchased bundled grocery essentials, showing loyalty-driven buying patterns               |
 
 ---
 
 ## Recommendations
 
-1. Bundle top associated products into value packs to encourage higher basket size  
-2. Reorganize store layout to place commonly paired products near each other  
-3. Offer targeted promotions on low-selling items when purchased with top-sellers  
-4. Use these insights to inform online and in-store merchandising strategies  
+1. **Bundle frequently associated products** (e.g., Potato Products with Beef, Flour with Mayonnaise) to increase basket size
+2. **Place cross-sell items near each other** on shelves to boost impulse purchases
+3. **Promote underperforming items** (e.g., BBQ Sauce, Tuna Salad) when bought with popular products
+4. **Schedule campaigns during high-traffic times** like weekends and holidays for better response
+5. **Personalize promotions** using co-purchase insights through apps, receipts, or in-store signage
 
 ---
 
