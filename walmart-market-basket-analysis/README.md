@@ -63,13 +63,17 @@ How can Walmart use product co-purchase patterns to create a more personalized s
 ```bash
 walmart-market-basket-analysis/
 │
-├── notebooks/
-│   └── Walmart_Market_Basket_Analysis.ipynb   # Apriori model, EDA, insights
+├── notebooks/        # Apriori model, EDA, product pairings
+│   └── Walmart_Market_Basket_Analysis.ipynb
 │
-├── data/
-│   └── Ecommerce_-_Market_Basket_-_Groceries_dataset.csv
+├── dashboard/        # Tableau KPI dashboard for product performance simulation
+│   └── dashboard_screenshot.png
 │
-├── presentation/
-│   └── Presentation deck.pdf
+├── presentation/     # Final business presentation for non-technical stakeholders
+│   └── transforming_shopping_experience_presentation.pdf
+│
+├── data/             # Transaction dataset used for analysis
+│   └── Walmart_Market_Basket_Groceries_dataset.csv
 │
 └── README.md
+
