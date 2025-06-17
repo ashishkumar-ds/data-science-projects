@@ -74,9 +74,8 @@ The data was cleaned, standardized, and reshaped into transaction lists suitable
   - Flour & Mayonnaise
   - Canned Fruit & Coffee
     
-## 📎 Business Insight Integration
+## Business Insight Integration
 
 The association rules and product pairing insights generated from this notebook were applied in:
 
-- **[Presentation Deck](../presentation/transforming_shopping_experience_presentation.pdf)**  
-  Summarizes key findings, cross-sell strategies, and actionable recommendations for business stakeholders.
+- **[Presentation Deck](../presentation/transforming_shopping_experience_presentation.pdf)**
