@@ -4,7 +4,7 @@
 
 This project explores customer purchasing behavior at Walmart using Market Basket Analysis. Faced with a 17% drop in sales in late 2015, the goal is to uncover hidden product associations and recommend bundling strategies, product placements, and personalized promotions to improve customer experience and boost sales.
 
-To simulate a real-world scenario, a **synthetic transaction dataset** was generated using **ChatGPT**. This allowed full control over the structure and variety of grocery purchase patterns, while maintaining a realistic representation of customer behavior in a retail setting.
+To simulate a real-world scenario, a synthetic transaction dataset was generated using ChatGPT. This allowed full control over the structure and variety of grocery purchase patterns, while maintaining a realistic representation of customer behavior in a retail setting.
 
 ---
 
@@ -56,7 +56,7 @@ How can Walmart use product co-purchase patterns to create a more personalized s
 ## Tools and Technologies
 
 - Python  
-- Market Basket Modeling: Apriori (`apyori`)  
+- Market Basket Modeling: Apriori 
 - Association Metrics: Support, Confidence, Lift  
 - Tableau  
 
