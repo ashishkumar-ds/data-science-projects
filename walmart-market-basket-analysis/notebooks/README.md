@@ -4,9 +4,9 @@ This notebook analyzes synthetic grocery transaction data designed to reflect cu
 
 ---
 
-## Methodology / Workflow
+## Methodology
 
-### 1. Data Retrieval
+### 1. Data Generation
 
 - The dataset used in this project is **synthetic** and was generated using **ChatGPT** to simulate realistic Walmart grocery transactions.
 - It includes over 38,000 transactions from 2014–2015, with three columns: `Date`, `Member_number`, and `itemDescription`.
