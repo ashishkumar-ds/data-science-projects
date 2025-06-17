@@ -4,6 +4,8 @@
 
 This project explores customer purchasing behavior at Walmart using Market Basket Analysis. Faced with a 17% drop in sales in late 2015, the goal is to uncover hidden product associations and recommend bundling strategies, product placements, and personalized promotions to improve customer experience and boost sales.
 
+To simulate a real-world scenario, a **synthetic transaction dataset** was generated using **ChatGPT**. This allowed full control over the structure and variety of grocery purchase patterns, while maintaining a realistic representation of customer behavior in a retail setting.
+
 ---
 
 ## Problem Statement
@@ -17,7 +19,7 @@ How can Walmart use product co-purchase patterns to create a more personalized s
 
 ## Dataset Description
 
-- **Source**: Simulated Walmart Grocery Transactions  
+- **Source**: Synthetic Walmart Grocery Transactions (generated using ChatGPT)  
 - **Scope**: 38,008 transactions  
 - **Time Frame**: 2014–2015  
 - **Key Features**:
@@ -43,19 +45,19 @@ How can Walmart use product co-purchase patterns to create a more personalized s
 
 ## Recommendations
 
-1. **Bundle frequently associated products** (e.g., Potato Products with Beef, Flour with Mayonnaise) to increase basket size
-2. **Place cross-sell items near each other** on shelves to boost impulse purchases
-3. **Promote underperforming items** (e.g., BBQ Sauce, Tuna Salad) when bought with popular products
-4. **Schedule campaigns during high-traffic times** like weekends and holidays for better response
-5. **Personalize promotions** using co-purchase insights through apps, receipts, or in-store signage
+1. **Bundle frequently associated products** (e.g., Potato Products with Beef, Flour with Mayonnaise) to increase basket size  
+2. **Place cross-sell items near each other** on shelves to boost impulse purchases  
+3. **Promote underperforming items** (e.g., BBQ Sauce, Tuna Salad) when bought with popular products  
+4. **Schedule campaigns during high-traffic times** like weekends and holidays for better response  
+5. **Personalize promotions** using co-purchase insights through apps, receipts, or in-store signage  
 
 ---
 
 ## Tools and Technologies
 
-- Python 
-- Market Basket Modeling: Apriori (via apyori)  
-- Association Metrics: Support, Confidence, Lift   
+- Python  
+- Market Basket Modeling: Apriori (`apyori`)  
+- Association Metrics: Support, Confidence, Lift  
 - Tableau  
 
 ---
@@ -74,8 +76,7 @@ walmart-market-basket-analysis/
 ├── presentation/     # Final business presentation for non-technical stakeholders
 │   └── transforming_shopping_experience_presentation.pdf
 │
-├── data/             # Transaction dataset used for analysis
+├── data/             # Synthetic transaction dataset used for analysis
 │   └── Walmart_Market_Basket_Groceries_dataset.csv
 │
 └── README.md
-
