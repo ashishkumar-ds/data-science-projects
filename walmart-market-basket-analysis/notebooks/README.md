@@ -46,14 +46,14 @@ The data was cleaned, standardized, and reshaped into transaction lists suitable
 
 ### 5. Modeling
 
-To uncover meaningful product associations, I applied the **Apriori algorithm** using the `apyori` Python package. This algorithm is well-suited for identifying frequent itemsets and strong association rules in market basket data. I set the parameters based on business relevance and dataset size:
-
-- **Minimum support**: 0.002 (to focus on frequently occurring item pairs)  
-- **Minimum confidence**: 0.05 (to ensure reliability of recommendations)  
-- **Minimum lift**: 3 (to prioritize rules with strong influence)  
-- **Rule length**: 2 (to identify pairs of co-purchased products)
-
-The model generated a set of product combinations with high support, confidence, and lift—suitable for bundling and cross-selling strategies.
+- Applied the **Apriori algorithm** using the `apyori` package to identify frequent itemsets and strong product associations  
+- Chose parameter values based on dataset size and business context:
+  - `min_support = 0.002` – to capture commonly bought-together items  
+  - `min_confidence = 0.05` – to ensure reliability of recommendations  
+  - `min_lift = 3` – to prioritize high-impact rules  
+  - `min_length = 2`, `max_length = 2` – to focus on product pairings  
+- Generated a ranked list of associated product pairs with high support, confidence, and lift  
+- These associations informed bundling, cross-sell opportunities, and product placement strategies  
 
 ---
 
@@ -74,6 +74,9 @@ The model generated a set of product combinations with high support, confidence,
   - Flour & Mayonnaise
   - Canned Fruit & Coffee
     
-- Business-ready insights used in:
-  - 📄 [Presentation deck](../presentation/transforming_shopping_experience_presentation.pdf)
-  - 📊 [KPI dashboard](../dashboard/dashboard_screenshot.png)
+## 📎 Business Insight Integration
+
+The association rules and product pairing insights generated from this notebook were applied in:
+
+- **[Presentation Deck](../presentation/transforming_shopping_experience_presentation.pdf)**  
+  Summarizes key findings, cross-sell strategies, and actionable recommendations for business stakeholders.
