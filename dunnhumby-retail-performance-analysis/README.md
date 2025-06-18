@@ -25,8 +25,6 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 - **Scope**: ~2.5 million transaction records  
 - **Time Frame**: 2017–2018  
 
-### Key Files and What They Represent
-
 - `transaction_data.csv` – Purchase history of each household (products, quantity, sales, store, time)  
 - `hh_demographic.csv` – Demographic attributes of households (age group, income, marital status, household size)  
 - `product.csv` – Product catalog information (department, brand, commodity and sub-commodity details)  
