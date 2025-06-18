@@ -1,4 +1,4 @@
-# Walmart Market Basket Analysis – Apriori Algorithm
+# Walmart Market Basket Analysis – Notebook
 
 This notebook analyzes synthetic grocery transaction data designed to reflect customer shopping patterns at Walmart. Using Market Basket Analysis and the Apriori algorithm, it identifies frequently bought-together items and provides insights to support bundling strategies, product placement, and promotion planning.
 
@@ -40,7 +40,7 @@ The data was cleaned, standardized, and reshaped into transaction lists suitable
 ### 4. Feature Engineering
 
 - Grouped purchases by `Member_number` to simulate individual shopping baskets
-- Transformed the data into the required format for the Apriori algorithm (`List[List[str]]`)
+- Transformed the data into the required format for the Apriori algorithm
 
 ---
 
@@ -48,10 +48,10 @@ The data was cleaned, standardized, and reshaped into transaction lists suitable
 
 - Applied the **Apriori algorithm** using the `apyori` package to identify frequent itemsets and strong product associations  
 - Chose parameter values based on dataset size and business context:
-  - `min_support = 0.002` – to capture commonly bought-together items  
-  - `min_confidence = 0.05` – to ensure reliability of recommendations  
-  - `min_lift = 3` – to prioritize high-impact rules  
-  - `min_length = 2`, `max_length = 2` – to focus on product pairings  
+  - `min_support = 0.002` to capture commonly bought-together items  
+  - `min_confidence = 0.05` to ensure reliability of recommendations  
+  - `min_lift = 3` to prioritize high-impact rules  
+  - `min_length = 2`, `max_length = 2` to focus on product pairings  
 - Generated a ranked list of associated product pairs with high support, confidence, and lift  
 - These associations informed bundling, cross-sell opportunities, and product placement strategies  
 
@@ -67,8 +67,8 @@ The data was cleaned, standardized, and reshaped into transaction lists suitable
 
 ## Key Outputs
 
-- Visuals highlighting product popularity and sales trends
 - Cleaned transaction list used for modeling
+- Visuals highlighting product popularity and sales trends
 - Ranked list of high-confidence item pairs, such as:
   - Potato Products & Beef (Confidence: 45%, Lift: 4.1)
   - Flour & Mayonnaise
