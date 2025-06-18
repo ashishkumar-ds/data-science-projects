@@ -55,7 +55,9 @@ After cleaning and transformation, the data was ready for customer segmentation 
 - Cleaned and integrated retail dataset from six sources  
 - RFM segments for customer targeting  
 - Campaign performance rankings and uplift calculations  
-- Forecast model for revenue projection  
+- Forecast model for revenue projection
+
+---
 
 ## Business Insight Integration
 
@@ -64,4 +66,3 @@ The customer segmentation, campaign evaluation, and store performance insights g
 - **[Presentation Deck](../presentation/dunnhumby_retail_performance_analysis_presentation_deck.pdf)**  
 
 - **[Interactive Tableau Dashboard](../dashboard/dashboard_screenshot.png)**
-
