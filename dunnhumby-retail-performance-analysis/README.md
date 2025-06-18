@@ -19,17 +19,22 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 
 ---
 
-## Dataset Description
+ ## Dataset Description
 
-- **Source**: Dunnhumby 
-- **Scope**: 2,500,000 transaction records  
+- **Source**: Dunnhumby (official public dataset)  
+- **Scope**: ~2.5 million transaction records  
 - **Time Frame**: 2017–2018  
-- **Key Features**:
-  - Customer demographics  
-  - Transaction time  
-  - Product information  
-  - Campaign and coupon data  
-  - Store identifiers  
+
+---
+
+### Key Files and What They Represent
+
+- `transaction_data.csv` – Purchase history of each household (products, quantity, sales, store, time)  
+- `hh_demographic.csv` – Demographic attributes of households (age group, income, marital status, household size)  
+- `product.csv` – Product catalog information (department, brand, commodity and sub-commodity details)  
+- `campaign_table.csv` – Metadata for each campaign (campaign ID, start date, end date)  
+- `coupon_redempt.csv` – Records of which households redeemed which coupons and when  
+- `campaign_desc.csv` – Descriptions of each campaign for business context
 
 ---
 
