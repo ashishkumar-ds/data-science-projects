@@ -77,6 +77,6 @@ dunnhumby-retail-performance/
 │   └── dashboard_screenshot.png
 │
 ├── presentation/     # Final business presentation for non-technical stakeholders
-│   └── dunnhumby_retail_performance_analysis_presentation_deck.pdf
+│   └── presentation_deck.pdf
 │
 └── README.md
