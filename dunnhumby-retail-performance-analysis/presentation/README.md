@@ -1,4 +1,4 @@
-This folder contains the final project presentation summarizing key insights and recommendations from the Dunnhumby retail analytics project. Designed for non-technical stakeholders, hiring managers, and recruiters
+This folder contains the project presentation summarizing key insights and recommendations from the Dunnhumby retail analytics project. Designed for non-technical stakeholders, hiring managers, and recruiters.
 
 ### The Presentation Deck Includes:
 - Project overview and business challenge
