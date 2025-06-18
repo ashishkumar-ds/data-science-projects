@@ -2,6 +2,7 @@ This folder contains the project presentation summarizing key insights and recom
 
 ### The Presentation Deck Includes:
 - Project overview and business challenge
+- Root Cause Analysis
 - Campaign performance comparison
 - RFM-based customer segmentation
 - Time-of-day analysis for campaign timing
