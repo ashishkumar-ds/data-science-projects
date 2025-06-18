@@ -1,7 +1,8 @@
-This folder contains the project presentation summarizing key insights and recommendations from the Dunnhumby retail analytics project. Designed for non-technical stakeholders, hiring managers, and recruiters.
+This folder contains the final project presentation that summarizes the key insights, findings, and actionable recommendations from the Walmart Market Basket Analysis project. It is designed for non-technical stakeholders, hiring managers, and recruiters who want a high-level understanding of the project’s business value.
 
 ### The Presentation Deck Includes:
 - Project overview and business challenge
+- Dataset Overview
 - Root Cause Analysis
 - Campaign performance comparison
 - RFM-based customer segmentation
