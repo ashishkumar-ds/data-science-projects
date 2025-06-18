@@ -56,5 +56,12 @@ After cleaning and transformation, the data was ready for customer segmentation 
 - RFM segments for customer targeting  
 - Campaign performance rankings and uplift calculations  
 - Forecast model for revenue projection  
-- Insights translated into:
-  - [Presentation deck](../presentation/dunnhumby_retail_performance_analysis_presentation_deck.pdf)
+
+## Business Insight Integration
+
+The customer segmentation, campaign evaluation, and store performance insights generated from this notebook were applied in:
+
+- **[Presentation Deck](../presentation/dunnhumby_retail_performance_analysis_presentation_deck.pdf)**  
+
+- **[Interactive Tableau Dashboard](../dashboard/dashboard_screenshot.png)**
+
