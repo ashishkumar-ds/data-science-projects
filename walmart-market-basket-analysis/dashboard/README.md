@@ -3,8 +3,6 @@
 This dashboard was created as the final delivery layer of the Walmart Market Basket Analysis project.
 It visualizes key product-level KPIs alongside supporting charts to simulate the potential impact of bundling, co-placement, and promotional strategies using historical transaction data.
 
-To make the insights more actionable, the dashboard includes interactive filters for **Year** and **District (store location)** — enabling stakeholders to explore how performance and strategy effectiveness vary across time and geography.
-
 ---
 
 ## Purpose & Design Framework
