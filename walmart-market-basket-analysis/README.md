@@ -76,7 +76,7 @@ walmart-market-basket-analysis/
 ├── presentation/     # Final business presentation for non-technical stakeholders
 │   └── presentation_deck.pdf
 │
-├── data/             # Synthetic transaction dataset used for analysis
+├── dataset/             # Synthetic transaction dataset used for analysis
 │   └── groceries_dataset.csv
 │
 └── README.md
