@@ -1,4 +1,4 @@
-# 📦 TheLook E-commerce Growth & Retention Analysis
+# TheLook E-commerce Growth & Retention Analysis
 
 ## Project Summary
 
