@@ -33,7 +33,7 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 - `coupon_redempt.csv` – Records of which households redeemed which coupons and when  
 - `campaign_desc.csv` – Descriptions of each campaign for business context
    
-**Product Count**: Over 2,500 unique items
+**Product Count**: Over 2,500 unique items  
 **Store Count**: 27 unique store locations
 
 ---
