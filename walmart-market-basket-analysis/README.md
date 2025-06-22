@@ -20,12 +20,12 @@ How can Walmart use product co-purchase patterns to create a more personalized s
 ## Dataset Description
 
 **Source**: Synthetic Walmart Grocery Transactions (generated using ChatGPT)  
-**Total Records**: 38,008 transactions
-**Time Frame**: 2012–2015  
-**Key Features**:
+**Total Records**: 38,008 transactions   
+**Time Frame**: 2012–2015   
+**Key Attributes**:
   - `Date`: Transaction date  
   - `Member_number`: Unique customer ID  
-  - `itemDescription`: Product purchased  
+  - `itemDescription`: Product purchased    
 **Product Count**: 167 unique grocery items
 
 ---
