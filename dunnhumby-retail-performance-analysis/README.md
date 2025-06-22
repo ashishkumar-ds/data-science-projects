@@ -24,8 +24,7 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 **Source**: Dunnhumby (official public dataset)  
 **Scope**: ~2.5 million transaction records  
 **Time Frame**: 2017–2018 
-
-### Component Datasets and Key Attributes
+**Component Datasets and Key Attributes**
 - `transaction_data.csv` – Purchase history of each household (products, quantity, sales, store, time)  
 - `hh_demographic.csv` – Demographic attributes of households (age group, income, marital status, household size) 
 - `product.csv` – Product catalog information (department, brand, commodity and sub-commodity details)  
@@ -34,6 +33,7 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 - `campaign_desc.csv` – Descriptions of each campaign for business context
    
 **Product Count**: Over 2,500 unique items
+
 **Store Count**: 27 unique store locations
 
 ---
