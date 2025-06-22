@@ -23,7 +23,8 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 
 **Source**: Dunnhumby (official public dataset)  
 **Scope**: ~2.5 million transaction records  
-**Time Frame**: 2017–2018 
+**Time Frame**: 2017–2018
+
 **Component Datasets and Key Attributes**
 - `transaction_data.csv` – Purchase history of each household (products, quantity, sales, store, time)  
 - `hh_demographic.csv` – Demographic attributes of households (age group, income, marital status, household size) 
