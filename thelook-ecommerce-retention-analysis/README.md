@@ -2,7 +2,7 @@
 
 ## Project Summary
 
-This project analyzes synthetic e-commerce clothing data from TheLook to uncover key insights into product profitability, customer purchasing behavior, and retention trends. After facing significant operational challenges in 2023, the company turned to data to guide its optimization efforts. Using SQL (BigQuery) for cohort analysis and Looker Studio for interactive reporting, this project provides decision-makers with evidence-based recommendations to improve category performance, retention, and profitability.
+This project explores how TheLook, an e-commerce clothing brand, used data to recover from the impact of COVID-19 and a challenging 2023. By analyzing customer behavior, order patterns, and retention trends, it uncovers key insights and strategic opportunities to improve product performance, reduce churn, and drive sustainable growth.
 
 ---
 
@@ -17,7 +17,7 @@ What strategies can TheLook adopt post-2023 to boost retention and category perf
 - **Source**: Synthetic dataset created by Looker  
 - **Total Records**: 65,000+ orders  
 - **Time Frame**: Multi-year retail activity until end of 2023  
-- **Key Tables & What They Contain**:
+- **Component Tables and Key Attributes**
   - `users` – Customer profiles and contact information  
   - `orders` – Purchase and return activity with timestamps  
   - `order_items` – Products in each order, pricing, and fulfillment status  
@@ -44,7 +44,7 @@ What strategies can TheLook adopt post-2023 to boost retention and category perf
 
 ## Recommendations
 
-1. **Investigate cancel/return reasons** to fix funnel or product issues  
+1. Investigate cancel/return reasons to fix funnel or product issues  
 2. **Follow up with high-return users** for feedback and friction points  
 3. **Promote fast-growing categories** (Swim, Active, Leggings) with targeted campaigns  
 4. **Remove low-margin products** that aren't scaling with volume  
@@ -55,7 +55,7 @@ What strategies can TheLook adopt post-2023 to boost retention and category perf
 
 ## Tools & Technologies
 
-- **SQL** 
+- **SQL (Google BigQuery)** 
 - **Looker Studio** 
 - **Cohort Analysis**
   
@@ -66,12 +66,13 @@ What strategies can TheLook adopt post-2023 to boost retention and category perf
 ```bash
 thelook-ecommerce-retention-analysis/
 │
-├── notebooks/             # SQL queries and modeling logic (if added)
+├── notebooks/           # SQL queries for cohort analysis, product trends, and user behavior
 │
-├── dashboard/             # Looker Studio screenshot or dashboard links
+├── dashboard/           # Looker Studio dashboard link and (optional) screenshot
+│   └── dashboard_screenshot.png        
 │
-├── presentation/          # Final stakeholder-ready pitch deck
-│   └── thelook_pitch_deck.pdf
+├── presentation/        # Final business presentation for non-technical stakeholders
+│   └── presentation_deck.pdf
 │
 └── README.md
 
