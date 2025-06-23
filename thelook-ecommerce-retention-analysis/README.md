@@ -45,11 +45,11 @@ What strategies can TheLook adopt post-2023 to boost retention and category perf
 ## Recommendations
 
 1. Investigate cancel/return reasons to fix funnel or product issues  
-2. **Follow up with high-return users** for feedback and friction points  
-3. **Promote fast-growing categories** (Swim, Active, Leggings) with targeted campaigns  
-4. **Remove low-margin products** that aren't scaling with volume  
-5. **Boost retention post-6 months** with personalized offers, A/B testing, and cohort tracking  
-6. **Increase inventory** for proven high-profit categories (e.g., Outerwear & Coats)  
+2. Follow up with high-return users for feedback and friction points  
+3. Promote fast-growing categories (Swim, Active, Leggings) with targeted campaigns
+4. Increase inventory for proven high-profit categories (e.g., Outerwear & Coats)  
+5. Remove low-margin products that aren't scaling with volume  
+6. Boost retention post-6 months with personalized offers, A/B testing, and cohort tracking 
 
 ---
 
