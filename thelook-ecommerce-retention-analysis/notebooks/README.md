@@ -1,32 +1,40 @@
-**Business Questions:**  
+# Notebooks: SQL Queries & Business Questions
 
-1. How many unique users, orders, and total sales occurred per order status each month?
+This file documents all key SQL queries used in the project, each tied to a specific business question. It helps demonstrate how real-world questions were translated into data-driven answers using SQL and cohort analysis.
+
+---
+
+## Query 1: Monthly Summary of Users, Orders, and Sales by Status
+
+**Business Question:**  
+How many unique users, orders, and total sales occurred per order status each month?
 
 ```sql
--- Calculate metrics for each month and status
 SELECT
-  DATE_TRUNC(CAST(created_at AS DATE), MONTH) AS month_year,  -- Extract month-year
-  status,                                                     -- Order status (e.g., Complete, Cancelled, Returned)
-  COUNT(DISTINCT user_id) AS total_unique_users,              -- Number of unique users
-  COUNT(DISTINCT order_id) AS total_orders,                   -- Number of orders
-  SUM(sale_price) AS total_sale_price                         -- Total sale price
+  DATE_TRUNC(CAST(created_at AS DATE), MONTH) AS month_year,
+  status,
+  COUNT(DISTINCT user_id) AS total_unique_users,
+  COUNT(DISTINCT order_id) AS total_orders,
+  SUM(sale_price) AS total_sale_price
 FROM `bigquery-public-data.thelook_ecommerce.order_items` AS oi
 WHERE DATE_TRUNC(created_at, MONTH) BETWEEN '2019-01-01' AND '2022-08-01'
 GROUP BY 1, 2
 ORDER BY 1, 2;
 
- 
-2. Who are the users that returned orders in August 2022?
 
-```sql
--- Retrieve user information for users who made a return in August 2022
+## Query 2: Identify Users with Returned Orders
+
+Business Question:
+Who are the users that returned orders in August 2022?
+
 SELECT
-  u.id AS id,                  -- User ID
-  u.email AS email,            -- User's email address
-  u.first_name AS first_name,  -- User's first name
-  u.last_name AS last_name     -- User's last name
+  u.id AS id,
+  u.email AS email,
+  u.first_name AS first_name,
+  u.last_name AS last_name
 FROM `bigquery-public-data.thelook_ecommerce.users` u
 INNER JOIN `bigquery-public-data.thelook_ecommerce.orders` o
   ON u.id = o.user_id
 WHERE DATE_TRUNC(o.created_at, MONTH) BETWEEN '2022-08-01' AND '2022-08-31'
   AND o.status = 'Returned';
+
