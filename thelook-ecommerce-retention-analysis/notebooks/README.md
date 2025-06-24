@@ -1,5 +1,6 @@
-**Business Question:**  
-How many unique users, orders, and total sales occurred per order status each month?
+**Business Questions:**  
+
+1. How many unique users, orders, and total sales occurred per order status each month?
 
 ```sql
 -- Calculate metrics for each month and status
@@ -14,3 +15,21 @@ WHERE DATE_TRUNC(created_at, MONTH) BETWEEN '2019-01-01' AND '2022-08-01'
 GROUP BY 1, 2
 ORDER BY 1, 2;
 
+---
+
+```sql 
+2. Who are the users that returned orders in August 2022?
+
+-- Retrieve user information for users who made a return in August 2022
+SELECT
+  u.id AS id,                  -- User ID
+  u.email AS email,            -- User's email address
+  u.first_name AS first_name,  -- User's first name
+  u.last_name AS last_name     -- User's last name
+FROM `bigquery-public-data.thelook_ecommerce.users` u
+INNER JOIN `bigquery-public-data.thelook_ecommerce.orders` o
+  ON u.id = o.user_id
+WHERE DATE_TRUNC(o.created_at, MONTH) BETWEEN '2022-08-01' AND '2022-08-31'
+  AND o.status = 'Returned';
+
+---
