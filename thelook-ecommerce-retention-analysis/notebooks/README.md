@@ -1,4 +1,4 @@
-# Notebooks: SQL Queries & Business Questions
+# SQL Queries & Business Questions
 
 This file documents all key SQL queries used in the project, each tied to a specific business question. It helps demonstrate how real-world questions were translated into data-driven answers using SQL and cohort analysis.
 
@@ -6,7 +6,7 @@ This file documents all key SQL queries used in the project, each tied to a spec
 
 ## Business Question
  
-**How many unique users, orders, and total sales occurred per order status each month?**
+**1. How many unique users, orders, and total sales occurred per order status each month?**
 
 ```sql
 SELECT
@@ -21,7 +21,7 @@ GROUP BY 1, 2
 ORDER BY 1, 2;
 ```
 
-**Who are the users that returned orders in August 2022?**
+**2. Who are the users that returned orders in August 2022?**
 
 ```sql
 SELECT
