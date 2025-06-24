@@ -16,10 +16,10 @@ GROUP BY 1, 2
 ORDER BY 1, 2;
 
 ---
-
-```sql 
+ 
 2. Who are the users that returned orders in August 2022?
 
+```sql
 -- Retrieve user information for users who made a return in August 2022
 SELECT
   u.id AS id,                  -- User ID
