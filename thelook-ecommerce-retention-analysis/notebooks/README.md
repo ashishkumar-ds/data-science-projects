@@ -23,6 +23,7 @@ ORDER BY 1, 2;
 
 **Who are the users that returned orders in August 2022?**
 
+```sql
 SELECT
   u.id AS id,
   u.email AS email,
@@ -33,4 +34,4 @@ INNER JOIN `bigquery-public-data.thelook_ecommerce.orders` o
   ON u.id = o.user_id
 WHERE DATE_TRUNC(o.created_at, MONTH) BETWEEN '2022-08-01' AND '2022-08-31'
   AND o.status = 'Returned';
-
+```
