@@ -4,10 +4,9 @@ This file documents all key SQL queries used in the project, each tied to a spec
 
 ---
 
-## Query 1: Monthly Summary of Users, Orders, and Sales by Status
-
-**Business Question:**  
-How many unique users, orders, and total sales occurred per order status each month?
+## Business Question
+ 
+**How many unique users, orders, and total sales occurred per order status each month?**
 
 ```sql
 SELECT
@@ -20,12 +19,9 @@ FROM `bigquery-public-data.thelook_ecommerce.order_items` AS oi
 WHERE DATE_TRUNC(created_at, MONTH) BETWEEN '2019-01-01' AND '2022-08-01'
 GROUP BY 1, 2
 ORDER BY 1, 2;
+```
 
-
-## Query 2: Identify Users with Returned Orders
-
-Business Question:
-Who are the users that returned orders in August 2022?
+**Who are the users that returned orders in August 2022?**
 
 SELECT
   u.id AS id,
