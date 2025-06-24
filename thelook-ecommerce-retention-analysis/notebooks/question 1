@@ -1,9 +1,6 @@
-**Business Question:**
+1. How many unique users, orders, and total sales occurred per order status each month?
 
-How many unique users, orders, and total sales occurred per order status each month?
 
-```sql
--- Calculate metrics for each month and status
 SELECT
   DATE_TRUNC(CAST(created_at AS DATE), MONTH) AS month_year,  -- Extract month-year
   status,                                                     -- Order status (e.g., Complete, Cancelled, Returned)
