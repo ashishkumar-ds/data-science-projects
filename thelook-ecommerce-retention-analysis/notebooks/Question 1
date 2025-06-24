@@ -1,4 +1,5 @@
-**Business Question:**  
+**Business Question:**
+
 How many unique users, orders, and total sales occurred per order status each month?
 
 ```sql
