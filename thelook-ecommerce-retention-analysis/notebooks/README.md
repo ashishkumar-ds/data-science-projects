@@ -231,7 +231,7 @@ order by month_year desc, product_category asc; -- sort the result by month_year
 **7. How many users (in %) from each monthly cohort in 2022 returned in the following 6 months?**
 
 ```sql
--- Step 1: Identify the cohort month for each user (the first order's month)
+-- Identify the cohort month for each user (the first order's month)
 with cohort_items as (
   select
     user_id, -- user id of the user
@@ -240,7 +240,7 @@ with cohort_items as (
   group by 1
 ),
 
--- Step 2: Calculate the month number for each user's activity relative to their cohort month
+-- Calculate the month number for each user's activity relative to their cohort month
 user_activities as (
   select
     act.user_id, -- user id of the user
@@ -252,7 +252,7 @@ user_activities as (
   group by 1, 2
 ),
 
--- Step 3: Calculate the cohort size (number of users) for each cohort month
+-- Calculate the cohort size (number of users) for each cohort month
 cohort_size as (
   select
     cohort_month, -- cohort month
@@ -262,7 +262,7 @@ cohort_size as (
   order by 1
 ),
 
--- Step 4: Calculate the retention table with the count of users for each cohort month and activity month
+-- Calculate the retention table with the count of users for each cohort month and activity month
 retention_table as (
   select
     b.cohort_month, -- cohort month
@@ -274,7 +274,7 @@ retention_table as (
   group by 1, 2
 )
 
--- Step 5: Final select to display the results with proper formatting
+-- Final select to display the results with proper formatting
 select
   c.cohort_month, -- cohort month
   d.users_number as cohort_size, -- number of users in the cohort
