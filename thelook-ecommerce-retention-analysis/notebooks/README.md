@@ -192,3 +192,98 @@ order by
 limit
   5;
 ```
+
+**6. What is the monthly growth of inventory (in %) for each product category, ordered by latest to oldest?**
+
+```sql
+-- calculate the monthly inventory count for each product category
+with monthly_inventory as (
+  select
+    date_trunc(created_at, month) as month_year, -- extract the month and year from the 'created_at' date
+    product_category, -- column representing the category of the product
+    count(product_id) as count_product -- count the number of products for each category in each month
+  from `bigquery-public-data.thelook_ecommerce.inventory_items`
+  where date_trunc(created_at, month) between '2019-01-01' and '2022-04-01' -- filter the data for the desired date range
+  group by 1, 2 -- group the data by month_year and product_category
+),
+
+-- calculate the growth percentage of inventory count for each product category
+inventory_growth as (
+  select
+    month_year,
+    product_category,
+    count_product,
+    lag(count_product) over (partition by product_category order by month_year) as prev_count_product, -- get the previous month's count for each category
+    round(((count_product - lag(count_product) over (partition by product_category order by month_year)) /
+    lag(count_product) over (partition by product_category order by month_year) * 100), 2) as growth_change -- calculate the growth change percentage
+  from monthly_inventory
+)
+
+-- final query to display the result
+select
+  month_year,
+  product_category,
+  concat(growth_change, '%') as growth_change -- format growth_change as a percentage with two decimal places
+from inventory_growth
+order by month_year desc, product_category asc; -- sort the result by month_year in descending order and product_category in ascending order
+```
+
+**7. How many users (in %) from each monthly cohort in 2022 returned in the following 6 months?**
+
+```sql
+-- Step 1: Identify the cohort month for each user (the first order's month)
+with cohort_items as (
+  select
+    user_id, -- user id of the user
+    min(date_trunc(cast(created_at as date), month)) as cohort_month -- the first order's month for the cohort
+  from `bigquery-public-data.thelook_ecommerce.orders`
+  group by 1
+),
+
+-- Step 2: Calculate the month number for each user's activity relative to their cohort month
+user_activities as (
+  select
+    act.user_id, -- user id of the user
+    date_diff(date_trunc(act.created_at, month), cohort_items.cohort_month, month) as month_number -- month number relative to cohort month
+  from `bigquery-public-data.thelook_ecommerce.orders` act
+  inner join cohort_items
+  on act.user_id = cohort_items.user_id
+  where extract(year from cohort_month) = 2022
+  group by 1, 2
+),
+
+-- Step 3: Calculate the cohort size (number of users) for each cohort month
+cohort_size as (
+  select
+    cohort_month, -- cohort month
+    count(user_id) as users_number -- number of users in the cohort
+  from cohort_items
+  group by 1
+  order by 1
+),
+
+-- Step 4: Calculate the retention table with the count of users for each cohort month and activity month
+retention_table as (
+  select
+    b.cohort_month, -- cohort month
+    a.month_number, -- month number relative to cohort month
+    count(a.user_id) as users_number -- number of users in the retention table
+  from user_activities a
+  left join cohort_items b
+  on a.user_id = b.user_id
+  group by 1, 2
+)
+
+-- Step 5: Final select to display the results with proper formatting
+select
+  c.cohort_month, -- cohort month
+  d.users_number as cohort_size, -- number of users in the cohort
+  c.month_number, -- month number relative to cohort month
+  c.users_number as total_users, -- number of users in the retention table
+  c.users_number / d.users_number as percentage -- percentage of users in the retention table relative to cohort size
+from retention_table c
+left join cohort_size d
+on c.cohort_month = d.cohort_month
+where c.month_number < 7 -- include only the first 6 months' data for each cohort
+order by 1, 3;
+```
