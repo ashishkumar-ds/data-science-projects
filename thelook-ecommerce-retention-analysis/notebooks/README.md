@@ -38,7 +38,26 @@ WHERE DATE_TRUNC(o.created_at, MONTH) BETWEEN '2022-08-01' AND '2022-08-31'
   AND o.status = 'Returned';
 ```
 
-**3. What are the top 5 most and least profitable products?**
+ **3. What is the total number of unique buyers, average order frequency, and average order value (AOV) per month?**
+ 
+```sql
+-- calculate key metrics for each month:
+-- 1. total unique buyers (users who made at least one purchase) for each month.
+-- 2. average order frequency per unique buyer for each month.
+-- 3. average order value (aov) for each month.
+select
+  date_trunc(cast(created_at as date), month) as month_year, -- extract the month and year from the 'created_at' date.
+  count(distinct user_id) as unique_buyers, -- count of unique buyers for each month.
+  count(distinct order_id) / count(distinct user_id) as avg_frequency, -- average order frequency per unique buyer for each month.
+  sum(sale_price) / count(distinct order_id) as aov -- average order value (aov) for each month.
+from `bigquery-public-data.thelook_ecommerce.order_items` as oi -- alias for the order_items table.
+where date_trunc(created_at, month) between '2019-01-01' and '2022-08-01' -- filter the data for the desired date range.
+  and status = 'Complete' -- filter the data for complete orders.
+group by 1 -- group the data by month_year.
+order by 1; -- sort the result by month_year.
+```
+
+**4. What are the top 5 most and least profitable products?**
 
 ```sql
 with product_summary as (
