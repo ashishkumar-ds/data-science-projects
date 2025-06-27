@@ -15,5 +15,5 @@ It is designed for non-technical stakeholders, hiring managers, and recruiters t
 - Monthly retention cohort breakdown   
 - Strategic recommendations for boosting retention and category growth  
 
-[View the deck here](thelook-ecommerce-retention-analysis/presentation/presentation deck.pdf)
+[View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/thelook-ecommerce-retention-analysis/presentation/presentation%20deck.pdf)
 
