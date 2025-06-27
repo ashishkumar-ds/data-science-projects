@@ -7,8 +7,9 @@ It is designed for non-technical stakeholders, hiring managers, and recruiters t
 
 ### The Presentation Deck Includes:
 
-- Project overview and post-COVID business context  
-- Business problem and data-driven objectives  
+- Project overview and post-COVID business context
+- Business problem and data-driven objectives
+- Data Sources & Tools 
 - Customer and order trend analysis  
 - Profitability insights by product category
 - Monthly retention cohort breakdown   
