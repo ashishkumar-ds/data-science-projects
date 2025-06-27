@@ -14,5 +14,5 @@ This folder contains the final project presentation that summarizes the key insi
 - Top product pairings with high support, confidence, and lift  
 - Strategic recommendations for bundling, shelf placement, and promotions  
 
-[View the deck here](./transforming_shopping_experience_presentation.pdf)
+[View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/walmart-market-basket-analysis/presentation/presentation%20deck.pdf)
 
