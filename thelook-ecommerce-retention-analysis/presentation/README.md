@@ -9,7 +9,7 @@ It is designed for non-technical stakeholders, hiring managers, and recruiters t
 
 - Project overview and post-COVID business context
 - Business problem and data-driven objectives
-- Data overview and methodology 
+- Dataset overview and methodology 
 - Customer and order trend analysis  
 - Profitability insights by product category
 - Monthly retention cohort breakdown   
