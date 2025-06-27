@@ -7,7 +7,7 @@ This folder contains the final project presentation that summarizes the key insi
 ### The Presentation Deck Includes:
 
 - Project background and business problem  
-- Data overview and methodology
+- Dataset overview and methodology
 - Root Cause Analysis 
 - Product popularity and underperforming item analysis  
 - Association rule mining (Apriori algorithm)  
