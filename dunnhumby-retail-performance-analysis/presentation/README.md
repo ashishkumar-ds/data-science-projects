@@ -1,3 +1,5 @@
+# Dunnhumby Retail Store Performance Analysis - Presentation  
+
 This folder contains the final project presentation summarizing the key insights, findings, and actionable recommendations from the Dunnhumby retail analytics project. It is designed for non-technical stakeholders, hiring managers, and recruiters who want a high-level understanding of the business problem and data-driven solutions.
 
 ### The Presentation Deck Includes:
