@@ -9,4 +9,4 @@ This folder contains the final project presentation summarizing the key insights
 - Time-of-day analysis for campaign timing
 - Forecasted sales uplift and key recommendations
 
-  [View the deck here](https://drive.google.com/file/d/1l90i0Dlo9hoN7jvstnZH4PPwVJktlFjp/view?usp=sharing)
+  [View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/dunnhumby-retail-performance-analysis/presentation/presentation%20deck.pdf)
