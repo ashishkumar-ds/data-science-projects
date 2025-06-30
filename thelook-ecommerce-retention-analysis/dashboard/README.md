@@ -56,7 +56,7 @@ Each KPI includes percentage and absolute change vs. previous period for trend a
 
 ## Dashboard Preview
 
-[View Preview](./dashboard_screenshot.jpg)
+[View Preview](https://github.com/ashishkumar-ds/data-science-projects/blob/main/thelook-ecommerce-retention-analysis/dashboard/dashboard%20screenshot.jpg)
 
 ---
 
