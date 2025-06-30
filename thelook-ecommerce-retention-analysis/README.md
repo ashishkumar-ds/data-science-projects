@@ -69,7 +69,7 @@ thelook-ecommerce-retention-analysis/
 ├── notebooks/           # SQL queries for cohort analysis, product trends, and user behavior
 │
 ├── dashboard/           # Looker Studio dashboard link and (optional) screenshot
-│   └── dashboard_screenshot.png        
+│   └── dashboard_screenshot.jpg        
 │
 ├── presentation/        # Final business presentation for non-technical stakeholders
 │   └── presentation_deck.pdf
