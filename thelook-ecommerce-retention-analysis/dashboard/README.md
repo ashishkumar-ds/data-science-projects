@@ -54,6 +54,11 @@ Each KPI includes percentage and absolute change vs. previous period for trend a
 
 ---
 
+## Interactive Dashboard Link
+
+[Dashboard Live](https://lookerstudio.google.com/reporting/16f827e0-7e2e-40d9-9688-c3b71b5ffede)
+
+
 ## Dashboard Preview
 
 [View Preview](https://github.com/ashishkumar-ds/data-science-projects/blob/main/thelook-ecommerce-retention-analysis/dashboard/dashboard%20screenshot.jpg)
