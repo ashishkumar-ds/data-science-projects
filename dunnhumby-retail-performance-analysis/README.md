@@ -1,4 +1,4 @@
-# Driving Retail Store Performance Through Customer Analytics and Targeted Campaigns
+# Dunnhumby Retail Store Performance Analysis
 
 ## Project Summary
 
