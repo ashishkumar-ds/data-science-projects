@@ -1,4 +1,4 @@
-# 🛍️ Etsy Funnel Analysis – Optimizing Conversion Rates
+# Etsy Funnel Analysis
 
 ## Project Summary
 
