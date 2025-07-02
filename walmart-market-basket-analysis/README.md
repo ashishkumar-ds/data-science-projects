@@ -1,4 +1,4 @@
-# Transforming Shopping Experience Through Market Basket Analysis
+# Walmart Market Basket Analysis
 
 ## Project Summary
 
