@@ -27,7 +27,7 @@ What are the main reasons behind Etsy’s high cart abandonment rate, and how ca
 
 ## Key Findings
 
-## 🔍 Key Findings
+## Key Findings
 
 | Funnel Stage              | Insight                                                                                          |
 |---------------------------|--------------------------------------------------------------------------------------------------|
