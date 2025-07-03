@@ -27,13 +27,19 @@ What are the main reasons behind Etsy’s high cart abandonment rate, and how ca
 
 ## Key Findings
 
-| Funnel Stage         | Insight                                                                                   |
-|----------------------|-------------------------------------------------------------------------------------------|
-| View Cart            | Highest drop-off (−1,239 visitors); customers often abandon after reviewing their cart    |
-| Checkout             | 27.01% bounce rate; possible delays or unclear details cause last-minute hesitation       |
-| Completion           | Final conversion drops to 62.44%; session duration is longest, suggesting friction         |
-| Payment Method       | Virtual Account had highest CR; Paylater & Biller Services had low CR and higher drop-off |
-| Product Categories   | Categories like Games, Stationery & Sports had the highest CAR due to unclear specs or price |
+## 🔍 Key Findings
+
+| Funnel Stage              | Insight                                                                                          |
+|---------------------------|--------------------------------------------------------------------------------------------------|
+| Homepage Visit            | Drop-off begins here, with many visitors bouncing without exploring products further             |
+| View Product              | Some users exit after viewing a product, likely due to unclear information or pricing confusion  |
+| Add to Cart               | Engagement remains strong, but early hesitation appears in lower-trust product categories         |
+| View Cart                 | Major drop-off observed; users abandon after reviewing cart due to unexpected costs or shipping   |
+| Change Payment Method     | Users switching from default methods often exit; confusion around Paylater and Biller Services   |
+| Payment Method Selected   | Virtual Account performs well, while other options show lower confidence and higher abandonment  |
+| Checkout                  | 27% bounce rate; users hesitate during form submission or encounter delays                        |
+| Completion                | Final conversion rate drops to 62.44%; long session times suggest friction or lack of urgency     |
+
 
 ---
 
