@@ -39,15 +39,13 @@ What are the main reasons behind Etsy’s high cart abandonment rate, and how ca
 
 ## Recommendations
 
+1. **Reduce cart abandonment at the View Cart stage** by clearly displaying shipping timelines, removing hidden charges, and improving pricing transparency.
 
-1. **Reduce Cart Abandonment at View Cart Stage**  
-   - Clearly show shipping times, fees, and remove hidden charges  
-2. **Improve Other Payment Methods (Paylater, Biller Services)**  
-   - Simplify UI/UX and provide clear FAQs to reduce uncertainty
-3. **Capitalize on Virtual Account Popularity**  
-   - Highlight this method visually and explain the process clearly to build trust
-4. **Fix Checkout Friction**  
-   - Streamline steps and reduce page load or validation issues that cause drop-offs  
+2. **Improve performance of Paylater and Biller Services** by simplifying the checkout experience and providing clear guidance or FAQs to reduce uncertainty.
+
+3. **Capitalize on the popularity of the Virtual Account payment method** by visually highlighting it and clearly explaining the process to increase trust and usage.
+
+4. **Fix friction in the checkout stage** by streamlining the steps, minimizing delays, and resolving any validation or technical blockers causing user hesitation.
 
 ---
 
