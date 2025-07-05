@@ -67,8 +67,8 @@ ORDER BY year, quarter;
 
 ### 3. **What are the intermediate (bonus) conversion rates between key funnel stages?** 
 
--- Bonus Rates Between Key Steps
 ```sql
+-- Bonus Rates Between Key Steps
 WITH funnel_counts AS (
   SELECT
     EXTRACT(YEAR FROM timestamp) AS year,
@@ -99,10 +99,10 @@ FROM funnel_counts
 ORDER BY year, quarter;
 ```
 
-### 4. ** What is the cart abandonment rate across quarters?**
+### 4. **What is the cart abandonment rate across quarters?**
 
 ```sql
---Cart Abandonment Rate (2019–2022)
+--Cart Abandonment Rate (From 2019 to 2022)
 WITH cart_data AS (
   SELECT
     EXTRACT(YEAR FROM timestamp) AS year,
