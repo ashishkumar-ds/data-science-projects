@@ -29,10 +29,10 @@ GROUP BY year, quarter
 ORDER BY year, quarter;
 ```
 
-### 2. **What are the conversion rates between funnel stages? (Coversion Rates)** 
+### 2. **What are the conversion rates between funnel stages?** 
 
 ```sql
--- Conversion Rates (Calculated using Funnel Counts from query 1)
+-- Conversion Rates (Calculated using Funnel Counts from business question 1)
 WITH funnel_counts AS (
   SELECT
     EXTRACT(YEAR FROM timestamp) AS year,
@@ -65,10 +65,10 @@ FROM funnel_counts
 ORDER BY year, quarter;
 ```
 
-### 3. **What are the intermediate (bonus) conversion rates between key funnel stages?** 
+### 3. **What are the bonus conversion rates between key funnel stages?** 
 
 ```sql
--- Funnel counts from the Conversion Rate Query
+-- Bonus Rates (Calculated using Funnel Counts from business question 2)
 WITH funnel_counts AS (
   SELECT
     EXTRACT(YEAR FROM timestamp) AS year,
