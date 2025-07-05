@@ -28,7 +28,7 @@ GROUP BY year, quarter
 ORDER BY year, quarter;
 ```
 
-### 2. ** What are the conversion rates between funnel stages? (Coversion Rates)** 
+### 2. **What are the conversion rates between funnel stages? (Coversion Rates)** 
 
 ```sql
 Conversion Rates (Calculated using Funnel Counts from Query 1)
