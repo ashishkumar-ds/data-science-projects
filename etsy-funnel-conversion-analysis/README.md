@@ -15,12 +15,12 @@ What are the main reasons behind Etsy’s high cart abandonment rate, and how ca
 
 ---
 
-## Funnel Analysis Scope
+## Dataset Description 
 
 - **Source**: Google Public Datasets (hosted on BigQuery)
 - **Platform**: Etsy E-commerce Marketplace  
 - **Funnel Coverage**: 8 customer journey steps from product view to purchase  
-- **Time Frame**: Q1 – Q4 2022  
+- **Time Frame**: 2019-2022  
 
 
 ---
