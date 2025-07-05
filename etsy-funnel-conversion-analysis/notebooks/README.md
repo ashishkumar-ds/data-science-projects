@@ -6,9 +6,10 @@ This folder contains the SQL queries used to analyze Etsy’s customer journey a
 
 ## Business Questions 
 
-### 1. **How many users reach each funnel stage? (Funnel Counts - 2019 to 2022)** 
+### 1. **How many users reach each funnel stage?** 
 
 ```sql
+-- Funnel Counts (from 2019 to 2022)
 SELECT
   EXTRACT(YEAR FROM timestamp) AS year,
   EXTRACT(QUARTER FROM timestamp) AS quarter,
@@ -31,7 +32,7 @@ ORDER BY year, quarter;
 ### 2. **What are the conversion rates between funnel stages? (Coversion Rates)** 
 
 ```sql
-Conversion Rates (Calculated using Funnel Counts from Query 1)
+-- Conversion Rates (Calculated using Funnel Counts from query 1)
 WITH funnel_counts AS (
   SELECT
     EXTRACT(YEAR FROM timestamp) AS year,
@@ -64,8 +65,9 @@ FROM funnel_counts
 ORDER BY year, quarter;
 ```
 
-### 3. **What are the intermediate (bonus) conversion rates between key funnel stages? (Bonus Rates)** 
+### 3. **What are the intermediate (bonus) conversion rates between key funnel stages?** 
 
+-- Bonus Rates Between Key Steps
 ```sql
 WITH funnel_counts AS (
   SELECT
