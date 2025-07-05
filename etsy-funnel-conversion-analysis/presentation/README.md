@@ -16,5 +16,5 @@ This folder contains the final project presentation summarizing key findings, in
 - **Checkout & Payment Friction Analysis**  
 - **Recommendations to Improve Funnel Conversion**
 
-[📥 View the deck here](./etsy_funnel_analysis_deck.pdf)
+[View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/etsy-funnel-conversion-analysis/presentation/presentation%20deck.pdf)
 
