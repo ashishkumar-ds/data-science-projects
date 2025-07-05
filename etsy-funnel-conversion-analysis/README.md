@@ -27,8 +27,6 @@ What are the main reasons behind Etsy’s high cart abandonment rate, and how ca
 
 ## Key Findings
 
-## Key Findings
-
 | Funnel Stage              | Insight                                                                                          |
 |---------------------------|--------------------------------------------------------------------------------------------------|
 | Homepage Visit            | Drop-off begins here, with many visitors bouncing without exploring products further             |
