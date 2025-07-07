@@ -73,9 +73,8 @@ The journey spans 15+ app interactions and milestones:
 
 ## Tools & Techniques
 
-- Product Journey Mapping  
-- Event Definition & Metric Design  
-- Mobile App Analytics Strategy  
+- Excel
+- Product Journey Mapping     
 - Sample Metric Table for Product Managers  
 
 ---
