@@ -2,13 +2,13 @@
 
 ## Project Summary
 
-This project focuses on mapping the customer journey within the Gojek app to define meaningful product events and metrics for experimentation. Acting as a user ordering food through the GoFood service, the project breaks down the app journey into event-based milestones, from login to delivery, and proposes event names, metrics, data tracking fields, and sample values. This helps Gojek’s product and business teams define actionable KPIs for improving user experience, measuring friction, and running successful experiments.
+This project focuses on mapping the customer journey within the Gojek app to define meaningful product events and metrics for experimentation. Acting as a user ordering food through the GoFood service, the project breaks down the app journey into event-based milestones, from login to delivery. As a data analyst, I proposed standardized event names, experimentation-ready metrics, and key tracking fields to support product teams in defining actionable KPIs. These insights enable Gojek’s product and business teams to improve user experience, detect friction, and run structured in-app experiments.
 
 ---
 
 ## Problem Statement
 
-**How can Gojek define and track product events across the customer journey to enable effective experimentation and performance evaluation?**
+**How can Gojek define and track meaningful product events across the user journey to support experimentation and enhance in-app experience?**
 
 
 ---
@@ -19,7 +19,7 @@ This project focuses on mapping the customer journey within the Gojek app to def
 - **Journey Focus**: Returning customer placing a GoFood order  
 - **Platform**: Gojek app (Indonesia-based multi-service platform)  
 - **Use Case**: Food ordering through GoFood, 2x per week customer pattern  
-- **Data Captured**: Event name, timestamp, user ID, screen interaction, outcome, feedback
+- **Data Captured**: Event name, timestamp, user ID, screen activity, selected actions, and user feedback
 
 ---
 
@@ -77,8 +77,6 @@ The journey spans 15+ app interactions and milestones:
 - Event Definition & Metric Design  
 - Mobile App Analytics Strategy  
 - Sample Metric Table for Product Managers  
-- Screenshots + Trigger-Based Event Documentation  
-- Manual User Walkthrough (Act as User)
 
 ---
 
