@@ -55,9 +55,9 @@ What strategies can TheLook adopt post-2023 to boost retention and category perf
 
 ## Tools & Technologies
 
-- **SQL (Google BigQuery)** 
-- **Looker Studio** 
-- **Cohort Analysis**
+- SQL (Google BigQuery) 
+- Looker Studio 
+- Cohort Analysis
   
 ---
 
