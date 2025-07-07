@@ -1,17 +1,93 @@
-# Dissect App Event Metrics for Experimentation
+# Gojek App Event Journey Mapping for Product Experimentation
 
-### Project Summary  
-Mapped and analyzed the Gojek app’s food-ordering flow to support product experimentation and improve user experience and retention.
+## Project Summary
 
----
-
-### What Was Done  
-- Defined the **user journey** with screenshots of key in-app events.
-- Identified critical **conversion and retention touchpoints** in the ordering funnel.
-- Collaborated with product management to **define event names**, data points, and **key metrics** for in-app experiments.
+This project focuses on mapping the customer journey within the Gojek app to define meaningful product events and metrics for experimentation. Acting as a user ordering food through the GoFood service, the project breaks down the app journey into event-based milestones, from login to delivery, and proposes event names, metrics, data tracking fields, and sample values. This helps Gojek’s product and business teams define actionable KPIs for improving user experience, measuring friction, and running successful experiments.
 
 ---
 
-### Outcome  
-- Established a clean event taxonomy to track user behavior effectively.
-- Enabled data-driven experimentation to drive conversion and retention improvements across the funnel.
+## Problem Statement
+
+**How can Gojek define and track product events across the customer journey to enable effective experimentation and performance evaluation?**
+
+
+---
+
+## Dataset Description
+
+- **Source**: Real-time customer journey walkthrough (no backend data; all events, metrics, and tracking schema were defined manually)
+- **Journey Focus**: Returning customer placing a GoFood order  
+- **Platform**: Gojek app (Indonesia-based multi-service platform)  
+- **Use Case**: Food ordering through GoFood, 2x per week customer pattern  
+- **Data Captured**: Event name, timestamp, user ID, screen interaction, outcome, feedback
+
+---
+
+## Customer Journey Covered
+
+The journey spans 15+ app interactions and milestones:
+
+1. App Install & Launch  
+2. Login / Sign Up  
+3. Input Mobile Number  
+4. OTP Verification  
+5. Landing on Home Page  
+6. Click GoFood Icon  
+7. Use “Near Me” Filter  
+8. Select Restaurant  
+9. Choose Food / Drink  
+10. Apply Coupon / Promo  
+11. Select Payment Method  
+12. Place Order  
+13. Order Status & Driver Assigned  
+14. Order Delivered  
+15. Rate Driver / App  
+
+---
+
+## Key Deliverables
+
+| Step                        | Event Name               | Metric Example                                     | Insights Tracked                                 |
+|-----------------------------|---------------------------|----------------------------------------------------|--------------------------------------------------|
+| OTP Verification            | `otp_verification`        | OTP Success Rate, Avg Verification Time            | Mobile auth efficiency by region/device          |
+| GoFood Icon Click           | `gofood_selected`         | Selection Rate, Abandonment Rate                   | Interest in GoFood service                       |
+| Restaurant Filter Use       | `find_restaurant`         | Cuisine/Price Filter Usage, Conversion Rate        | Filter impact on decision-making                 |
+| Add Item to Cart            | `item_added_to_cart`      | Cart Size, Abandonment Rate                        | Popular dishes and cart drop-off                 |
+| Promo Code Applied          | `apply_coupon`            | Promo Usage Rate, Avg Discount                     | Campaign effectiveness                           |
+| Payment Method Selection    | `select_payment_method`   | Gopay % Usage, Inactive Payment Method Rate        | Preferred and unused payment options             |
+| Place Order                 | `order_placed`            | Order Completion Rate, Avg Order Value             | Funnel completion indicators                     |
+| Delivery Completion         | `order_delivered`         | Avg Delivery Time, Delivery Success Rate           | Operational efficiency, timing                   |
+| Feedback Provided           | `driver_app_rating`       | Avg Rating, Feedback Sentiment                     | Satisfaction metrics for driver & app experience |
+
+---
+
+## Recommendations
+
+1. Define standard event naming across product teams to ensure experiment tracking consistency  
+2. Track real-time behavioral metrics like abandonment rates and promo usage to optimize UI/UX decisions  
+3. Prioritize high-dropoff points (e.g., cart, payment) for experimentation or A/B testing  
+4. Use feedback sentiment (text/NLP) to enrich app review signals and improve service quality  
+5. Build dashboards to visualize these metrics over time and identify changes post feature releases
+
+---
+
+## Tools & Techniques
+
+- Product Journey Mapping  
+- Event Definition & Metric Design  
+- Mobile App Analytics Strategy  
+- Sample Metric Table for Product Managers  
+- Screenshots + Trigger-Based Event Documentation  
+- Manual User Walkthrough (Act as User)
+
+---
+
+## Project Structure
+
+```bash
+gojek-app-event-mapping/
+│
+├── presentation/       # Final project walkthrough deck
+│   └── presentation.pdf
+│
+└── README.md
