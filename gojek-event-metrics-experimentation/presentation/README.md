@@ -12,4 +12,4 @@ This folder contains the project presentation summarizing the step-by-step journ
 - **Key Metrics for Each Event**
 - **Sample Data Fields and Sample Values**
 
-[View the deck here](./gojek_app_event_journey_mapping.pdf)
+[View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/gojek-event-metrics-experimentation/presentation/presentation%20deck.pdf)
