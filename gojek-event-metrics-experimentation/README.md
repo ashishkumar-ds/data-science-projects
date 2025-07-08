@@ -1,4 +1,4 @@
-# Gojek App Event Journey Mapping for Product Experimentation
+# Gojek App Event Journey Mapping for Experimentation
 
 ## Project Summary
 
