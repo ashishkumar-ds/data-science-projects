@@ -1,4 +1,4 @@
-# Etsy Funnel Analysis
+# Etsy Funnel Conversion Analysis
 
 ## Project Summary
 
@@ -64,7 +64,7 @@ What are the main reasons behind Etsy’s high cart abandonment rate, and how ca
 ## Project Structure
 
 ```bash
-etsy-funnel-analysis/
+etsy-funnel-conversion-analysis/
 │
 ├── notebooks/           # SQL queries and funnel metrics analysis
 │
