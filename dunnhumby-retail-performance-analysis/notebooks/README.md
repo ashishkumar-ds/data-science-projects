@@ -13,14 +13,14 @@ Transform raw multi-source retail transaction data into a unified, validated, an
 
 ---
 
-## 2. Data Understanding
+# 2. Data Understanding
 
-| Feed | Rows |
-|------|-------|
-| Transaction | 2,595,914 |
-| Product | 23,539 |
-| Coupon | 4 campaigns |
-| **TOTAL** | **2,619,457** |
+| Data Source | Rows | Key Fields |
+|--------------|-------|-------------|
+| Transaction | 2,595,914 | household_key, basket, product, qty, sales, discount, coupon, day |
+| Product | 23,539 | dept, brand, commodity, size |
+| Coupon | 4 campaigns | coupon_upc, campaign, start/end day |
+| Campaign description | 4 rows | description, objective |
 
 ---
 
@@ -72,16 +72,16 @@ Identify performance drivers, segment customers by value, and quantify campaign 
 
 ---
 
-## 5.2 Customer Traffic Patterns
+## 4.2 Customer Traffic Patterns
 
-| Time Dimension | Level | Footfall Share | Peak Indicator |
-|----------------|--------|----------------|----------------|
-| Week-part | weekday | 65% | ▲ staff Mon–Fri |
-|  | weekend | 35% | different promo cadence |
-| Time-of-day | afternoon (10–15 h) | 31.8% | ▲ true peak |
-|  | evening (16–21 h) | 28.6% | secondary peak |
-|  | morning (04–09 h) | 22.3% | tertiary |
-|  | night (22–03 h) | 17.3% | ▼ maintenance window |
+| Dimension | Level | Footfall Share |
+|-----------|--------|------------------|
+| Week-part | weekday | 65% |
+|  | weekend | 35% |
+| Time-of-day | **afternoon (10–15)** | **31.8%** |
+|  | evening (16–21) | 28.6% |
+|  | morning (04–09) | 22.3% |
+|  | night (22–03) | 17.3% |
 
 **Insight:** Afternoon weekday drives highest traffic → roster & promo budget skew **32% to 10 AM–3 PM**.
 
@@ -118,19 +118,18 @@ Identify performance drivers, segment customers by value, and quantify campaign 
 
 ---
 
-# 8. Sales Forecast
+# 8.Predictive Modelling — Sales Forecast
 
-| Model | wMAPE | RMSE | MAE | R² | Train/Val/Test | 95% PI Width |
-|--------|--------|-------|------|-----|----------------|----------------|
-| Linear Regression | 5.4% | 842 | 512 | 0.78 | 70/15/15 | ±1,649 |
-| LightGBM + Optuna | **3.1%** | **488** | **296** | **0.92** | same | **±956** |
+| Model | wMAPE | RMSE | MAE | R² |
+|--------|--------|-------|------|-----|
+| Linear Regression | 5.4% | 842 | 512 | 0.78 |
+| **LightGBM + Optuna** | **3.1%** | **488** | **296** | **0.92** |
 
-### Technical Notes
-- Optuna tuned **50 hyper-parameter sets** (early-stop 50 rounds).  
-- Rolling-window 5-fold CV: mean wMAPE = **3.2% ± 0.3%**.  
-- Durbin-Watson = **1.98** (no auto-correlation).  
-- Residual Shapiro p = **0.12** (Gaussian).  
-- Production forecast: **60-day horizon**, nightly refresh ≤ 15 s.
+**Notes:**  
+- Optuna tuned **50 hyper-parameter sets**  
+- Time-series split: **70/15/15%**  
+- Production forecast: **60-day horizon**, nightly refresh for inventory & labour planning  
+- Includes **95% prediction interval**
 
 ---
 
