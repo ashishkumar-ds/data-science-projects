@@ -2,39 +2,38 @@
 
 ## Project Summary
 
-This project analyzes over 2.5 million household-level transactions from Dunnhumby to uncover data-driven strategies that improve sales in underperforming retail stores. By combining customer segmentation (RFM analysis), campaign effectiveness evaluation, and time-based engagement insights, the analysis identifies actionable recommendations to target the right customers with the right campaigns at the right time.
+This project analyzes **2.59M+ household-level transactions** from the **Dunnhumby Retail Store dataset** to drive a targeted intervention in underperforming stores. By combining **RFM customer segmentation**, **campaign ROI analysis**, and **time-of-day optimization**, the work delivers a prioritized, 60-day action plan projected to generate **≈$15K in incremental revenue**.
 
-In addition, an interactive Tableau dashboard was developed to help store managers monitor key metrics, compare regions, and evaluate how these strategies might influence business performance.
-
+An interactive **Tableau dashboard** enables real-time monitoring of store performance, customer segments, and campaign response — empowering managers to act on insights immediately.
 
 ---
 
 ## Problem Statement
 
-Only 12% of stores account for 80% of total revenue. The remaining 96.6% are underperforming with monthly sales growth below 9.3%.
+- **88% of stores (511 of 582)** are underperforming, generating only **20% of total sales**  
+- These stores show **monthly sales growth below 9.3%** (category average)
 
-
-**Business Question:**  
-How can Dunnhumby increase the sales value of underperforming stores within a two-month period through better targeting and campaign strategies?
+**Business Question**:  
+> How can we increase sales in underperforming stores within **60 days** through precise customer targeting, high-ROI campaigns, and optimized timing?
 
 ---
 
 ## Dataset Description
 
-- **Source**: Dunnhumby (official public dataset)  
-- **Total Records**: ~2.5 million transactions  
+- **Source**: [Dunnhumby Retail Store Public Dataset](https://www.dunnhumby.com/source-files/)  
 - **Time Frame**: 2017–2018  
+- **Total Transactions**: 2,595,914  
+- **Stores**: **582 unique store locations**  
+- **Households**: 103,200  
+- **Products**: 23,539  
 
-- **Component Datasets and Key Attributes**  
-  - `transaction_data.csv` – Purchase history of each household (products, quantity, sales, store, time)  
-  - `hh_demographic.csv` – Demographic attributes of households (age group, income, marital status, household size)  
-  - `product.csv` – Product catalog information (department, brand, commodity and sub-commodity details)  
-  - `campaign_table.csv` – Metadata for each campaign (campaign ID, start date, end date)  
-  - `coupon_redempt.csv` – Records of which households redeemed which coupons and when  
-  - `campaign_desc.csv` – Descriptions of each campaign for business context  
-
-- **Product Count**: Over 2,500 unique items  
-- **Store Count**: 27 unique store locations
+### Key Files:
+- `transaction_data.csv` – Purchase history (sales, quantity, day, store, household)  
+- `hh_demographic.csv` – Age, income, household size  
+- `product.csv` – Department, brand, commodity  
+- `campaign_desc.csv` – Campaign IDs, start/end dates (30 total campaigns)  
+- `coupon_redempt.csv` – Coupon redemptions by household  
+- `causal_data.csv` – Weather, fuel price, CPI (excluded from modeling)
 
 ---
 
@@ -42,30 +41,30 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 
 | Focus Area               | Insight                                                                 |
 |--------------------------|-------------------------------------------------------------------------|
-| Store Sales Distribution | 96.6% of stores show below-average monthly sales growth                 |
-| Customer Segment         | Best Customers are aged 45–54, income $50K–$74K, typically no children  |
-| Campaign Effectiveness   | Campaign 18 outperformed others in ROI and engagement                   |
-| Time of Engagement       | Afternoon is the most profitable time slot post-campaign                |
-| Forecast Impact          | Predicted 12.06% sales increase over 60 days in targeted stores         |
+| **Store Performance**    | Top 12% of stores (69) drive 80% of revenue; 511 are underperforming    |
+| **Best Customers**       | Age 45–54, income $50K–$74K, no kids — 20.2% of base, 41% of revenue    |
+| **Top Campaign**         | **Campaign 18**: 411.4% gross ROI, 278.7% net ROI, $5.5M incremental    |
+| **Optimal Timing**       | **Afternoon (12–18)** drives peak engagement and highest uplift         |
+| **Forecast Impact**      | **11% sales uplift** projected for Store #289 over 60 days              |
 
 ---
 
 ## Recommendations
 
-1. Prioritize Campaign 18 for stores identified as underperforming  
-2. Target the Best Customer segment to maximize campaign effectiveness  
-3. Schedule campaigns in the afternoon to leverage peak engagement and conversion  
-4. Monitor uplift and performance using forecasting models to refine strategies  
+1. **Scale Campaign 18** to **85 eligible underperforming stores** (≥20 Best Customers)  
+2. **Target Best Customers** — highest redemption (38%) and revenue contribution  
+3. **Deploy exclusively in afternoon (12–18)** to capture peak response  
+4. **Monitor via Tableau dashboard** to track uplift and adjust in real time  
+
+> *Projected outcome: **≈$15K incremental revenue in 60 days** with 278.7% net ROI*
 
 ---
 
 ## Tools and Technologies
 
-- Python: Pandas, NumPy, Matplotlib, Seaborn 
-- Tableau  
-- RFM Segmentation  
-- ROI and Campaign Analytics  
-- Trend-Based Forecasting  
+- **Python**: pandas, LightGBM, Optuna, scikit-learn  
+- **Visualization**: Tableau, Matplotlib, Seaborn  
+- **Methods**: RFM Segmentation, ROI Analysis, Time-Series Forecasting (wMAPE = 15.1%)  
 
 ---
 
@@ -74,14 +73,14 @@ How can Dunnhumby increase the sales value of underperforming stores within a tw
 ```bash
 dunnhumby-retail-performance/
 │
-├── notebooks/        # Data cleaning, segmentation, campaign analysis, forecasting
+├── notebooks/        # Data cleaning + main analysis (with full business impact)
 │   ├── data_cleaning.ipynb
 │   └── main_analysis.ipynb
 │
-├── dashboard/        # Tableau dashboard files for store performance tracking
-│   └── dashboard_screenshot.png
+├── dashboard/        # Tableau dashboard for real-time store monitoring
+│   └── retail_performance_dashboard.twb
 │
-├── presentation/     # Final business presentation for non-technical stakeholders
-│   └── presentation_deck.pdf
+├── presentation/     # Executive-ready deck for stakeholders
+│   └── Retail_Store_Performance_Analysis_Presentation.pdf
 │
 └── README.md
