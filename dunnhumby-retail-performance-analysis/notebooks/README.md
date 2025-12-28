@@ -1,4 +1,4 @@
-aEnd-to-end workflow covering data cleaning, feature engineering, exploratory analysis, campaign uplift, segmentation, forecasting, and business impact.
+End-to-end workflow covering data cleaning, feature engineering, exploratory analysis, campaign uplift, segmentation, forecasting, and business impact.
 
 ---
 
