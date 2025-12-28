@@ -50,7 +50,7 @@ Transform raw multi-source retail transaction data into a unified, validated, an
 
 ---
 
-## Tier 2 – Main Analysis Notebook  
+## Main Analysis Notebook  
 **File:** `notebooks/main_analysis.ipynb`
 
 ### 🎯 Objective  
@@ -109,7 +109,7 @@ Campaign 18 drives the highest revenue share and ROI,making it the strongest can
 
 | Segment   | % Customers | % Revenue | Avg Monetary | Campaign-18 Redemption |
 |-----------|-------------|-----------|--------------|------------------------|
-| Best      | 20.2%       | 41%       | $1,246       | 38%                    |
+| **Best**      | **20.2%**       | **41%**       | **$1,246**       | **38%**                    |
 | Loyal     | 20.3%       | 29%       | $682         | 32%                    |
 | Promising | 21.0%       | 19%       | $413         | 18%                    |
 | At-Risk   | 19.6%       | 10%       | $199         | 12%                    |
