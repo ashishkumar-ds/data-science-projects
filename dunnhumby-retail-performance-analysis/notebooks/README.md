@@ -141,5 +141,11 @@ Applying Campaign 18 during afternoon hours is projected to lift sales by **+11%
 
 ---
 
+### Limitations
+
+- **Campaign mechanics not explicitly provided**: Offer structure (discount depth, product eligibility) was inferred using Dunnhumby’s official campaign design best practices.
+- **External factors excluded**: Forecast does not incorporate weather, local competition, or macro trends; future iterations could enhance robustness with causal data.
+
+---
+
 **Stack:** Python 3.9 · pandas · LightGBM · Optuna  
-**Repository:** Ready for staging pipeline deployment
