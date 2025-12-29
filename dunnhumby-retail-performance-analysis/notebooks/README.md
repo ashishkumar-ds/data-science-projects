@@ -69,7 +69,8 @@ Identify performance drivers, segment customers by value, and quantify campaign 
 | **Total**             | **582**     | **100%**   | **100%**            |
 
 **Key Insight:**  
-A small fraction of stores drives the majority of revenue,confirming a strong Pareto dynamic and justifying focused intervention on the underperforming long tail.
+Top 12% of stores generate 80% of total sales, confirming a strong Pareto dynamic and justifying focused intervention on the long tail.
+
 
 ---
 
