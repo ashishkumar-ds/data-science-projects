@@ -1,17 +1,9 @@
-# Dunnhumby Retail Store Performance Analysis - Presentation  
+# Presentation Deck
 
-This folder contains the final project presentation summarizing the key insights, findings, and actionable recommendations from the Dunnhumby retail analytics project. It is designed for non-technical stakeholders, hiring managers, and recruiters who want a high-level understanding of the business problem and data-driven solutions.
+This folder contains the executive presentation summarizing the Dunnhumby retail performance project for **hiring managers and business stakeholders**.
 
-### The Presentation Deck Includes:
+The deck turns insights from the [notebooks](../notebooks/) into a clear, action-oriented story — focused on the 60-day opportunity, Campaign 18 (278.7% net ROI), 11% projected uplift, and $15K incremental revenue.
 
-- **Executive Summary**
-- **Project overview & Problem Statment**
-- **Dataset Overview**
-- **Root Cause Analysis**
-- **Research Questions**
-- **Campaign performance comparison**
-- **RFM-based customer segmentation**
-- **Time-of-day analysis for campaign timing**
-- **Forecasted sales uplift and key recommendations**
+No technical jargon. Just business impact.
 
-  [View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/dunnhumby-retail-performance-analysis/presentation/presentation%20deck.pdf)
+🔗 [View the deck](presentation%20deck.pdf)
