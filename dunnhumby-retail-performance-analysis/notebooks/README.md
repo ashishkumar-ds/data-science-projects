@@ -64,7 +64,7 @@ Identify performance drivers, segment customers by value, and quantify campaign 
 
 | Category              | Store Count | % of Total | Sales Contribution |
 |-----------------------|-------------|------------|---------------------|
-| Performing (Top 12%)  | 69          | 12%        | 80%                 |
+| Performing (Top 12%)  | 71          | 12%        | 80%                 |
 | Underperforming       | 511         | 88%        | 20%                 |
 | **Total**             | **582**     | **100%**   | **100%**            |
 
