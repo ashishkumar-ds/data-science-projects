@@ -5,7 +5,7 @@ End-to-end workflow covering data cleaning, feature engineering, exploratory ana
 ## Data Cleaning Notebook  
 **File:** `notebooks/data_cleaning.ipynb`
 
-### 🎯 Objective  
+### Objective  
 Transform raw multi-source retail transaction data into a unified, validated, and analysis-ready dataset suitable for modeling and downstream analytics.
 
 ---
@@ -53,7 +53,7 @@ Transform raw multi-source retail transaction data into a unified, validated, an
 ## Main Analysis Notebook  
 **File:** `notebooks/main_analysis.ipynb`
 
-### 🎯 Objective  
+### Objective  
 Identify performance drivers, segment customers by value, and quantify campaign uplift to generate recommendations for improving underperforming stores.
 
 ---
