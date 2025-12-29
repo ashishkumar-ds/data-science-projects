@@ -10,7 +10,7 @@ Transform raw multi-source retail transaction data into a unified, validated, an
 
 ---
 
-### 2. Data Understanding
+### 1. Data Understanding
 
 | Data Source       | Rows       | Key Fields                                                |
 |-------------------|------------|-----------------------------------------------------------|
@@ -22,7 +22,7 @@ Transform raw multi-source retail transaction data into a unified, validated, an
 
 ---
 
-### 3. Data Preparation
+### 2. Data Preparation
 
 | QC Gate                     | Rows Removed | % of Raw |
 |-----------------------------|--------------|----------|
@@ -33,7 +33,7 @@ Transform raw multi-source retail transaction data into a unified, validated, an
 
 ---
 
-### 4. Feature Engineering
+### 3. Feature Engineering
 
 | Feature             | Definition                                | Business Role                  |
 |---------------------|-------------------------------------------|--------------------------------|
@@ -58,9 +58,9 @@ Identify performance drivers, segment customers by value, and quantify campaign 
 
 ---
 
-### 5. Exploratory Data Analysis
+### 4. Exploratory Data Analysis
 
-#### 5.1 Store Concentration (Pareto)
+#### 4.1 Store Concentration (Pareto)
 
 | Category              | Store Count | % of Total | Sales Contribution |
 |-----------------------|-------------|------------|---------------------|
@@ -74,7 +74,7 @@ Top 12% of stores generate 80% of total sales, confirming a strong Pareto dynami
 
 ---
 
-#### 5.2 Customer Traffic Patterns
+#### 4.2 Customer Traffic Patterns
 
 | Dimension    | Level     | Footfall Share |
 |--------------|-----------|----------------|
@@ -90,7 +90,7 @@ Afternoon (12–18) is the peak engagement window for campaign delivery.
 
 ---
 
-### 6. Campaign Uplift
+### 5. Campaign Uplift
 
 | Campaign | Cust. CR | Coupon CR | Gross ROI | Sales Share | Incremental |
 |----------|----------|-----------|-----------|-------------|-------------|
@@ -106,7 +106,7 @@ Campaign 18 drives the highest revenue share and ROI,making it the strongest can
 
 ---
 
-### 7. Customer Segmentation (RFM)
+### 6. Customer Segmentation (RFM)
 
 | Segment   | % Customers | % Revenue | Avg Monetary | Campaign-18 Redemption |
 |-----------|-------------|-----------|--------------|------------------------|
@@ -121,7 +121,7 @@ Best Customers (20.2% of base) drive 41% of revenue and 38% of redemptions,the h
 
 ---
 
-### 8. Predictive Modelling — Sales Forecast
+### 7. Predictive Modelling — Sales Forecast
 
 **Why Store #289?**  
 Selected as the ideal pilot among underperforming stores: Bottom 19% by sales, 118 Best Customers (highest in cohort), and full Campaign 18 exposure with 71 days of clean daily sales.
@@ -135,14 +135,14 @@ Applying Campaign 18 during afternoon hours is projected to lift sales by **+11%
 
 ---
 
-### 9. Business Impact
+### 8. Business Impact
 
 - Scaling Campaign 18 to **85 eligible underperforming stores** is projected to generate **≈$15K in incremental revenue** within 60 days  
 - Drives an **11% sales uplift** at the store level through afternoon deployment to Best Customers  
 
 ---
 
-### 10. Limitations
+### 9. Limitations
 
 - **Campaign mechanics not explicitly provided**: Offer structure (discount depth, product eligibility) was inferred using Dunnhumby’s official campaign design best practices.
 - **External factors excluded**: Forecast does not incorporate weather, local competition, or macro trends; future iterations could enhance robustness with causal data.
