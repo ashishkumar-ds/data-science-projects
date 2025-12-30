@@ -8,4 +8,4 @@ focused on the 60-day opportunity, Campaign 18 (278.7% net ROI), 11% projected u
 No technical jargon. Just business impact.
 
 [View the deck here]
-(https://drive.google.com/file/d/1IRHadWj28G3agXJR6XfG4x-ITaquTQ9y/view?usp=drivesdk)
+()
