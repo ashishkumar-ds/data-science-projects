@@ -1,18 +1,10 @@
-# Walmart Market Basket Analysis - Presentation
+# Presentation Deck
 
-This folder contains the final project presentation that summarizes the key insights, findings, and actionable recommendations from the Walmart Market Basket Analysis project. It is designed for non-technical stakeholders, hiring managers, and recruiters who want a high-level understanding of the project’s business value.
+This folder contains the executive presentation summarizing the Walmart Market Basket Analysis project for **hiring managers and business stakeholders**.
 
----
+The deck turns insights from the [notebooks](../notebooks/) into a clear, action-oriented story:  
+focused on reversing a 17% sales decline through product bundling, strategic placement, and time-targeted promotions — projected to drive **+24.8% basket size** and **$2K+ monthly revenue lift**.
 
-### The Presentation Deck Includes:
+No technical jargon. Just business impact.
 
-- Project background and business problem  
-- Dataset overview and methodology
-- Root Cause Analysis 
-- Product popularity and underperforming item analysis  
-- Association rule mining (Apriori algorithm)  
-- Top product pairings with high support, confidence, and lift  
-- Strategic recommendations for bundling, shelf placement, and promotions  
-
-[View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/walmart-market-basket-analysis/presentation/presentation%20deck.pdf)
-
+[View the deck](presentation%20deck.pdf)
