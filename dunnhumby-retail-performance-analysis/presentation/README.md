@@ -6,4 +6,5 @@ The deck turns insights from the [notebooks](../notebooks/) into a clear, action
 
 No technical jargon. Just business impact.
 
-🔗 [View the deck](presentation%20deck.pdf)
+[View the deck]
+(https://drive.google.com/file/d/1IRHadWj28G3agXJR6XfG4x-ITaquTQ9y/view?usp=drivesdk)
