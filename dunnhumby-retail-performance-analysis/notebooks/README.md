@@ -147,4 +147,4 @@ Applying Campaign 18 during afternoon hours is projected to lift sales by **+11%
 
 ---
 
-**Stack:** Python 3.9 · pandas · LightGBM · Optuna  
+**Stack:** Python 3.9 · Pandas · LightGBM · Optuna  
