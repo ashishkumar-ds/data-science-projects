@@ -1,6 +1,6 @@
 # TheLook E-commerce Growth & Retention Analysis - Dashboard
 
-his dashboard is the final delivery layer of the TheLook E-commerce Growth & Retention Analysis project. It is designed to support recovery efforts after the post-COVID business impact, and provides a concise view of key performance indicators, helping stakeholders track profit fluctuations, identify fast-growing or high-return product segments, and monitor customer retention trends across time.
+This dashboard is the final delivery layer of the TheLook E-commerce Growth & Retention Analysis project. It is designed to support recovery efforts after the post-COVID business impact, and provides a concise view of key performance indicators, helping stakeholders track profit fluctuations, identify fast-growing or high-return product segments, and monitor customer retention trends across time.
 
 
 ---
