@@ -29,7 +29,6 @@ Discover strong product associations, analyze shopping behavior, and generate da
 | Text standardization  | Unified casing and spacing (e.g., “milk” → “Whole Milk”) | Consistent product labels |
 | Basket construction   | Grouped items by (`Member_number`, `Date`) | **14,963 unique shopping baskets** |
 
-**Artifact produced:** `walmart_baskets.pkl`
 
 ---
 
