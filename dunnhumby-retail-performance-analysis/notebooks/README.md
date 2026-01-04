@@ -45,8 +45,6 @@ Transform raw multi-source retail transaction data into a unified, validated, an
 | `sales_lag_7`       | sales 7 days ago                          | auto-regressive signal         |
 | `sales_ma_7`        | 7-day moving average                      | trend smoothing                |
 
-**Artifact produced:** `clean_2_58M_rows_562stores.parquet`  
-
 
 ---
 
