@@ -3,7 +3,7 @@ This folder contains a notebook that walks through the end-to-end Walmart grocer
 ---
 
 ## Main Analysis Notebook  
-**File:** `notebooks/walmart_grocery_market_basket_analysis_.ipynb`
+**File:**`notebooks/walmart_grocery_market_basket_analysis_.ipynb`
 
 ### Objective  
 Discover strong product associations, analyze shopping behavior, and generate data-driven recommendations to increase basket size and revenue in Walmart grocery.
