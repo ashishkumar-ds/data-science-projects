@@ -1,4 +1,4 @@
-This notebook analyzes synthetic Walmart grocery transaction data from 2014–2015 to uncover high-value product associations and drive actionable merchandising strategies. Using **Market Basket Analysis** and the **FP-Growth algorithm**, it identifies frequently co-purchased items to inform bundling, shelf placement, and promotional planning — with a projected **+24.8% basket size increase** and **$23.5K annual revenue lift**.
+This folder contains a notebook that walks through the end-to-end Walmart grocery market basket analysis workflow from data cleaning and exploratory analysis to association rule mining, product pairing discovery, and actionable merchandising strategy development.
 
 ---
 
