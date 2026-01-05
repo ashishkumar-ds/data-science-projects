@@ -97,4 +97,4 @@ High-lift rules reveal **meal-pairing** (Beef + Potatoes) and **household combos
 
 ---
 
-**Stack:** Python 3.9 · pandas · matplotlib · seaborn · mlxtend 
+**Stack:** Python 3.9 · pandas · matplotlib · seaborn · mlxtend (FP-Growth algorithm)
