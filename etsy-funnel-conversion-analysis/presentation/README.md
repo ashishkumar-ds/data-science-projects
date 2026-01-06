@@ -1,20 +1,9 @@
-# Etsy Funnel Analysis - Presentation 
+# Presentation Deck
 
-This folder contains the final project presentation summarizing key findings, insights, and recommendations from the Etsy Funnel Analysis project. It is designed for business stakeholders, hiring managers, and non-technical audiences who want a concise, strategic overview of how funnel performance was analyzed and improved.
+This folder contains the executive presentation summarizing key findings and strategic recommendations from the **Etsy Funnel Analysis** project—crafted specifically for **hiring managers and business stakeholders**.
 
----
+The deck translates analytical insights into a clear, action-oriented narrative—highlighting a **90% cart abandonment rate**, critical friction points in checkout and payment, and prioritized opportunities to **increase conversion by 5% in Q1 2023**.
 
-## The Presentation Deck includes:
+No technical jargon. Just business impact.
 
-- **Executive Summary**
-- **About Company**
-- **Problem Statment**  
-- **Funnel Events and Journey (8 Stages from Product View to Completion)**  
-- **Stage-wise Drop-off & Bounce Insights**  
-- **Conversion and Bonus Rate Trends (2019–2022)**  
-- **Cart Abandonment Rate**  
-- **Checkout & Payment Friction Analysis**  
-- **Recommendations to Improve Funnel Conversion**
-
-[View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/etsy-funnel-conversion-analysis/presentation/presentation%20deck.pdf)
-
+[View the deck]
