@@ -1,15 +1,10 @@
-# Gojek App Event Journey Mapping - Presentation
+# Presentation Deck
 
-This folder contains the project presentation summarizing the step-by-step journey of a Gojek user placing a food order via the GoFood feature. It is intended for product managers, experimentation teams, and non-technical stakeholders looking to understand how to define meaningful product events and trackable metrics for experimentation setup.
+This folder contains the executive presentation summarizing the Gojek customer journey mapping analysis for **hiring managers and business stakeholders**.
 
----
+The deck translates insights from the [notebooks](../notebooks/) into a concise, action-driven narrative:  
+highlighting key friction points in the GoFood ordering flow, critical drop-off stages (e.g., promo application and payment confirmation), and high-impact opportunities to **reduce order abandonment** and **optimize in-app engagement**.
 
-## The Presentation Deck Includes:
+No technical jargon. Just business impact.
 
-- **Project Overview**
-- **Screenshots of App Journey**
-- **Event Names and Definitions**
-- **Key Metrics for Each Event**
-- **Sample Data Fields and Sample Values**
-
-[View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/gojek-event-metrics-experimentation/presentation/presentation%20deck.pdf)
+[View the deck here]
