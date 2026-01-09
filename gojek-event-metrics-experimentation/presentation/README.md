@@ -7,4 +7,4 @@ highlighting key friction points in the GoFood ordering flow, critical drop-off 
 
 No technical jargon. Just business impact.
 
-[View the deck here]
+[View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/gojek-event-metrics-experimentation/presentation/presentation%20deck.pdf)
