@@ -1,19 +1,10 @@
-# TheLook E-commerce Growth & Retention Analysis - Presentation
+# Presentation Deck
 
-This folder contains the final presentation deck for the TheLook e-commerce analytics project.  
-It is designed for non-technical stakeholders, hiring managers, and recruiters to understand key business insights and strategic recommendations without diving into technical execution.
+This folder contains the executive presentation summarizing **TheLook E-commerce Clothing Analysis** project for **hiring managers and business stakeholders**.
 
----
+The deck turns insights from SQL-driven analysis into a clear, action-oriented story:  
+focused on the **4–6 month retention drop-off**, **15% order cancellation rate**, **10% return rate**, and strategic opportunities in **high-growth (Swim/Active)** and **high-margin (Outerwear & Coats)** categories—projecting improved profitability through targeted inventory and engagement actions.
 
-### The Presentation Deck Includes:
+No technical jargon. Just business impact.
 
-- Project overview and post-COVID business context
-- Business problem and data-driven objectives
-- Dataset overview and methodology 
-- Customer and order trend analysis  
-- Profitability insights by product category
-- Monthly retention cohort breakdown   
-- Strategic recommendations for boosting retention and category growth  
-
-[View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/thelook-ecommerce-retention-analysis/presentation/presentation%20deck.pdf)
-
+[View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/thelook-ecommerce-analysis/presentation/TheLook%20E-commerce%20Clothing%20Analysis%20Pitch%20Deck.pdf)
