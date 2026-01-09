@@ -7,4 +7,4 @@ focused on the **4–6 month retention drop-off**, **15% order cancellation rate
 
 No technical jargon. Just business impact.
 
-[View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/thelook-ecommerce-analysis/presentation/TheLook%20E-commerce%20Clothing%20Analysis%20Pitch%20Deck.pdf)
+[View the deck here](https://github.com/ashishkumar-ds/data-science-projects/blob/main/thelook-ecommerce-retention-analysis/presentation/presentation%20deck.pdf)
