@@ -6,4 +6,4 @@ The deck translates analytical insights into a clear, action-oriented narrative,
 
 No technical jargon. Just business impact.
 
-[View the deck]
+[View the deck](https://github.com/ashishkumar-ds/data-science-projects/blob/main/etsy-funnel-conversion-analysis/presentation/presentation%20deck.pdf)
