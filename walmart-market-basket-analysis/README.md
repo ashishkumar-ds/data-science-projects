@@ -78,7 +78,7 @@ An interactive **Tableau dashboard** enables scenario-based simulation of bundli
 walmart-grocery-market-basket/
 │
 ├── notebooks/
-│   └── Grocery-Market-Basket-Analysis.ipynb      # End-to-end analysis: FP-Growth, rule extraction, and insight generation
+│   └── market-basket-analysis.ipynb      # End-to-end analysis: FP-Growth, rule extraction, and insight generation
 │
 ├── dashboard/
 │   ├── dashboard_screenshot.png                  # Preview of the Tableau KPI dashboard
