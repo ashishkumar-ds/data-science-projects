@@ -6,7 +6,8 @@ This project analyzes **38,000+ grocery transactions** from a synthetic **Walmar
 
 The insights drive actionable recommendations projected to increase **average basket size by 24.8%** and generate an estimated **$23.5K in annual incremental revenue** through intelligent bundling and cross-selling.
 
-An interactive **Looker Studio dashboard** visualizes key association rules, temporal shopping patterns, and revenue impact projections for ongoing performance monitoring.
+
+An interactive **Tableau dashboard** enables real-time simulation of bundling impact, product performance, and category trends, empowering retail managers to prioritize and act on data-driven recommendations immediately.
 
 ---
 
