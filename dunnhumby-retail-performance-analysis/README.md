@@ -78,9 +78,9 @@ dunnhumby-retail-performance/
 │   └── main_analysis.ipynb
 │
 ├── dashboard/        # Tableau dashboard for real-time store monitoring
-│   └── retail_performance_dashboard.twb
+│   └── dashboard_screenshot.png
 │
 ├── presentation/     # Executive-ready deck for stakeholders
-│   └── Retail_Store_Performance_Analysis_Presentation.pdf
+│   └── presentation.pdf
 │
 └── README.md
