@@ -75,6 +75,7 @@ An interactive **Tableau dashboard** enables scenario-based simulation of bundli
 
 ---
 
+```bash
 walmart-grocery-market-basket/
 │
 ├── notebooks/
@@ -85,6 +86,6 @@ walmart-grocery-market-basket/
 │   └── README.md                                 # Notes on dashboard design and simulation logic
 │
 ├── presentation/
-│   └── Grocery_Market_Basket_Analysis_Presentation.pdf  # Executive slide deck for business stakeholders
+│   └── presentation.pdf  # Executive slide deck for business stakeholders
 │
 └── README.md                                  
