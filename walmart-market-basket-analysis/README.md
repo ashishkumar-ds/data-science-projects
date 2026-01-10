@@ -41,7 +41,6 @@ An interactive **Tableau dashboard** enables scenario-based simulation of bundli
 | **High-Lift Pairs**      | **Potato Products + Beef** (Lift: 3.8x), **Kitchen Towels + UHT Milk** (Lift: 3.8x) |
 | **Peak Shopping Times**  | **Wednesdays & Thursdays** show highest traffic; **August** has seasonal demand spike |
 | **Underperforming Items**| **Makeup Remover**, **Kitchen Utensil**, **Preservation Products** lag significantly |
-| **Projected Impact**     | **24.8% basket size increase**, **$2K/month ($23.5K/year) incremental revenue** |
 
 ---
 
