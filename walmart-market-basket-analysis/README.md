@@ -1,82 +1,189 @@
-# Walmart Market Basket Analysis
+# Walmart Grocery Market Basket Analysis
 
 ## Project Summary
 
-This project explores customer purchasing behavior at Walmart using Market Basket Analysis. Faced with a 17% drop in sales in late 2015, the goal is to uncover hidden product associations and recommend bundling strategies, product placements, and personalized promotions to improve customer experience and boost sales.
+This project analyzes **38,000+ grocery transactions** from a synthetic **Walmart grocery dataset** to uncover hidden product affinities and optimize merchandising strategies. By applying **Market Basket Analysis** using the **FP-Growth algorithm**, the work identifies high-confidence product pairings such as **Potato Products + Beef** and **Flour + Mayonnaise**, enabling targeted promotions and strategic shelf placement.
 
-To simulate a real-world scenario, a synthetic transaction dataset was generated using ChatGPT. This allowed full control over the structure and variety of grocery purchase patterns, while maintaining a realistic representation of customer behavior in a retail setting.
+The insights drive actionable recommendations projected to increase **average basket size by 24.8%** and generate an estimated **$23.5K in annual incremental revenue** through intelligent bundling and cross-selling.
+
+An interactive **Looker Studio dashboard** visualizes key association rules, temporal shopping patterns, and revenue impact projections for ongoing performance monitoring.
 
 ---
 
 ## Problem Statement
 
-Walmart observed a significant decline in sales in late 2015, raising concerns about customer satisfaction and in-store engagement.
+- Walmart experienced a **17% sales decline** in late 2015  
+- Customer engagement and basket value require immediate improvement  
 
-**Business Question:**  
-How can Walmart use product co-purchase patterns to create a more personalized shopping experience and increase average basket value?
+**Business Question**:  
+> How can Walmart leverage purchase pattern insights to improve product placement, create targeted promotions, and deliver a better shopping experience—ultimately increasing basket size and reversing sales decline?
 
 ---
 
 ## Dataset Description
 
-- **Source**: Synthetic Walmart Grocery Transactions (generated using ChatGPT)
-- **Total Records**: 38,008 transactions   
-- **Time Frame**: 2012–2015   
-- **Key Attributes**:
-  - `Date`: Transaction date  
-  - `Member_number`: Unique customer ID  
-  - `itemDescription`: Product purchased    
-- **Product Count**: 167 unique grocery items
+- **Source**: Synthetic Walmart grocery transaction data (2014–2015)  
+- **Time Frame**: 2 years (2014–2015)  
+- **Total Transactions**: 38,006  
+- **Unique Products**: 167 across diverse categories (fresh produce, dairy, household, etc.)  
+- **Customers**: 3,898 unique member numbers  
+
+### Key Features:
+- **Product-level granularity**: Includes items like *Whole Milk*, *Other Vegetables*, *Soda*  
+- **Temporal data**: Full date stamps enabling day-of-week and monthly trend analysis  
+- **Realistic distribution**: Mirrors actual grocery purchasing behavior  
 
 ---
 
 ## Key Findings
 
-| Focus Area            | Insight                                                                                                                  |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Product Popularity    | Milk, vegetables, fruits, and RTE (ready-to-eat) foods were among the most frequently purchased items                    |
-| Underperforming Items | Products like Pancake Syrup, Tuna Salad, BBQ Sauce, and Mango Chutney sold fewer than 8 units over 2 years               |
-| Product Associations  | Strong cross-sell relationships discovered using Apriori, including Potato Products with Beef, and Flour with Mayonnaise |
-| Cross-Sell Confidence | Over 40% confidence in item pairs like Canned Fruit with Coffee, and Meat Spreads with Eggs                              |
-| Timing Insight        | Transaction volumes spiked during weekends and holidays                                                                  |
-| Customer Behavior     | Repeat customers frequently repurchased bundled grocery essentials, showing loyalty-driven buying patterns               |
+| Focus Area               | Insight                                                                 |
+|--------------------------|-------------------------------------------------------------------------|
+| **Top-Selling Items**    | **Whole Milk**, **Other Vegetables**, **Rolls/Buns** dominate baskets (40%+ of transactions) |
+| **High-Lift Pairs**      | **Potato Products + Beef** (Lift: 3.8x), **Kitchen Towels + UHT Milk** (Lift: 3.8x) |
+| **Peak Shopping Times**  | **Wednesdays & Thursdays** show highest traffic; **August** has seasonal demand spike |
+| **Underperforming Items**| **Makeup Remover**, **Kitchen Utensil**, **Preservation Products** lag significantly |
+| **Projected Impact**     | **24.8% basket size increase**, **$2K/month ($23.5K/year) incremental revenue** |
 
 ---
 
 ## Recommendations
 
-1. **Bundle frequently associated products** (e.g., Potato Products with Beef, Flour with Mayonnaise) to increase basket size  
-2. **Place cross-sell items near each other** on shelves to boost impulse purchases  
-3. **Promote underperforming items** (e.g., BBQ Sauce, Tuna Salad) when bought with popular products  
-4. **Schedule campaigns during high-traffic times** like weekends and holidays for better response  
-5. **Personalize promotions** using co-purchase insights through apps, receipts, or in-store signage  
+1. **Implement Strategic Bundling**  
+   - Create combo deals for high-lift pairs (*e.g., Potato Products + Beef*)  
+   - Offer discounts when both items are purchased together  
+
+2. **Optimize Shelf Placement**  
+   - Position co-purchased items adjacently (*e.g., Flour next to Mayonnaise*)  
+   - Place underperforming items near top sellers to drive discovery  
+
+3. **Deploy Time-Based Promotions**  
+   - Run targeted campaigns on **Wednesdays/Thursdays** during peak traffic  
+   - Launch August-specific bundles capitalizing on seasonal spikes  
+
+4. **Revitalize Low-Performers**  
+   - Bundle **Makeup Remover** with complementary health/beauty products  
+   - Feature **Kitchen Utensils** in cooking-themed displays with Flour/Mayonnaise  
+
+> *Projected outcome: **24.8% larger baskets** and **$23.5K annual revenue uplift** through 10% bundling adoption*
 
 ---
 
 ## Tools and Technologies
 
-- Python  
-- Market Basket Modeling: Apriori 
-- Association Metrics: Support, Confidence, Lift  
-- Tableau  
+- **Python**: pandas, mlxtend (FP-Growth), Matplotlib, Seaborn  
+- **Visualization**: Looker Studio (dashboard), WordCloud  
+- **Methods**: Market Basket Analysis, FP-Growth Algorithm, Lift/Confidence Metrics  
 
 ---
 
 ## Project Structure
 
 ```bash
-walmart-market-basket-analysis/
+walmart-grocery-market-basket/
 │
-├── notebooks/        # Apriori model, EDA, product pairings
-│   └── market_basket_analysis.ipynb
+├── notebooks/              # Complete analysis with statistical validation
+│   └── Grocery-Market-Basket-Analysis.ipynb
 │
-├── dashboard/        # Tableau KPI dashboard for product performance simulation
-│   └── dashboard_screenshot.png
+├── dashboard/              # Interactive Looker Studio dashboard
+│   └── walmart_basket_analysis_dashboard.pdf
 │
-├── presentation/     # Final business presentation for non-technical stakeholders
-│   └── presentation_deck.pdf
-│
-├── dataset/             # Synthetic transaction dataset used for analysis
-│   └── groceries_dataset.csv
+├── presentation/           # Executive summary deck
+│   └── Grocery_Market_Basket_Analysis_Presentation.pdf
 │
 └── README.md
+```# Walmart Grocery Market Basket Analysis
+
+## Project Summary
+
+This project analyzes **38,000+ grocery transactions** from a synthetic **Walmart grocery dataset** to uncover hidden product affinities and optimize merchandising strategies. By applying **Market Basket Analysis** using the **FP-Growth algorithm**, the work identifies high-confidence product pairings such as **Potato Products + Beef** and **Flour + Mayonnaise**, enabling targeted promotions and strategic shelf placement.
+
+The insights drive actionable recommendations projected to increase **average basket size by 24.8%** and generate an estimated **$23.5K in annual incremental revenue** through intelligent bundling and cross-selling.
+
+An interactive **Looker Studio dashboard** visualizes key association rules, temporal shopping patterns, and revenue impact projections for ongoing performance monitoring.
+
+---
+
+## Problem Statement
+
+- Walmart experienced a **17% sales decline** in late 2015  
+- Customer engagement and basket value require immediate improvement  
+
+**Business Question**:  
+> How can Walmart leverage purchase pattern insights to improve product placement, create targeted promotions, and deliver a better shopping experience—ultimately increasing basket size and reversing sales decline?
+
+---
+
+## Dataset Description
+
+- **Source**: Synthetic Walmart grocery transaction data (2014–2015)  
+- **Time Frame**: 2 years (2014–2015)  
+- **Total Transactions**: 38,006  
+- **Unique Products**: 167 across diverse categories (fresh produce, dairy, household, etc.)  
+- **Customers**: 3,898 unique member numbers  
+
+### Key Features:
+- **Product-level granularity**: Includes items like *Whole Milk*, *Other Vegetables*, *Soda*  
+- **Temporal data**: Full date stamps enabling day-of-week and monthly trend analysis  
+- **Realistic distribution**: Mirrors actual grocery purchasing behavior  
+
+---
+
+## Key Findings
+
+| Focus Area               | Insight                                                                 |
+|--------------------------|-------------------------------------------------------------------------|
+| **Top-Selling Items**    | **Whole Milk**, **Other Vegetables**, **Rolls/Buns** dominate baskets (40%+ of transactions) |
+| **High-Lift Pairs**      | **Potato Products + Beef** (Lift: 3.8x), **Kitchen Towels + UHT Milk** (Lift: 3.8x) |
+| **Peak Shopping Times**  | **Wednesdays & Thursdays** show highest traffic; **August** has seasonal demand spike |
+| **Underperforming Items**| **Makeup Remover**, **Kitchen Utensil**, **Preservation Products** lag significantly |
+| **Projected Impact**     | **24.8% basket size increase**, **$2K/month ($23.5K/year) incremental revenue** |
+
+---
+
+## Recommendations
+
+1. **Implement Strategic Bundling**  
+   - Create combo deals for high-lift pairs (*e.g., Potato Products + Beef*)  
+   - Offer discounts when both items are purchased together  
+
+2. **Optimize Shelf Placement**  
+   - Position co-purchased items adjacently (*e.g., Flour next to Mayonnaise*)  
+   - Place underperforming items near top sellers to drive discovery  
+
+3. **Deploy Time-Based Promotions**  
+   - Run targeted campaigns on **Wednesdays/Thursdays** during peak traffic  
+   - Launch August-specific bundles capitalizing on seasonal spikes  
+
+4. **Revitalize Low-Performers**  
+   - Bundle **Makeup Remover** with complementary health/beauty products  
+   - Feature **Kitchen Utensils** in cooking-themed displays with Flour/Mayonnaise  
+
+> *Projected outcome: **24.8% larger baskets** and **$23.5K annual revenue uplift** through 10% bundling adoption*
+
+---
+
+## Tools and Technologies
+
+- **Python**: pandas, mlxtend (FP-Growth), Matplotlib, Seaborn  
+- **Visualization**: Tableau  
+- **Methods**: Market Basket Analysis, FP-Growth Algorithm, Lift/Confidence Metrics  
+
+---
+
+## Project Structure
+
+```bash
+walmart-grocery-market-basket/
+│
+├── notebooks/              # Complete analysis with statistical validation
+│   └── Grocery-Market-Basket-Analysis.ipynb
+│
+├── dashboard/              # Interactive Looker Studio dashboard
+│   └── walmart_basket_analysis_dashboard.pdf
+│
+├── presentation/           # Executive summary deck
+│   └── Grocery_Market_Basket_Analysis_Presentation.pdf
+│
+└── README.md
+```
