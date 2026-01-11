@@ -1,4 +1,4 @@
-# Presentation Deck
+# # Dunnhumby Retail Store Performance Analysis – Presentation Deck
 
 This folder contains the executive presentation summarizing the Dunnhumby retail performance project for **hiring managers and business stakeholders**.
 
