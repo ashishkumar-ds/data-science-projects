@@ -1,3 +1,5 @@
+# Dunnhumby Retail Store Performance Analysis – Notebooks
+
 This folder contains notebooks that walk through the end-to-end dunnhumby analytics workflow from data cleaning and exploratory analysis to customer segmentation, campaign uplift modeling, forecasting, and business impact evaluation.
 
 ---
