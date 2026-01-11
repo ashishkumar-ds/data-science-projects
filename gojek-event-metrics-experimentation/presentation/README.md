@@ -1,4 +1,4 @@
-# Presentation Deck
+# Gojek App Event Journey Mapping for Experimentation - Presentation Deck
 
 This folder contains the executive presentation summarizing the Gojek customer journey mapping analysis for **hiring managers and business stakeholders**.
 
