@@ -1,3 +1,5 @@
+# Walmart Market Basket Analysis - Notebooks
+
 This folder contains a notebook that walks through the end-to-end Walmart grocery market basket analysis workflow from data cleaning and exploratory analysis to association rule mining, product pairing discovery, and actionable merchandising strategy development.
 
 ---
