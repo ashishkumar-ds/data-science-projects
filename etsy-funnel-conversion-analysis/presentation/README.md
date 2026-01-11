@@ -1,4 +1,4 @@
-# Presentation Deck
+# Etsy Funnel Analysis - Presentation Deck
 
 This folder contains the executive presentation summarizing key findings and strategic recommendations from the Etsy Funnel Analysis project, crafted specifically for **hiring managers and business stakeholders**.
 
