@@ -1,4 +1,4 @@
-# Presentation Deck
+# Walmart Market Basket Analysis - Presentation Deck
 
 This folder contains the executive presentation summarizing the Walmart Market Basket Analysis project for **hiring managers and business stakeholders**.
 
