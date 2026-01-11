@@ -1,4 +1,4 @@
-# Presentation Deck
+# TheLook E-commerce Growth & Retention Analysis - Presentation Deck
 
 This folder contains the executive presentation summarizing TheLook E-commerce Clothing Analysis project for **hiring managers and business stakeholders**.
 
