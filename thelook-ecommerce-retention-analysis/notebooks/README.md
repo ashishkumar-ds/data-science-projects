@@ -1,4 +1,4 @@
-# SQL Queries & Business Questions
+## TheLook E-commerce Growth & Retention Analysis - SQL Queries & Business Questions
 
 This file documents all key SQL queries used in the project, each tied to a specific business question. It helps demonstrate how real-world questions were translated into data-driven answers using SQL and cohort analysis.
 
