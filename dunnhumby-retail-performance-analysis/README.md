@@ -81,6 +81,6 @@ dunnhumby-retail-performance/
 │   └── dashboard_screenshot.png
 │
 ├── presentation/     # Executive-ready deck for stakeholders
-│   └── presentation.pdf
+│   └── presentation_deck.pdf
 │
 └── README.md
