@@ -85,6 +85,6 @@ walmart-grocery-market-basket/
 │   └── README.md                                 # Notes on dashboard design and simulation logic
 │
 ├── presentation/
-│   └── presentation.pdf  # Executive slide deck for business stakeholders
+│   └── presentation_deck.pdf  # Executive slide deck for business stakeholders
 │
 └── README.md                                  
