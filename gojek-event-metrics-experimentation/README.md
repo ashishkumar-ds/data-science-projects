@@ -85,6 +85,6 @@ The journey spans 15+ app interactions and milestones:
 gojek-app-event-mapping/
 │
 ├── presentation/       # Final project walkthrough deck
-│   └── presentation.pdf
+│   └── presentation_deck.pdf
 │
 └── README.md
