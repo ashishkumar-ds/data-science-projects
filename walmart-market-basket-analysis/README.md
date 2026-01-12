@@ -10,7 +10,7 @@ An interactive **Tableau dashboard** enables scenario-based simulation of bundli
 
 ## Problem Statement
 
-- Walmart experienced a **17% sales decline** in late 2015  
+- Walmart experienced a **32% sales decline** in late 2015  
 - Customer engagement and basket value require immediate improvement  
 
 **Business Question**:  
