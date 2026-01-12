@@ -7,4 +7,4 @@ focused on reversing a 17% sales decline through product bundling, strategic pla
 
 No technical jargon. Just business impact.
 
-[View the deck here](https://github.com/ashishkumar-ds/data-science-projects/tree/main/walmart-market-basket-analysis/presentation)
+[View the deck here](walmart-market-basket-analysis/presentation/presentation deck.pdf)
