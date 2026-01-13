@@ -8,6 +8,8 @@ This folder contains the SQL queries used to analyze Etsy’s customer journey a
 
 ### 1. **How many users reach each funnel stage?** 
 
+[[Query Link]](https://console.cloud.google.com/bigquery?sq=828354531328:4b714f5040254275b28009e46adbb1b3)
+
 ```sql
 -- Funnel Counts (Unique Users at Each Stage from 2019 to 2022)
 SELECT
@@ -29,7 +31,9 @@ GROUP BY year, quarter
 ORDER BY year, quarter;
 ```
 
-### 2. **What are the conversion rates between funnel stages?** 
+### 2. **What are the conversion rates between funnel stages?**
+
+[[Query Link]](https://console.cloud.google.com/bigquery?sq=828354531328:c28a142903194febbdfbe3e014caeaae)
 
 ```sql
 -- Conversion Rates (Calculated using Funnel Counts from business question 1)
@@ -65,7 +69,9 @@ FROM funnel_counts
 ORDER BY year, quarter;
 ```
 
-### 3. **What are the bonus conversion rates between key funnel stages?** 
+### 3. **What are the bonus conversion rates between key funnel stages?**
+
+[[Query Link]](https://console.cloud.google.com/bigquery?sq=828354531328:4b714f5040254275b28009e46adbb1b3)
 
 ```sql
 -- Bonus Rates (Calculated using Funnel Counts from business question 2)
@@ -100,6 +106,8 @@ ORDER BY year, quarter;
 ```
 
 ### 4. **What is the cart abandonment rate across quarters?**
+
+[[Query link]](https://console.cloud.google.com/bigquery?sq=828354531328:57664c202bb84dddbc5001eafc16d2e5)
 
 ```sql
 --Cart Abandonment Rate (From 2019 to 2022)
