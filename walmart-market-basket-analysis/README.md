@@ -20,7 +20,7 @@ An interactive **Tableau dashboard** enables scenario-based simulation of bundli
 
 ## Dataset Description
 
-- **Source**: Synthetic Walmart grocery transaction data (2014–2015)  
+- **Source**: [Synthetic Walmart grocery transaction data (2014–2015)](https://github.com/ashishkumar-ds/data-science-projects/blob/main/walmart-market-basket-analysis%2Fdataset%2Fgroceries%20dataset.xlsx)
 - **Time Frame**: 2 years (2014–2015)  
 - **Total Transactions**: 38,006  
 - **Unique Products**: 167 across diverse categories (fresh produce, dairy, household, etc.)  
