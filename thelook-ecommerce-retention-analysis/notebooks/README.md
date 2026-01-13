@@ -6,7 +6,7 @@ This file documents all key SQL queries used in the project, each tied to a spec
 
 ## Business Question
  
-**1. How many unique users, orders, and total sales occurred per order status each month?**[Query Link](https://console.cloud.google.com/bigquery?sq=651852827630:f383d0c7c4354bf1bf89c75bee58c7a1)
+**1. How many unique users, orders, and total sales occurred per order status each month?** [[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:f383d0c7c4354bf1bf89c75bee58c7a1)
 
 ```sql
 -- Calculate metrics for each month and status
