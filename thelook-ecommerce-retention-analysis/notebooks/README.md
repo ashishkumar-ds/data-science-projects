@@ -6,7 +6,8 @@ This file documents all key SQL queries used in the project, each tied to a spec
 
 ## Business Question
  
-**1. How many unique users, orders, and total sales occurred per order status each month?** [[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:f383d0c7c4354bf1bf89c75bee58c7a1)
+**1. How many unique users, orders, and total sales occurred per order status each month?**
+[[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:f383d0c7c4354bf1bf89c75bee58c7a1)
 
 ```sql
 -- Calculate metrics for each month and status
@@ -22,7 +23,8 @@ GROUP BY 1, 2
 ORDER BY 1, 2;
 ```
 
-**2. Who are the users that returned orders in August 2022?** [[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:036c9dbb998c4efdacbb605c93c04c85)
+**2. Who are the users that returned orders in August 2022?**
+[[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:036c9dbb998c4efdacbb605c93c04c85)
 
 ```sql
 -- Retrieve user information for users who made a return in August 2022
@@ -38,7 +40,8 @@ WHERE DATE_TRUNC(o.created_at, MONTH) BETWEEN '2022-08-01' AND '2022-08-31'
   AND o.status = 'Returned';
 ```
 
- **3. What is the total number of unique buyers, average order frequency, and average order value (AOV) per month?** [[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:e56f2a9652a849a68acfba6f70e1a3c1)
+ **3. What is the total number of unique buyers, average order frequency, and average order value (AOV) per month?** 
+[[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:e56f2a9652a849a68acfba6f70e1a3c1)
  
 ```sql
 -- calculate key metrics for each month:
@@ -57,7 +60,8 @@ group by 1 -- group the data by month_year.
 order by 1; -- sort the result by month_year.
 ```
 
-**4. What are the top 5 most and least profitable products?** [[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:5b55ac9a886346e9babd41cad49aa922)
+**4. What are the top 5 most and least profitable products?**
+[[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:5b55ac9a886346e9babd41cad49aa922)
 
 ```sql
 with product_summary as (
@@ -139,7 +143,8 @@ union all
 select * from top_least_profitable_products;
 ```
 
-**5. What is the Month-to-Date (MTD) total profit for each product category over the past 3 months?** [[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:91e91283f27d4afaac4d24aaccecef53)
+**5. What is the Month-to-Date (MTD) total profit for each product category over the past 3 months?**
+[[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:91e91283f27d4afaac4d24aaccecef53)
 
 ```sql
 -- calculate the total revenue, product quantity sold, and profit for each product category
@@ -232,7 +237,8 @@ from inventory_growth
 order by month_year desc, product_category asc; -- sort the result by month_year in descending order and product_category in ascending order
 ```
 
-**7. How many users (in %) from each monthly cohort in 2022 returned in the following 6 months?** [[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:91067299c4d14ae0b7ab00211d0ec909)
+**7. How many users (in %) from each monthly cohort in 2022 returned in the following 6 months?**
+[[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:91067299c4d14ae0b7ab00211d0ec909)
 
 ```sql
 -- Identify the cohort month for each user (the first order's month)
