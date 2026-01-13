@@ -38,7 +38,7 @@ WHERE DATE_TRUNC(o.created_at, MONTH) BETWEEN '2022-08-01' AND '2022-08-31'
   AND o.status = 'Returned';
 ```
 
- **3. What is the total number of unique buyers, average order frequency, and average order value (AOV) per month?**[[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:e56f2a9652a849a68acfba6f70e1a3c1)
+ **3. What is the total number of unique buyers, average order frequency, and average order value (AOV) per month?** [[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:e56f2a9652a849a68acfba6f70e1a3c1)
  
 ```sql
 -- calculate key metrics for each month:
