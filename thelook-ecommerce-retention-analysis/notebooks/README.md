@@ -22,7 +22,7 @@ GROUP BY 1, 2
 ORDER BY 1, 2;
 ```
 
-**2. Who are the users that returned orders in August 2022?**[[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:036c9dbb998c4efdacbb605c93c04c85)
+**2. Who are the users that returned orders in August 2022?** [[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:036c9dbb998c4efdacbb605c93c04c85)
 
 ```sql
 -- Retrieve user information for users who made a return in August 2022
@@ -57,7 +57,7 @@ group by 1 -- group the data by month_year.
 order by 1; -- sort the result by month_year.
 ```
 
-**4. What are the top 5 most and least profitable products?**[[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:5b55ac9a886346e9babd41cad49aa922)
+**4. What are the top 5 most and least profitable products?** [[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:5b55ac9a886346e9babd41cad49aa922)
 
 ```sql
 with product_summary as (
@@ -139,7 +139,7 @@ union all
 select * from top_least_profitable_products;
 ```
 
-**5. What is the Month-to-Date (MTD) total profit for each product category over the past 3 months?**[[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:91e91283f27d4afaac4d24aaccecef53)
+**5. What is the Month-to-Date (MTD) total profit for each product category over the past 3 months?** [[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:91e91283f27d4afaac4d24aaccecef53)
 
 ```sql
 -- calculate the total revenue, product quantity sold, and profit for each product category
@@ -197,7 +197,7 @@ order by
 
 ```
 
-**6. What is the monthly growth of inventory (in %) for each product category, ordered by latest to oldest?**[[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:a917b08a6f374336b0031b91ba65261a)
+**6. What is the monthly growth of inventory (in %) for each product category, ordered by latest to oldest?** [[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:a917b08a6f374336b0031b91ba65261a)
 
 ```sql
 -- calculate the monthly inventory count for each product category
@@ -232,7 +232,7 @@ from inventory_growth
 order by month_year desc, product_category asc; -- sort the result by month_year in descending order and product_category in ascending order
 ```
 
-**7. How many users (in %) from each monthly cohort in 2022 returned in the following 6 months?**[[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:91067299c4d14ae0b7ab00211d0ec909)
+**7. How many users (in %) from each monthly cohort in 2022 returned in the following 6 months?** [[Query Link]](https://console.cloud.google.com/bigquery?sq=651852827630:91067299c4d14ae0b7ab00211d0ec909)
 
 ```sql
 -- Identify the cohort month for each user (the first order's month)
