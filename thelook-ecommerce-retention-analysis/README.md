@@ -14,7 +14,7 @@ What strategies can TheLook adopt post-2023 to boost retention and category perf
 
 ## Dataset Description
 
-- **Source**: Synthetic dataset created by Looker  
+- **Source**: [Synthetic dataset created by Looker](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1sbigquery-public-data!2sthelook_ecommerce) 
 - **Total Records**: 65,000+ orders  
 - **Time Frame**: Multi-year retail activity until end of 2023  
 - **Component Tables and Key Attributes**
