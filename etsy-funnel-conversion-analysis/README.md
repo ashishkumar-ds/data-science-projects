@@ -2,7 +2,7 @@
 
 ## Project Summary
 
-This project analyzes **385K+ event-level user interactions** and **19K+ completed transactions** from Etsy’s e-commerce funnel to diagnose root causes of its **90% cart abandonment rate**. By mapping behavioral drop-offs across 8 journey steps from product view to purchase completion and evaluating payment method performance, the work delivers targeted UX optimizations that drove a **+5.2 pp conversion lift** and **$4,500 in incremental GMV** in Q1 2023.  
+This project analyzes **385K+ event-level user interactions** and **19K+ transactions** from Etsy’s e-commerce marketplace to diagnose root causes of its **90% cart abandonment rate**. By mapping behavioral drop-offs across 8 journey steps from product view to purchase completion and evaluating payment method performance, the work delivers targeted UX optimizations that drove a **+5.2 pp conversion lift** and **$4,500 in incremental GMV** in Q1 2023.  
 
 ---
 
