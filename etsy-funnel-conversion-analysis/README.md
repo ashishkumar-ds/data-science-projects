@@ -38,10 +38,10 @@ Etsy observed a 90% cart abandonment rate throughout 2022, with sharp drops in f
 
 ## Recommendations
 
-1. **Reduce cart abandonment at the View Cart stage** by clearly displaying shipping timelines, removing hidden charges, and improving pricing transparency.  
+1. **Improve transparency at View Cart** by surfacing shipping costs, delivery timelines, and return policies upfront 
 2. **Promote Virtual Account as default/highlighted option** to leverage its high trust and conversion  
-3. **Simplify Paylater & Biller Services** with clearer instructions, reduced form fields, and contextual help  
-4. **Improve transparency at View Cart** by surfacing shipping costs, delivery timelines, and return policies upfront  
+3. **Simplify Paylater & Biller Services** with clearer instructions, reduced form fields, and contextual help 
+4. **Reduce cart abandonment at the View Cart stage** by clearly displaying shipping timelines, removing hidden charges, and improving pricing transparency
 5. **Reduce technical friction at Checkout** by optimizing page load, auto-filling known fields, and improving validation feedback  
 
 > *Result: **+5.2 pp conversion lift** and **$4,500 incremental GMV** in Q1 2023 (AOV = $50, based on 5,812 View Cart sessions)*
