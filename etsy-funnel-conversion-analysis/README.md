@@ -10,8 +10,8 @@ This project analyzes **385K+ event-level user interactions** and **19K+ complet
 
 Etsy observed a 90% cart abandonment rate throughout 2022, with sharp drops in funnel completion at steps like **View Cart**, **Change Payment Method**, and **Checkout**.  
 
-**Business Question:**  
-How can we reduce cart abandonment and increase conversion by **5% in Q1 2023**?
+**Business Question**:  
+>How can we reduce cart abandonment and increase conversion by **5% in Q1 2023**?
 
 ---
 
