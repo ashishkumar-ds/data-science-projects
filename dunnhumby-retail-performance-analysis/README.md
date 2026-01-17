@@ -33,7 +33,7 @@ An interactive **Tableau dashboard** enables real-time monitoring of store perfo
 
 | Focus Area               | Insight                                                                 |
 |--------------------------|-------------------------------------------------------------------------|
-| **Store Performance**    | Top 12% of stores (69) drive 80% of revenue; 511 are underperforming    |
+| **Store Performance**    | Top 12% of stores (71) drive 80% of revenue; 511 are underperforming    |
 | **Best Customers**       | Age 45–54, income $50K–$74K, no kids, 20.2% of base, 41% of revenue    |
 | **Top Campaign**         | **Campaign 18**: 411.4% gross ROI, 278.7% net ROI    |
 | **Optimal Timing**       | **Afternoon (12–18)** drives peak engagement and highest uplift         |
