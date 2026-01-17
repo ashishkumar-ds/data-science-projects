@@ -33,7 +33,6 @@ How can we reduce cart abandonment and increase conversion by **5% in Q1 2023**?
 | **Payment Method Performance** | **Virtual Account**: 89% proceed to checkout; **Paylater**: only 61%, highlighting strong user preference and trust |
 | **High-Abandonment Categories** | **Groceries, Games, and Stationery** show elevated cart abandonment, likely due to pricing sensitivity or unclear specs |
 | **Session Duration**          | **Completion (3.8 mins)** takes longer than **Checkout (2.1 mins)**, suggesting user hesitation or UI delays during finalization |
-| **Business Impact**           | Optimizing payment method selection drove **+5.2 pp conversion lift** (74.79% to 80.0%) and **$4,500 incremental GMV** |
 
 ---
 
