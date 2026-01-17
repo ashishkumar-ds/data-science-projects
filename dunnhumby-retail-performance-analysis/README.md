@@ -22,7 +22,18 @@ An interactive **Tableau dashboard** enables real-time monitoring of store perfo
 
 - **Source**: [Dunnhumby Retail Store Public Dataset](https://www.dunnhumby.com/source-files/)  
 - **Time Frame**: 2017–2018  
+- **Total Transactions**: 2,595,914
+- **Stores**: 582 unique store locations**
+- **Households**: 103,200
+- **Products**: 23,539
 
+582 unique store locations**
+
+27
+
+**Households**: 103,200
+
+28 -- **Products**: 23,539
 ---
 
 ## Key Findings
