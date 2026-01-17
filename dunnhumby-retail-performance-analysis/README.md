@@ -22,18 +22,6 @@ An interactive **Tableau dashboard** enables real-time monitoring of store perfo
 
 - **Source**: [Dunnhumby Retail Store Public Dataset](https://www.dunnhumby.com/source-files/)  
 - **Time Frame**: 2017–2018  
-- **Total Transactions**: 2,595,914  
-- **Stores**: **582 unique store locations**  
-- **Households**: 103,200  
-- **Products**: 23,539  
-
-### Key Files:
-- `transaction_data.csv` – Purchase history (sales, quantity, day, store, household)  
-- `hh_demographic.csv` – Age, income, household size  
-- `product.csv` – Department, brand, commodity  
-- `campaign_desc.csv` – Campaign IDs, start/end dates (30 total campaigns)  
-- `coupon_redempt.csv` – Coupon redemptions by household  
-- `causal_data.csv` – Weather, fuel price, CPI (excluded from modeling)
 
 ---
 
