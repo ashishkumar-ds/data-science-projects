@@ -14,7 +14,7 @@ An interactive **Tableau dashboard** enables scenario-based simulation of bundli
 - Customer engagement and basket value require immediate improvement  
 
 **Business Question**:  
-> How can Walmart leverage purchase pattern insights to improve product placement, create targeted promotions, and deliver a better shopping experience—ultimately increasing basket size and reversing sales decline?
+> How can Walmart leverage purchase pattern insights to improve product placement, create targeted promotions, and deliver a better shopping experience ultimately increasing basket size and reversing sales decline?
 
 ---
 
