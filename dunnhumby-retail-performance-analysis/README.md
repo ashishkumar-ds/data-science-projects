@@ -14,7 +14,7 @@ An interactive **Tableau dashboard** enables real-time monitoring of store perfo
 - These stores show **monthly sales growth below 9.3%** (category average)
 
 **Business Question**:  
-> How can we increase sales in underperforming stores within **60 days** through precise customer targeting, high-ROI campaigns, and optimized timing?
+> How can we increase sales in underperforming stores within **60 days**?
 
 ---
 
