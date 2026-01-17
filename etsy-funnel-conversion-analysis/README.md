@@ -26,9 +26,9 @@ How can we reduce cart abandonment and increase conversion by **5% in Q1 2023**?
 ---
 
 ## Key Findings
-
-| Focus Area                     | Insight                                                                 |
-|-------------------------------|-------------------------------------------------------------------------|
+                                                               
+| Focus Area               | Insight                                                                 |
+|--------------------------|-------------------------------------------------------------------------|
 | **Funnel Drop-off**           | Of 5,812 sessions reaching **View Cart**, only **1,340 completed purchase**, a **77% drop-off** from this stage onward |
 | **Payment Method Performance** | **Virtual Account**: 89% proceed to checkout; **Paylater**: only 61%, highlighting strong user preference and trust |
 | **High-Abandonment Categories** | **Groceries, Games, and Stationery** show elevated cart abandonment, likely due to pricing sensitivity or unclear specs |
