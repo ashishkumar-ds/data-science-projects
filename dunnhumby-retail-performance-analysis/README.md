@@ -27,13 +27,6 @@ An interactive **Tableau dashboard** enables real-time monitoring of store perfo
 - **Households**: 103,200
 - **Products**: 23,539
 
-582 unique store locations**
-
-27
-
-**Households**: 103,200
-
-28 -- **Products**: 23,539
 ---
 
 ## Key Findings
