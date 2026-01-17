@@ -2,7 +2,7 @@
 
 ## Project Summary
 
-This project analyzes **385K+ event-level user interactions** and **19K+ completed transactions** from Etsy’s e-commerce funnel to diagnose root causes of its **~90% cart abandonment rate**. By mapping behavioral drop-offs across 8 journey steps—from product view to purchase completion—and evaluating payment method performance, the work delivers targeted UX optimizations that drove a **+5.2 pp conversion lift** and **$4,500 in incremental GMV** in Q1 2023.  
+This project analyzes **385K+ event-level user interactions** and **19K+ completed transactions** from Etsy’s e-commerce funnel to diagnose root causes of its **90% cart abandonment rate**. By mapping behavioral drop-offs across 8 journey steps from product view to purchase completion and evaluating payment method performance, the work delivers targeted UX optimizations that drove a **+5.2 pp conversion lift** and **$4,500 in incremental GMV** in Q1 2023.  
 
 ---
 
@@ -38,20 +38,20 @@ Etsy observed a 90% cart abandonment rate throughout 2022, with sharp drops in f
 
 ## Recommendations
 
-1. **Reduce cart abandonment at the View Cart stage** by clearly displaying shipping timelines, removing hidden charges, and improving pricing transparency.
+1. **Reduce cart abandonment at the View Cart stage** by clearly displaying shipping timelines, removing hidden charges, and improving pricing transparency.  
+2. **Promote Virtual Account as default/highlighted option** to leverage its high trust and conversion  
+3. **Simplify Paylater & Biller Services** with clearer instructions, reduced form fields, and contextual help  
+4. **Improve transparency at View Cart** by surfacing shipping costs, delivery timelines, and return policies upfront  
+5. **Reduce technical friction at Checkout** by optimizing page load, auto-filling known fields, and improving validation feedback  
 
-2. **Improve performance of Paylater and Biller Services** by simplifying the checkout experience and providing clear guidance or FAQs to reduce uncertainty.
-
-3. **Capitalize on the popularity of the Virtual Account payment method** by visually highlighting it and clearly explaining the process to increase trust and usage.
-
-4. **Fix friction in the checkout stage** by streamlining the steps, minimizing delays, and resolving any validation or technical blockers causing user hesitation.
+> *Result: **+5.2 pp conversion lift** and **$4,500 incremental GMV** in Q1 2023 (AOV = $50, based on 5,812 View Cart sessions)*
 
 ---
 
 ## Tools and Techniques
 
 - SQL (Google BigQuery)  
-- Tableau (Dashboard Visualizations) 
+- Tableau 
 - Customer Funnel Analysis  
 
 ---
