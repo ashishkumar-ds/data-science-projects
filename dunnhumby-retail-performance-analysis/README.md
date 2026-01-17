@@ -11,7 +11,7 @@ An interactive **Tableau dashboard** enables real-time monitoring of store perfo
 ## Problem Statement
 
 - **88% of stores (511 of 582)** are underperforming, generating only **20% of total sales**  
-- These stores show **monthly sales growth below 9.3%** (category average)
+- These stores show **monthly sales growth below 9.3%**
 
 **Business Question**:  
 > How can we increase sales in underperforming stores within **60 days**?
