@@ -55,7 +55,7 @@ An interactive **Tableau dashboard** enables real-time monitoring of store perfo
 ## Tools and Technologies
 
 - **Python**: Pandas, Scikit-Learn, LightGBM, Optuna 
-- **Visualization**: Matplotlib, Seaborn,Tableau  
+- **Visualization**: Matplotlib, Seaborn, Tableau  
 - **Methods**: RFM Segmentation, ROI Analysis, Time-Series Forecasting  
 
 ---
