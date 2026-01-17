@@ -48,11 +48,11 @@ Etsy observed a 90% cart abandonment rate throughout 2022, with sharp drops in f
 
 ---
 
-## Tools and Techniques
+## Tools and Technologies
 
-- SQL (Google BigQuery)  
-- Tableau 
-- Customer Funnel Analysis  
+- **SQL**: Google BigQuery
+- **Visualization**: Tableau  
+- **Methods**: Customer Funnel Analysis, Drop-off Point Diagnosis, Conversion Rate Optimization
 
 ---
 
