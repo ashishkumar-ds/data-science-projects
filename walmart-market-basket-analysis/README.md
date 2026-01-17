@@ -26,11 +26,6 @@ An interactive **Tableau dashboard** enables scenario-based simulation of bundli
 - **Unique Products**: 167 across diverse categories (fresh produce, dairy, household, etc.)
 - **Time Frame**: 2 years (2014–2015)  
 
-### Key Features:
-- **Product-level granularity**: Includes items like *Whole Milk*, *Other Vegetables*, *Soda*  
-- **Temporal data**: Full date stamps enabling day-of-week and monthly trend analysis  
-- **Realistic distribution**: Mirrors actual grocery purchasing behavior  
-
 ---
 
 ## Key Findings
