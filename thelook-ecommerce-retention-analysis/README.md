@@ -57,7 +57,7 @@ The Look E-Commerce is in optimization mode due to a potential 2023 business cri
 
 - **SQL**: Google BigQuery  
 - **Visualization**: Looker Studio 
-- **Methods**: Cohort Analysis, 
+- **Methods**: Cohort Analysis
 
 ---
 
