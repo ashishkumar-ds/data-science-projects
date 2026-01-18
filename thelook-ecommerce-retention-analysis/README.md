@@ -10,34 +10,33 @@ This project analyzes **65,166 customer orders** from TheLook’s e-commerce pla
 
 ## Problem Statement
 
-- **15% of orders are cancelled**, and **10% of orders are returned** indicating significant post-purchase dissatisfaction  
-- User retention drops sharply after **4–6 months**, with the **December 2022 cohort showing anomalous early churn**
+The Look E-Commerce is in optimization mode due to a potential 2023 business crisis. Management plans to cut resources in categories with the lowest growth over the past year and needs data-driven strategies to improve user retention and reduce operational friction in order fulfillment.
 
 **Business Question**:  
-> How can we reduce cancellations and returns while improving 6-month user retention through data-driven product and service improvements?
-
+> How can we increase 6-month user retention and reduce cancellations and returns by analyzing customer behavior and order trends?
 
 ---
 
 ## Dataset Description
 
 - **Source**: [Synthetic dataset created by Looker](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1sbigquery-public-data!2sthelook_ecommerce) 
-- **Total Records**: 65,000+ orders  
+- **Total Records**: 65,000+ orders
+- **Platform**: TheLook (fashion & apparel e-commerce)    
 - **Time Frame**: 2019-2022  
 
 ---
 
- ## Key Findings
+## Key Findings
 
 | Focus Area            | Insight                                                                                   |
-|------------------------|-------------------------------------------------------------------------------------------|
+|----------------------|-------------------------------------------------------------------------------------------|
 | **Order Issues**           | 15% of orders were cancelled, and 10% were returned                                       |
-| **High Return Users**      | 2,299 users returned 2,332 orders – a small segment with high return activity             |
-| **Profitability Gaps**     | Products like Aluminum Aluma Wallet sold poorly with very low margins                    |
-| **Category Growth**        | Swimwear, Activewear, and Leggings showed the fastest growth                             |
-| **Profit Leaders**         | Outerwear and Coats consistently drove the highest profits across months                 |
-| **Customer Patterns**      | Average orders/user = 1 per month, average order value = $84.69                          |
-| **Retention Challenge**    | Cohorts grew month-over-month, but dropped sharply in retention after 4–6 months         |
+| **High Return Users**      | **2,299 users returned 2,332 orders** – a small segment with high return activity           |
+| **Profitability Gaps**     | Products like **Aluminum Aluma Wallet** sold poorly with very low margins                  |
+| **Category Growth**        | **Swimwear, Activewear, and Leggings** showed the fastest growth                           |
+| **Profit Leaders**         | **Outerwear and Coats** consistently drove the highest profits across months               |
+| **Customer Patterns**      | **Average orders/user = 1 per month**, **average order value = $84.69**                    |
+| **Retention Challenge**    | Cohorts grew month-over-month, but **dropped sharply in retention after 4–6 months**        |
 
 ---
 
