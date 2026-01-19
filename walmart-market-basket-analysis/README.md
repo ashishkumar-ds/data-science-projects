@@ -63,8 +63,9 @@ An interactive **Tableau dashboard** enables scenario-based simulation of bundli
 
 ## Tools and Technologies
 
-- **Python**: pandas, mlxtend (FP-Growth), Matplotlib, Seaborn  
-- **Visualization**: Tableau 
+- **Python**: pandas, mlxtend, Matplotlib, Seaborn  
+- **Visualization**: Tableau
+- **Data Generation**: ChatGPT
 - **Methods**: Market Basket Analysis, FP-Growth Algorithm, Lift/Confidence Metrics  
 
 ---
