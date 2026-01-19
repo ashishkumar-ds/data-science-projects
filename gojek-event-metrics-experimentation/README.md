@@ -66,7 +66,7 @@ The journey spans 15+ app interactions and milestones:
 
 ## Tools & Techniques
 
-- **Lucidchart**
+- **Google Sheets**
 - **Customer Journey Mapping**    
 - **Funnel-Based Metric Definition**
 
