@@ -29,7 +29,7 @@ Transform raw multi-source retail transaction data into a unified, validated, an
 | QC Gate                     | Rows Removed | % of Raw |
 |-----------------------------|--------------|----------|
 | Zero quantity               | 7,266        | 0.28%    |
-| Illegal positive discount   | 6,206        | 0.24%    |
+| Illegal positive discount ( coupan discount > sales value ) | 6,206        | 0.24%    |
 | Extreme outliers            | 10           | 0.00%    |
 | **TOTAL REMOVED**           | **13,472**   | **0.52%**|
 
@@ -41,8 +41,8 @@ Transform raw multi-source retail transaction data into a unified, validated, an
 |---------------------|-------------------------------------------|--------------------------------|
 | `DATE`              | Julian → calendar date                    | time-series index              |
 | `DAY_CATEGORY`      | weekday / weekend                         | roster optimisation            |
-| `TIME_CATEGORY`     | Day (06–18) / Night (18–06)               | store-hour decisions           |
-| `TIMES_CATEGORY`    | morning / afternoon / evening / night     | promo timing                   |
+| `TIME_CATEGORY`     | Day (06:00–17.59) / Night (18:00–05.59)               | store-hour decisions           |
+| `TIME_OF_DAY_CATEGORY`    | morning / afternoon / evening / night     | promo timing                   |
 | `cust_purchase_value`| net spend (sales_value + coupon_disc)    | LTV modelling                  |
 | `sales_lag_7`       | sales 7 days ago                          | auto-regressive signal         |
 | `sales_ma_7`        | 7-day moving average                      | trend smoothing                |
