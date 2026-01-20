@@ -29,7 +29,7 @@ Transform raw multi-source retail transaction data into a unified, validated, an
 | QC Gate                     | Rows Removed | % of Raw |
 |-----------------------------|--------------|----------|
 | Zero quantity               | 7,266        | 0.28%    |
-| Illegal positive discount ( coupan discount > sales value ) | 6,206        | 0.24%    |
+| Coupan discount > sales value ) | 6,206        | 0.24%    |
 | Extreme outliers            | 10           | 0.00%    |
 | **TOTAL REMOVED**           | **13,472**   | **0.52%**|
 
