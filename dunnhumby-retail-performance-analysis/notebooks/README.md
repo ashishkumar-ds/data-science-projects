@@ -29,7 +29,7 @@ Transform raw multi-source retail transaction data into a unified, validated, an
 | QC Gate                     | Rows Removed | % of Raw |
 |-----------------------------|--------------|----------|
 | Zero quantity               | 7,266        | 0.28%    |
-| Coupan discount > sales value  | 6,206        | 0.24%    |
+| Coupon discount > sales value  | 6,206        | 0.24%    |
 | Extreme outliers            | 10           | 0.00%    |
 | **TOTAL REMOVED**           | **13,472**   | **0.52%**|
 
@@ -41,7 +41,7 @@ Transform raw multi-source retail transaction data into a unified, validated, an
 |---------------------|-------------------------------------------|--------------------------------|
 | `DATE`              | Julian → calendar date                    | time-series index              |
 | `DAY_CATEGORY`      | weekday / weekend                         | roster optimisation            |
-| `TIME_CATEGORY`     | Day (06:00–17.59) / Night (18:00–05.59)               | store-hour decisions           |
+| `TIME_CATEGORY`     | Day (06:00–17:59) / Night (18:00–05:59)               | store-hour decisions           |
 | `TIME_OF_DAY_CATEGORY`    | morning / afternoon / evening / night     | promo timing                   |
 | `cust_purchase_value`| net spend (sales_value + coupon_disc)    | LTV modelling                  |
 | `sales_lag_7`       | sales 7 days ago                          | auto-regressive signal         |
@@ -51,7 +51,7 @@ Transform raw multi-source retail transaction data into a unified, validated, an
 ---
 
 ## Main Analysis Notebook  
-**File:** `notebooks/main_analysis.ipynb`
+**File:** `notebooks/store_performance_analysis.ipynb`
 
 ### Objective  
 Identify performance drivers, segment customers by value, and quantify campaign uplift to generate recommendations for improving underperforming stores.
@@ -80,13 +80,13 @@ Top 12% of stores generate 80% of total sales, confirming a strong Pareto dynami
 |--------------|-----------|----------------|
 | Week-part    | weekday   | 65%            |
 |              | weekend   | 35%            |
-| Time-of-day  | **afternoon (12–18)** | **27%**    |
-|              | evening (19–24)       | 25%            |
-|              | morning (06–11)       | 24%            |
-|              | night (00–05)         | 24%            |
+| Time-of-day  | **afternoon (12:00–18:00)** | **27%**    |
+|              | evening (19:00–24:00)       | 25%            |
+|              | morning (06:00–11:00)       | 24%            |
+|              | night (00:00–05:00)         | 24%            |
 
 **Key Insight:**  
-Afternoon (12–18) is the peak engagement window for campaign delivery.
+Afternoon (12:00–18:00) is the peak engagement window for campaign delivery.
 
 ---
 
@@ -102,7 +102,7 @@ Afternoon (12–18) is the peak engagement window for campaign delivery.
 > Net ROI for Campaign 18 = **278.7%** (after deducting 75% COGS and $1,500 campaign cost).
 
 **Key Insight:**  
-Campaign 18 drives the highest revenue share and ROI,making it the strongest candidate for scaling to underperforming stores.
+Campaign 18 drives the highest revenue share and ROI, making it the strongest candidate for scaling to underperforming stores.
 
 ---
 
@@ -117,7 +117,7 @@ Campaign 18 drives the highest revenue share and ROI,making it the strongest can
 | Lost      | 18.8%       | 2%        | $75          | 0%                     |
 
 **Key Insight:**  
-Best Customers (20.2% of base) drive 41% of revenue and 38% of redemptions,the highest-value segment for retention and targeting.
+Best Customers (20.2% of base) drive 41% of revenue and 38% of redemptions, the highest-value segment for retention and targeting.
 
 ---
 
