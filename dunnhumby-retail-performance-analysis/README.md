@@ -65,9 +65,9 @@ An interactive **Tableau dashboard** enables real-time monitoring of store perfo
 ```bash
 dunnhumby-retail-performance/
 │
-├── notebooks/        # Data cleaning + main analysis (with full business impact)
+├── notebooks/        # Data cleaning + store performance analysis (with full business impact)
 │   ├── data_cleaning.ipynb
-│   └── main_analysis.ipynb
+│   └── store_performance_analysis.ipynb
 │
 ├── dashboard/        # Tableau dashboard for real-time store monitoring
 │   └── dashboard_screenshot.png
