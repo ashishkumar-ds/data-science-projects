@@ -4,8 +4,6 @@
 
 This project analyzes **38,000+ grocery transactions** from a synthetic **Walmart grocery dataset** to boost basket value through strategic product bundling and placement. By combining **Market Basket Analysis**, **high-lift association rules**, and **temporal shopping patterns**, the work delivers an actionable 60-day plan projected to generate **≈$23.5K in annual incremental revenue**. 
 
-An interactive **Tableau dashboard** enables scenario-based simulation of bundling impact, product performance, and category trends, empowering retail managers to prioritize and act on data-driven recommendations immediately.
-
 ---
 
 ## Problem Statement
