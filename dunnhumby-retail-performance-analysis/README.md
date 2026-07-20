@@ -2,7 +2,7 @@
 
 ## Project Summary
 
-This project analyzes **2.59M+ household-level transactions** from the Dunnhumby Retail Store dataset to drive a targeted intervention in underperforming stores. By combining **RFM customer segmentation**, **campaign ROI analysis**, and **time-of-day optimization**, the work delivers a prioritized, 60-day action plan projected to generate **≈$15K in incremental revenue**.
+This project analyzes **2.59M+ household-level transactions** from the Dunnhumby Retail Store dataset to drive a targeted intervention in underperforming stores. By combining **RFM customer segmentation**, **campaign ROI analysis**, and **time-of-day optimization**, the work delivers a prioritized, 60-day action plan projected to generate **≈$31K in incremental revenue**.
 
 An interactive **Tableau dashboard** enables real-time monitoring of store performance, customer segments, and campaign response, empowering managers to act on insights immediately.
 
@@ -37,8 +37,7 @@ An interactive **Tableau dashboard** enables real-time monitoring of store perfo
 | **Best Customers**       | Age 45–54, income $50K–$74K, no kids, 20.2% of base, 41% of revenue    |
 | **Top Campaign**         | **Campaign 18**: 411.4% gross ROI, 278.7% net ROI    |
 | **Optimal Timing**       | **Afternoon (12–18)** drives peak engagement and highest uplift         |
-| **Forecast Impact**      | **11% sales uplift** projected for pilot Store #289 over 60 days              |
-
+| **Forecast Impact**      | **22.5% sales uplift** projected across three validated pilot stores during the 56-day Campaign 18 period            |
 ---
 
 ## Recommendations
@@ -48,7 +47,7 @@ An interactive **Tableau dashboard** enables real-time monitoring of store perfo
 3. **Deploy exclusively in afternoon (12–18)** to capture peak response  
 4. **Monitor via Tableau dashboard** to track uplift and adjust in real time  
 
-> *Projected outcome: **≈$15K incremental revenue in 60 days** with 278.7% net ROI*
+> *Projected outcome: **≈$31K incremental revenue in 60 days** with 278.7% net ROI*
 
 ---
 
