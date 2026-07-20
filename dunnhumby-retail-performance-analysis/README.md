@@ -47,7 +47,7 @@ An interactive **Tableau dashboard** enables real-time monitoring of store perfo
 3. **Deploy exclusively in afternoon (12–18)** to capture peak response  
 4. **Monitor via Tableau dashboard** to track uplift and adjust in real time  
 
-> *Projected outcome: **≈$31K incremental revenue in 60 days** with 278.7% net ROI*
+> *Projected outcome: **≈$31K incremental revenue in 56 days** with 278.7% net ROI*
 
 ---
 
