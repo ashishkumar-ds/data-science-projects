@@ -133,8 +133,6 @@ Selected as the ideal pilot stores among underperforming stores: Bottom ~15% by 
 | 448   | 40.7%   | 34.8  | $4,303       | $2,663          | +61.6% |
 | **Pooled** | **41–58%** | —  | **$12,446**  | **$10,157**     | **+22.5%** |
 
-**Model:** LightGBM + Optuna. Pooled uplift is computed as the % difference between summed actual and summed counterfactual sales across all three stores — not an average of the three individual percentages — so the result is dollar-weighted rather than treating differently sized stores as equal.
-
 **Key Insight:**  
 Applying Campaign 18 during afternoon hours produced a pooled **+22.5%** sales uplift across three validated pilot stores over the 56-day campaign window. Individual store results (+2.0% to +61.6%) reflect genuine forecast uncertainty at this sample size, not measurement error.
 
