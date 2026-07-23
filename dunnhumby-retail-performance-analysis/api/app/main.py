@@ -1,10 +1,4 @@
 """
-Retail Sales Forecast API
-===========================
-Serves a store-level daily sales forecasting model
-(scikit-learn HistGradientBoostingRegressor) as a REST API, for other
-systems to call — e.g. an automation pipeline deciding campaign rollout.
-
 MODELING NOTE: this model was trained with QUANTITY and BASKETS as
 same-day features, so it is a same-day / nowcasting model, not a pure
 N-days-ahead forecaster. If a caller doesn't know the target day's
@@ -111,25 +105,42 @@ def _build_features(store_id: int, day: int, quantity: Optional[float], baskets:
 
 @app.post("/predict", response_model=PredictResponse)
 def predict(req: PredictRequest):
-    features, qty_est, bask_est = _build_features(req.store_id, req.day, req.quantity, req.baskets)
+    features, qty_est, bask_est = _build_features(
+        req.store_id,
+        req.day,
+        req.quantity,
+        req.baskets,
+    )
+
     X = pd.DataFrame([features])[FEATURE_COLS]
     pred = float(MODEL.predict(X)[0])
 
+    # Convert all feature values to native Python types
+    features_used = {}
+    for key, value in features.items():
+        if hasattr(value, "item"):  # numpy scalar
+            value = value.item()
+
+        if isinstance(value, float):
+            value = round(value, 2)
+
+        features_used[key] = value
+
     return PredictResponse(
-        store_id=req.store_id,
-        day=req.day,
-        predicted_sales_value=round(pred, 2),
-        quantity_used=round(features["QUANTITY"], 2),
-        baskets_used=round(features["BASKETS"], 2),
-        quantity_was_estimated=qty_est,
-        baskets_was_estimated=bask_est,
-        features_used=features,
-        model_validation_mae=VALIDATION_MAE,
-        model_validation_wmape_pct=VALIDATION_WMAPE,
+        store_id=int(req.store_id),
+        day=int(req.day),
+        predicted_sales_value=round(float(pred), 2),
+        quantity_used=round(float(features["QUANTITY"]), 2),
+        baskets_used=round(float(features["BASKETS"]), 2),
+        quantity_was_estimated=bool(qty_est),
+        baskets_was_estimated=bool(bask_est),
+        features_used=features_used,
+        model_validation_mae=float(VALIDATION_MAE),
+        model_validation_wmape_pct=float(VALIDATION_WMAPE),
     )
 
-
 @app.get("/")
+
 def root():
     return {
         "message": "Retail Sales Forecast API",
