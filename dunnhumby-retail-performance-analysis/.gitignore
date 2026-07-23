@@ -1,0 +1,14 @@
+# Raw datasets — too large for git (transaction_data.csv alone is ~140MB,
+# well over GitHub's 100MB hard limit). See datasets/README.md for how to
+# get these files.
+datasets/*.csv
+datasets/*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+
+# OS
+.DS_Store
