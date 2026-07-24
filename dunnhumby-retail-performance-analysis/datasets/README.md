@@ -1,6 +1,6 @@
 # Datasets
 
-This folder is intentionally empty in git — the raw CSVs are excluded via
+This folder is intentionally empty in git. The raw CSVs are excluded via
 `.gitignore` because `transaction_data.csv` alone is ~140MB, over GitHub's
 100MB hard limit on pushed files.
 
@@ -10,7 +10,6 @@ This folder is intentionally empty in git — the raw CSVs are excluded via
 2,500 households over a 2-year period. Publicly available two ways:
 
 - dunnhumby's own Source Files program: https://www.dunnhumby.com/source-files/
-- Kaggle mirror: search "dunnhumby The Complete Journey"
 
 ## Required files
 
@@ -27,8 +26,6 @@ Download and place these 7 files directly in this folder
 | `campaign_table.csv` | 96 KB | Which households received which campaigns |
 | `hh_demographic.csv` | 43 KB | Household demographics (partial coverage) |
 
-`causal_data.csv` (also part of the public dataset — in-store display/mailer
-placement) is **not** used by this project and doesn't need to be downloaded.
 
 ## After downloading
 
