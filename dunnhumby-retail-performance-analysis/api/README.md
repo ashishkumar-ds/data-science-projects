@@ -1,6 +1,6 @@
 # Retail Sales Forecast API
 
-A store-level daily sales forecast model, served as a production REST API.
+A store-level daily sales forecast model, served as a production FAST API.
 
 ## Project structure
 ```
