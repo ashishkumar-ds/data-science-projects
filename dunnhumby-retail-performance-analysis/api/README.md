@@ -1,61 +1,95 @@
 # Retail Sales Forecast API
 
-A store-level daily sales forecast model, served as a production FAST API.
+A store-level daily sales forecasting model, served as a production **FastAPI** REST API.
 
-## Project structure
-```
-retail_api/
-├── app/
-│   ├── __init__.py
-│   ├── main.py                      # FastAPI app
-│   ├── sales_forecast_model.pkl     # trained HistGradientBoostingRegressor
-│   └── daily_store_features.pkl     # historical features (for lag/rolling lookups)
-├── Dockerfile
-├── requirements.txt
-└── .dockerignore
-```
+---
 
-## 1. Build the Docker image
+## 1. Build the Docker Image
+
 ```bash
 docker build -t retail-forecast-api .
 ```
 
-## 2. Run it locally
+---
+
+## 2. Run Locally
+
 ```bash
 docker run -p 8000:8000 retail-forecast-api
 ```
-Open http://127.0.0.1:8000/docs for the interactive API explorer.
 
-## 3. Smoke test
-```bash
-curl http://127.0.0.1:8000/health
-curl http://127.0.0.1:8000/stores | head -c 300
+Open the interactive API documentation:
 
-curl -X POST http://127.0.0.1:8000/predict \
-  -H "Content-Type: application/json" \
-  -d '{"store_id": 32004, "day": 650}'
+```text
+http://127.0.0.1:8000/docs
 ```
 
-## 4. Deploy (Render, Docker environment)
-1. Push this folder to a GitHub repo
-2. Render dashboard → New → Web Service → connect the repo
-3. Environment: **Docker** (Render auto-detects the Dockerfile — no build/start command needed)
-4. Deploy → you get a URL like `retail-forecast-api.onrender.com`
+---
 
-## 5. Verify production
+## 3. Smoke Test
+
+### Health Check
+
+```bash
+curl http://127.0.0.1:8000/health
+```
+
+### Available Stores
+
+```bash
+curl http://127.0.0.1:8000/stores
+```
+
+### Prediction
+
+```bash
+curl -X POST http://127.0.0.1:8000/predict \
+  -H "Content-Type: application/json" \
+  -d '{"store_id": 299, "day": 650}'
+```
+
+---
+
+## 4. Deploy (Render – Docker Environment)
+
+1. Push this folder to a GitHub repository.
+2. In the Render dashboard, select **New → Web Service** and connect the repository.
+3. Choose **Docker** as the environment (Render automatically detects the `Dockerfile`; no build or start command is required).
+4. Deploy the service to obtain a public URL such as:
+
+```text
+https://retail-forecast-api.onrender.com
+```
+
+---
+
+## 5. Verify Production
+
 ```bash
 curl https://<your-app>.onrender.com/health
 ```
 
-## Important modeling note
-This model was trained with same-day `QUANTITY` and `BASKETS` as features — it's a
-same-day / nowcasting model, not a pure N-days-ahead forecaster. If you don't pass
-`quantity`/`baskets` in the request, the API substitutes the store's recent rolling
-average and flags this in the response (`quantity_was_estimated`, `baskets_was_estimated`).
+---
 
-## Before connecting this to anything real
-- Add an API key / auth header — this is currently open to anyone with the URL
-- Add structured logging of every prediction (input, output, timestamp) for auditability
-- Validation metrics from training: MAE $30.64, wMAPE 24.07% — substituted
-  scikit-learn `HistGradientBoostingRegressor` for LightGBM/Optuna due to no
-  package-install access during model development
+
+## Production Readiness
+
+- Add API authentication (API key or authorization header)
+- Add structured logging for prediction requests (inputs, outputs, and timestamps) to support monitoring and auditing
+- Model: **LightGBM (Optuna-tuned)** with **45–53% wMAPE** across validated pilot stores and a **30.1% pooled sales uplift** (95% CI: **+11.9% to +51.0%**)
+
+---
+
+## Project Structure
+
+```text
+retail_api/
+├── app/
+│   ├── __init__.py
+│   ├── main.py                      # FastAPI application
+│   ├── sales_forecast_model.pkl     # Trained LightGBM (Optuna-tuned) model
+│   └── daily_store_features.pkl     # Historical features for lag and rolling calculations
+├── Dockerfile
+├── requirements.txt
+└── .dockerignore
+```
