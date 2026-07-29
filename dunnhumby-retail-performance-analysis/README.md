@@ -1,6 +1,6 @@
 # Dunnhumby Retail Store Performance Analysis
 
-> Part 1 of the Dunnhumby series. See [Part 2 — Retail Store Performance Analysis](https://github.com/ashishkumar-ds/data-science-projects/tree/main/dunnhumby-retail-performance-analysis) for the full analytical foundation.
+> Part 1 of the Dunnhumby series. See [Part - 2 Retail Campaign Automation with n8n](https://github.com/ashishkumar-ds/retail-campaign-automation-with-n8n) for the full campaign automation workflow.
 > 
 
 ## Project Summary
