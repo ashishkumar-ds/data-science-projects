@@ -1,6 +1,6 @@
 # Dunnhumby Retail Store Performance Analysis
 
-> Part 1 of the Dunnhumby series. See [Part - 2 Retail Campaign Automation with n8n](https://github.com/ashishkumar-ds/retail-campaign-automation-with-n8n) for the full campaign automation workflow.
+> Part 1 of the Dunnhumby series. See [Part — 2 Retail Campaign Automation with n8n](https://github.com/ashishkumar-ds/retail-campaign-automation-with-n8n) for the full campaign automation workflow.
 > 
 
 ## Project Summary
