@@ -1,5 +1,8 @@
 # Dunnhumby Retail Store Performance Analysis
 
+> Part 1 of the Dunnhumby series. See [Part 2 — Retail Store Performance Analysis](https://github.com/ashishkumar-ds/data-science-projects/tree/main/dunnhumby-retail-performance-analysis) for the full analytical foundation.
+> 
+
 ## Project Summary
 
 This project analyzes **2.59M+ household-level transactions** from the Dunnhumby Retail Store dataset to drive a targeted intervention in underperforming stores. By combining **RFM customer segmentation**, **campaign ROI analysis**, and **time-of-day optimization**, the work delivers a prioritized, 60-day action plan projected to generate **≈$41K in incremental revenue**.
