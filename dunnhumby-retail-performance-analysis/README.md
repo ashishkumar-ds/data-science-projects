@@ -91,9 +91,7 @@ dunnhumby-retail-performance/
 │
 ├── notebooks/                          # Data cleaning + store performance analysis
 │   ├── data_cleaning.ipynb
-│   ├── store_performance_analysis.ipynb   # incl. DiD validation section
-│   ├── did_household_event_study.png
-│   └── did_store_pilots.png
+│   └── store_performance_analysis.ipynb   # incl. DiD validation section (charts embedded)
 │
 ├── dashboard/                          # Tableau dashboard for real-time store monitoring
 │   └── dashboard_screenshot.png
