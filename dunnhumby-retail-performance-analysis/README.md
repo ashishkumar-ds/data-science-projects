@@ -5,7 +5,9 @@
 
 ## Project Summary
 
-This project analyzes **2.59M+ household-level transactions** from the Dunnhumby Retail Store dataset to drive a targeted intervention in underperforming stores. By combining **RFM customer segmentation**, **campaign ROI analysis**, and **time-of-day optimization**, the work delivers a prioritized, 60-day action plan projected to generate **≈$41K in incremental revenue**.
+This project analyzes **2.59M+ household-level transactions** from the Dunnhumby Retail Store dataset to drive a targeted intervention in underperforming stores. By combining **RFM customer segmentation**, **campaign ROI analysis**, and **time-of-day optimization**, the work delivers a prioritized, 60-day action plan.
+
+A **Difference-in-Differences (DiD) validation** with untreated control households and matched control stores then tests the campaign's *causal* impact, estimating **≈$14K in incremental revenue per 56-day cycle** (vs. $41K under forecast-based attribution) and recommending a randomized rollout before scaling.
 
 An interactive **Tableau dashboard** enables real-time monitoring of store performance, customer segments, and campaign response, empowering managers to act on insights immediately.
 
@@ -26,7 +28,7 @@ An interactive **Tableau dashboard** enables real-time monitoring of store perfo
 - **Source**: [Dunnhumby Retail Store Public Dataset](https://www.dunnhumby.com/source-files/)  
 - **Total Transactions**: 2,595,914
 - **Stores**: 582 unique store locations
-- **Households**: 103,200
+- **Households**: 2,500 (loyalty panel; 1,584 ever assigned to a campaign)
 - **Products**: 23,539
 - **Time Frame**: 2017–2018  
 
@@ -38,27 +40,28 @@ An interactive **Tableau dashboard** enables real-time monitoring of store perfo
 |--------------------------|-------------------------------------------------------------------------|
 | **Store Performance**    | Top 12% of stores (71) drive 80% of revenue; 511 are underperforming    |
 | **Best Customers**       | Age 45–54, income $50K–$74K, no kids, 20.2% of base, 41% of revenue    |
-| **Top Campaign**         | **Campaign 18**: 411.4% gross ROI, 278.7% net ROI    |
+| **Top Campaign**         | **Campaign 18**: 411.4% gross ROI, 278.7% net ROI *(redeemer-attributed, not causal)*    |
 | **Optimal Timing**       | **Afternoon (12–18)** drives peak engagement and highest uplift         |
-| **Forecast Impact**      | **30.1% sales uplift** projected across three validated pilot stores during the 56-day Campaign 18 period            |
+| **Forecast Impact**      | +30.1% projected uplift across three pilot stores — **not confirmed causally**: market drift was +9.7% |
+| **DiD Validation**       | True causal lift **+2.84% per targeted household** (p=0.10) ≈ **$14.1K/cycle**; pilot stores show no detectable store-level lift (-9.6%, n.s.) |
 ---
 
 ## Recommendations
 
-1. **Scale Campaign 18** to **85 eligible underperforming stores** (≥20 Best Customers)  
-2. **Target Best Customers** — highest redemption (38%) and revenue contribution  
-3. **Deploy exclusively in afternoon (12–18)** to capture peak response  
-4. **Monitor via Tableau dashboard** to track uplift and adjust in real time  
+1. **Keep targeting Best Customers** — highest redemption (38%, 18.9% overall for Campaign 18) and revenue contribution; the ~+3% household lift is benchmark-consistent with dunnhumby's published campaign results
+2. **Do not scale to 85 stores on forecast evidence** — DiD shows the lift does not concentrate in targeted stores (only 12 of 653 Campaign-18 redemptions occurred in the three pilots)
+3. **Deploy in afternoon (12–18)** where engagement peaks
+4. **Run a randomized rollout** across stores/households, powered for ~+3% effects, monitored via the Tableau dashboard
 
-> *Projected outcome: **≈$41K incremental revenue in 56 days** with 278.7% net ROI*
+> *Causal estimate: **≈$14K incremental revenue per 56-day cycle** across all targeted households (DiD ITT), before campaign costs — scale only with experimental measurement in place.*
 
 ---
 
 ## Tools and Technologies
 
-- **Python**: Pandas, Scikit-Learn, LightGBM, Optuna 
+- **Python**: Pandas, Scikit-Learn, LightGBM, Optuna, Statsmodels 
 - **Visualization**: Matplotlib, Seaborn, Tableau  
-- **Methods**: RFM Segmentation, ROI Analysis, Time-Series Forecasting  
+- **Methods**: RFM Segmentation, ROI Analysis, Time-Series Forecasting, **Difference-in-Differences (TWFE, event study, matched controls)**  
 
 ---
 
@@ -69,7 +72,9 @@ dunnhumby-retail-performance/
 │
 ├── notebooks/                          # Data cleaning + store performance analysis
 │   ├── data_cleaning.ipynb
-│   └── store_performance_analysis.ipynb
+│   ├── store_performance_analysis.ipynb   # incl. DiD validation section
+│   ├── did_household_event_study.png
+│   └── did_store_pilots.png
 │
 ├── dashboard/                          # Tableau dashboard for real-time store monitoring
 │   └── dashboard_screenshot.png

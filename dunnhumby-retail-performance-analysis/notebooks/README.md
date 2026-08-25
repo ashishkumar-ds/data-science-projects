@@ -158,6 +158,32 @@ Deploying Campaign 18 during afternoon hours produced a combined **30.1% increas
 
 ---
 
+## 7.1 Difference-in-Differences (DiD) Validation
+
+The forecast counterfactual above compares each store only to its own history, so it cannot separate the campaign effect from market-wide movements (all-store sales drifted **+9.7%** during the campaign window). The DiD section appended to the notebook adds a quasi-experimental validation with untreated controls.
+
+| DiD requirement | Evidence |
+|-----------------|----------|
+| Panel data | 2,500 households × 102 weeks; 582 stores × 711 days |
+| Sharp treatment timing | Campaign 18: days 587–642 (56 days) |
+| Untreated controls | Only 1,133/2,500 households assigned Campaign 18; only 90 stores saw any redemption |
+
+### Results
+
+| Estimate | Design | Result |
+|----------|--------|--------|
+| **Household ITT DiD** (primary) | 1,123 treated vs 981 clean control households, symmetric 56-day windows | **+$12.46/HH (+2.84%)**, p=0.100 → **≈$14.1K incremental revenue per 56-day cycle** |
+| Household ITT — matched controls | 1-NN on pre-spend/trips/trend | +$30.89/HH (+7.03%), p=0.004 (upper bound; RTM risk) |
+| Weekly TWFE panel | 1,669 HH, HH+week FE, bootstrap CI | -$0.90/HH-week [-3.00, +1.34] — ≈0 |
+| Parallel-trends placebo test | Event study, ref week 83 | p=0.897 — flat pre-trend, control group credible |
+| **Store-level DiD (pilots)** | 3 pilots vs 12 matched underperforming stores (no C18 redemptions) | **-9.6%** (p=0.178), 95% CI [-23.6%, +25.4%] |
+
+**Key Insight**
+
+Campaign 18's *causal* uplift is small at best (~+3% at the household level, ≈$14K per cycle) — not the +30.1%/411% ROI implied by forecast-based attribution, which largely reflects market drift and model bias. Pilot-store targeting does not concentrate the lift: only 12 of 653 Campaign-18 redemptions occurred inside the pilot stores (store 299 received zero). Scale-up projections should be revised accordingly and a randomized rollout used to measure true lift.
+
+---
+
 ## 8. Business Impact
 
 - Estimated **$41K incremental revenue** by expanding Campaign 18 to **85 eligible underperforming stores** over 60 days.
@@ -170,6 +196,7 @@ Deploying Campaign 18 during afternoon hours produced a combined **30.1% increas
 - Campaign mechanics (offer structure, discount depth, and eligible products) were inferred from Dunnhumby campaign documentation.
 - Forecasts do not account for external variables such as weather, competitor actions, or macroeconomic conditions.
 - Forecast uncertainty (wMAPE 45–53%) and the uplift confidence interval indicate results should support pilot decisions rather than full-scale rollout planning.
+- The DiD validation (§7.1) finds the causal campaign effect is far smaller than forecast-based attribution suggests; treated households are 45% of the customer base, so spillover to "control" units may bias the ITT estimate downward.
 
 ---
 
