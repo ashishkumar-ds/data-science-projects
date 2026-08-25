@@ -138,7 +138,7 @@ Best Customers represent only 20.2% of households but contribute 41% of total re
 
 ## 7. Sales Forecasting
 Why Stores #299, #317, and #448?
-These three stores were chosen as pilot candidates based on four criteria: ranking in the bottom ~15% by sales, having the highest number of Best Customers within the eligible underperforming cohort (37, 34, and 28 respectively), maintaining over 480 days of historical sales data, and receiving full exposure to Campaign 18.
+These three stores were chosen as pilot candidates based on four criteria: ranking at the bottom edge of the top-15% by sales (i.e., the largest stores in the underperforming tail), high Best-Customer counts, over 480 days of history, and assumed full Campaign-18 exposure. **Verification against the data confirms size/history but not the other two:** Best-Customer counts are 6/8/8 (stores #309 and #289 have more), and actual Campaign-18 redemptions captured in-store are **0 / 5 / 7** of 653 — see §7.1.
 
 ### Forecast Results
 
