@@ -25,8 +25,10 @@ APP_DIR = Path(__file__).parent
 
 app = FastAPI(
     title="Retail Sales Forecast API",
-    description="Store-level daily sales forecasting model (LightGBM, Optuna-tuned), served for production use.",
-    version="2.0.0",
+    description="Store-level daily sales forecasting model (LightGBM, Optuna-tuned), served for production use. "
+                "New in 2.1: GET /actuals/{store_id} (observed sales) and GET /controls/{store_id} (matched-control DiD) "
+                "for the v4 feedback loop and causal guardrail.",
+    version="2.1.0",
 )
 
 MODEL = joblib.load(APP_DIR / "sales_forecast_model.pkl")
@@ -325,5 +327,12 @@ def root():
     return {
         "message": "Retail Sales Forecast API",
         "docs": "/docs",
-        "endpoints": ["/health", "/stores", "/predict (POST)"],
+        "version": "2.1.0",
+        "endpoints": [
+            "/health",
+            "/stores",
+            "/predict (POST)",
+            "/actuals/{store_id} (GET, query: start_day, end_day)",
+            "/controls/{store_id} (GET, query: pre_start, pre_end, post_start, post_end, k)",
+        ],
     }
