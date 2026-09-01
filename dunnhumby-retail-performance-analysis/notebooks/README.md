@@ -1,21 +1,24 @@
 # Dunnhumby Retail Store Performance Analysis – Notebooks
 
-This directory contains the Jupyter notebooks used throughout the project, covering the complete analytics workflow from data preparation and exploratory analysis to customer segmentation, campaign evaluation, sales forecasting, and business impact assessment.
+This directory contains the Jupyter notebooks used throughout the project, covering the complete analytics workflow from data preparation and exploratory analysis to customer segmentation, campaign evaluation, causal (DiD) validation, forecasting, and business impact assessment.
 
 ---
 
 ## Notebook Overview
 
-| Notebook | Description |
-|----------|-------------|
-| `notebooks/data_cleaning.ipynb` | Data preparation, quality checks, feature engineering, and creation of the modeling dataset. |
-| `notebooks/store_performance_analysis.ipynb` | Exploratory analysis, campaign evaluation, customer segmentation, forecasting, and business recommendations. |
+| Notebook | Status | Description |
+|----------|--------|-------------|
+| `store_performance_analysis_with_DiD.ipynb` | **Canonical — start here** | Full analysis: data prep, RFM segmentation, campaign evaluation, LightGBM counterfactual forecasting, and the DiD causal validation (+2.84% household ITT / −9.6% store-level) that gates rollout in Parts 2–3. |
+| `data cleaning.ipynb` | Superseded | Early data-preparation pass. Kept for history; the canonical notebook re-runs the same cleaning with named constants. |
+| `store performance analysis.ipynb` | Superseded | Pre-DiD version of the analysis (forecast-based uplift only). Kept for history; its uplift numbers are revised by the DiD section of the canonical notebook. |
+
+**Key numbers to quote (from the canonical notebook):** forecast uplift +30.1% [+11.9%, +51.0%] is directional and absorbs +9.7% market drift; the causal answer is +2.84% household ITT (p=0.10) / −9.6% store-level DiD → ≈$14K causal incremental revenue per 56-day cycle. Scale-up gating in Parts 2–3 uses the causal 3% target.
 
 ---
 
 # Data Cleaning Notebook
 
-**File:** `notebooks/data_cleaning.ipynb`
+**File:** `notebooks/data cleaning.ipynb` (superseded — logic preserved in the canonical notebook)
 
 ## Objective
 
