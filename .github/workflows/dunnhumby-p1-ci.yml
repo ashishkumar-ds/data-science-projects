@@ -1,0 +1,31 @@
+name: Dunnhumby P1 CI
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "dunnhumby-retail-performance-analysis/**"
+      - ".github/workflows/dunnhumby-p1-ci.yml"
+  pull_request:
+    paths:
+      - "dunnhumby-retail-performance-analysis/**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    defaults:
+      run:
+        working-directory: dunnhumby-retail-performance-analysis/api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: pip install -r requirements.txt pytest
+      - name: Forecast API tests (offline, committed model artifacts)
+        run: pytest tests/ -q

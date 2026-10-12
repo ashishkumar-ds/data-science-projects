@@ -35,6 +35,6 @@ Each metric included in the dashboard was intentionally selected to answer a key
 
 ## Dashboard Preview
 
-[Dashboard Preview](https://github.com/ashishkumar-ds/data-science-projects/blob/main/dunnhumby-retail-performance-analysis/dashboard/dashboard_screenshot.PNG)
+[Dashboard Preview](https://github.com/ashishkumar-ds/data-science-projects/blob/main/dunnhumby-retail-performance-analysis/dashboard/dashboard_screenshot.png)
 
 

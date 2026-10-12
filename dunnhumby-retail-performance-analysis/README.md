@@ -1,9 +1,13 @@
 # Dunnhumby Retail Store Performance Analysis
 
-> Part 1 of the Dunnhumby series. See [Part — 2 Retail Campaign Automation with n8n](https://github.com/ashishkumar-ds/retail-campaign-automation-with-n8n) for the full campaign automation workflow.
-> 
+[![P1 CI](https://github.com/ashishkumar-ds/data-science-projects/actions/workflows/dunnhumby-p1-ci.yml/badge.svg)](https://github.com/ashishkumar-ds/data-science-projects/actions/workflows/dunnhumby-p1-ci.yml)
+
+> Part 1 of the Dunnhumby series. See [Part 2 — Retail Campaign Automation with n8n](https://github.com/ashishkumar-ds/retail-campaign-automation-with-n8n) for the full campaign automation workflow.
+>
 
 ## Project Summary
+
+Proving what actually grows underperforming stores: RFM segmentation, campaign ROI, and afternoon timing — validated causally with Difference-in-Differences before anything scales.
 
 This project analyzes **2.59M+ household-level transactions** from the Dunnhumby Retail Store dataset to drive a targeted intervention in underperforming stores. By combining **RFM customer segmentation**, **campaign ROI analysis**, and **time-of-day optimization**, the work delivers a prioritized, 60-day action plan.
 
@@ -90,14 +94,15 @@ How Campaign 18's measured results compare against dunnhumby's published campaig
 dunnhumby-retail-performance/
 │
 ├── notebooks/                          # Data cleaning + store performance analysis
-│   ├── data_cleaning.ipynb
-│   └── store_performance_analysis.ipynb   # incl. DiD validation section (charts embedded)
+│   ├── data cleaning.ipynb
+│   ├── store performance analysis.ipynb
+│   └── store_performance_analysis_with_DiD.ipynb   # DiD validation (charts embedded)
 │
 ├── dashboard/                          # Tableau dashboard for real-time store monitoring
 │   └── dashboard_screenshot.png
 │
 ├── presentation/                       # Executive-ready deck for stakeholders
-│   └── presentation_deck.pdf
+│   └── presentation deck.pdf
 │
 ├── datasets/                           # Raw Dunnhumby source data
 │   ├── transaction_data.csv
