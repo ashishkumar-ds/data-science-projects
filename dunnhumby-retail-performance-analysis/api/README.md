@@ -74,7 +74,7 @@ Returns `{store_id, windows, matched_controls:[{store_id,distance}], causal:{did
 4. Deploy the service to obtain a public URL such as:
 
 ```text
-https://retail-forecast-api.onrender.com
+https://retail-forecast-api-7sue.onrender.com
 ```
 
 ---

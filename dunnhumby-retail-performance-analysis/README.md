@@ -1,6 +1,11 @@
 # Dunnhumby Retail Store Performance Analysis
 
 [![P1 CI](https://github.com/ashishkumar-ds/data-science-projects/actions/workflows/dunnhumby-p1-ci.yml/badge.svg)](https://github.com/ashishkumar-ds/data-science-projects/actions/workflows/dunnhumby-p1-ci.yml)
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![LightGBM](https://img.shields.io/badge/model-lightgbm-76B900)](https://lightgbm.readthedocs.io)
+[![Live API](https://img.shields.io/badge/api-render-46e3b7?logo=render&logoColor=white)](https://retail-forecast-api-7sue.onrender.com/health)
+[![Tableau](https://img.shields.io/badge/dashboard-tableau-E97627?logo=tableau&logoColor=white)](https://public.tableau.com/views/DunnhumbyStorePerformanceReportwithfilter/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 > Part 1 of the Dunnhumby series. See [Part 2 — Retail Campaign Automation with n8n](https://github.com/ashishkumar-ds/retail-campaign-automation-with-n8n) for the full campaign automation workflow.
 >
