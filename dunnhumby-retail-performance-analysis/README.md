@@ -1,6 +1,6 @@
 # Dunnhumby Retail Store Performance Analysis
 
-[![P1 CI](https://github.com/ashishkumar-ds/data-science-projects/actions/workflows/dunnhumby-p1-ci.yml/badge.svg)](https://github.com/ashishkumar-ds/data-science-projects/actions/workflows/dunnhumby-p1-ci.yml)
+[![CI](https://github.com/ashishkumar-ds/data-science-projects/actions/workflows/ci.yml/badge.svg)](https://github.com/ashishkumar-ds/data-science-projects/actions/workflows/ci.yml)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![LightGBM](https://img.shields.io/badge/model-lightgbm-76B900)](https://lightgbm.readthedocs.io)

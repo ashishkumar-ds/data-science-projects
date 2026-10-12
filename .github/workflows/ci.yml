@@ -1,4 +1,4 @@
-name: Dunnhumby P1 CI
+name: CI
 
 on:
   push:
