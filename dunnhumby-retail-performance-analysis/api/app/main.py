@@ -122,6 +122,7 @@ def get_matched_controls(
     post_start: int = 587,
     post_end: int = 642,
     k: int = 10,
+    pool: str = "all",
 ):
     """Matched-control comparison for causal (DiD) validation.
 
@@ -136,7 +137,17 @@ def get_matched_controls(
 
     Consumers (Project 3's causal guardrail) must treat the returned
     did_uplift_pct - not raw lift - as the scale-up decision input.
+
+    ``pool`` selects the control universe: ``"all"`` (default, every other
+    store with coverage — byte-identical to previous behavior) or
+    ``"underperforming"`` (bottom-tercile pre-window mean sales, so treated
+    stores selected for being low are compared against stores that share
+    the same selection mechanism and its regression-to-the-mean bounce).
     """
+    if pool not in ("all", "underperforming"):
+        raise HTTPException(
+            status_code=400, detail="pool must be 'all' or 'underperforming'")
+    pool_name: str = pool
     if pre_start >= pre_end or post_start > post_end or pre_end >= post_start:
         raise HTTPException(
             status_code=400,
@@ -176,15 +187,37 @@ def get_matched_controls(
 
     # Control pool: every other store with sufficient coverage (untreated by
     # construction - this API serves observed history, not campaign assignment).
-    pool: dict[int, tuple[float, float]] = {}
+    pool_feats: dict[int, tuple[float, float]] = {}
     for sid, grp in HISTORY.groupby("STORE_ID"):
         if int(sid) == store_id:
             continue
         feat = _features(grp)
         if feat is not None:
-            pool[int(sid)] = feat
-    if not pool:
+            pool_feats[int(sid)] = feat
+    if not pool_feats:
         raise HTTPException(status_code=422, detail="no eligible control stores in the window")
+    pool_rule = "all untreated stores with >=80% day coverage"
+    if pool == "underperforming":
+        # Regression-to-the-mean guard: treated stores were selected for
+        # being low, and low stores bounce back on their own. Restrict the
+        # pool to the bottom tercile of pre-window mean sales so the bounce
+        # cancels out in the treated-minus-control difference.
+        pre_means = {}
+        for sid in pool_feats:
+            days = HISTORY[(HISTORY.STORE_ID == sid)
+                           & (HISTORY.DAY >= pre_start) & (HISTORY.DAY <= pre_end)]
+            if len(days):
+                pre_means[sid] = float(days.SALES_VALUE.mean())
+        if not pre_means:
+            raise HTTPException(status_code=422, detail="no pool sales means computable")
+        cutoff = float(np.quantile(list(pre_means.values()), 1.0 / 3.0))
+        pool_feats = {sid: feat for sid, feat in pool_feats.items()
+                      if pre_means.get(sid, float("inf")) <= cutoff}
+        if not pool_feats:
+            raise HTTPException(status_code=422, detail="underperforming pool is empty")
+        pool_rule = (f"bottom-tercile pre-window mean sales (cutoff "
+                     f"{cutoff:.2f} over {len(pre_means)} covered stores)")
+    pool: dict[int, tuple[float, float]] = pool_feats
 
     # Z-score features across pool + treated, then deterministic Euclidean
     # k-NN (numpy only; mirrors the notebook's NN on scaled features).
@@ -217,10 +250,53 @@ def get_matched_controls(
         else None
     )
 
+    # Placebo check (report-only): same DiD machinery on the pre-window
+    # split in half, where no intervention happened — a non-zero placebo
+    # warns that treated and controls were already diverging.
+    mid = pre_start + (pre_end - pre_start) // 2
+    treated_early = _window_mean(store_id, pre_start, mid)
+    treated_late = _window_mean(store_id, mid + 1, pre_end)
+    ctrl_early = [m for m in (_window_mean(s, pre_start, mid) for s in control_ids)
+                  if m is not None]
+    ctrl_late = [m for m in (_window_mean(s, mid + 1, pre_end) for s in control_ids)
+                 if m is not None]
+    placebo_did = None
+    if treated_early and treated_late and ctrl_early and ctrl_late:
+        placebo_did = round(
+            _pct(treated_early, treated_late)
+            - _pct(float(np.mean(ctrl_early)), float(np.mean(ctrl_late))), 2)
+
+    # Pre-trend divergence: treated intra-pre trend vs mean control trend
+    # (both already computed as matching features). Large gaps weaken the
+    # parallel-trends assumption the DiD rests on.
+    control_trends = [pool[sid][1] for sid in control_ids]
+    trend_divergence = (
+        round(abs(float(treated_feat[1]) - float(np.mean(control_trends))), 2)
+        if control_trends and treated_feat[1] is not None else None)
+
+    # Uncertainty from control variation (report-only): per-control
+    # pre->post change pcts give a standard error for the control mean
+    # change; the 95% interval is normal-approx (z=1.96, noted as
+    # approximate for small k). MDE = smallest |effect| clearing that bar.
+    paired_changes = []
+    for sid in control_ids:
+        pre_mean = _window_mean(sid, pre_start, pre_end)
+        post_mean = _window_mean(sid, post_start, post_end)
+        if pre_mean and post_mean:
+            paired_changes.append(_pct(pre_mean, post_mean))
+    did_ci95: list[float] | None = None
+    mde_pct: float | None = None
+    if did is not None and len(paired_changes) >= 2:
+        se = float(np.std(paired_changes, ddof=1)) / float(np.sqrt(len(paired_changes)))
+        half_width = round(1.96 * se, 2)
+        did_ci95 = [round(did - half_width, 2), round(did + half_width, 2)]
+        mde_pct = half_width
+
     return {
         "store_id": store_id,
         "windows": {"pre_start": pre_start, "pre_end": pre_end,
                     "post_start": post_start, "post_end": post_end},
+        "pool": pool_name,
         "matched_controls": [
             {"store_id": sid, "distance": round(float(dists[all_ids.index(sid)]), 4),
              "pre_log_mean_sales": round(float(pool[sid][0]), 4),
@@ -235,12 +311,23 @@ def get_matched_controls(
             "treated_change_pct": round(treated_change, 2) if treated_change is not None else None,
             "control_change_pct": round(control_change, 2) if control_change is not None else None,
             "did_uplift_pct": did,
+            "did_ci95": did_ci95,
+            "mde_pct": mde_pct,
+            "placebo_did_pct": placebo_did,
+            "pre_trend_divergence": trend_divergence,
         },
         "methodology": {
             "matching": f"k={min(k, len(pool))} nearest neighbors on z-scored "
                         "[log pre-sales level, intra-pre trend] from a pool of "
-                        f"{len(pool)} stores with >=80% day coverage",
+                        f"{len(pool)} stores with >=80% day coverage "
+                        f"({pool_rule})",
             "effect": "DiD = treated pre->post change - pooled matched-control pre->post change (%)",
+            "uncertainty": "did_ci95/mde_pct from control-group variation "
+                           "(normal-approx z=1.96, approximate for small k); "
+                           "placebo_did_pct reruns the DiD on the pre-window "
+                           "split in half (expect ~0); pre_trend_divergence "
+                           "flags parallel-trends risk. All report-only: the "
+                           "scale-up rule still keys on did_uplift_pct.",
             "caveat": "observational DiD, not a randomized experiment; "
                       "treated-vs-control, unlike own-baseline lift, nets out market drift",
         },
@@ -333,6 +420,6 @@ def root():
             "/stores",
             "/predict (POST)",
             "/actuals/{store_id} (GET, query: start_day, end_day)",
-            "/controls/{store_id} (GET, query: pre_start, pre_end, post_start, post_end, k)",
+            "/controls/{store_id} (GET, query: pre_start, pre_end, post_start, post_end, k, pool)",
         ],
     }

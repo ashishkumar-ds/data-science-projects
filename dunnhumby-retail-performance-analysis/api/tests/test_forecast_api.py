@@ -99,3 +99,57 @@ def test_controls_returns_matched_controls(k):
     body = r.json()
     assert len(body["matched_controls"]) == k
     assert "did_uplift_pct" in body["causal"]
+
+
+def _controls(params):
+    r = client.get(f"/controls/{STORE}", params=params)
+    assert r.status_code == 200
+    return r.json()
+
+
+def test_controls_default_pool_all_unchanged():
+    body = _controls({"pre_start": 531, "pre_end": 586, "post_start": 587,
+                      "post_end": 642, "k": 3})
+    assert body["pool"] == "all"
+    assert isinstance(body["causal"]["did_uplift_pct"], float)
+
+
+def test_controls_underperforming_pool_is_bottom_tercile():
+    import numpy as _np
+
+    from app.main import HISTORY
+    body = _controls({"pre_start": 531, "pre_end": 586, "post_start": 587,
+                      "post_end": 642, "k": 10, "pool": "underperforming"})
+    assert body["pool"] == "underperforming"
+    means = {}
+    span = 642 - 531 + 1
+    for sid, grp in HISTORY.groupby("STORE_ID"):
+        days = grp[(grp.DAY >= 531) & (grp.DAY <= 642)]
+        if days.DAY.nunique() / span < 0.8:  # same coverage gate as the endpoint
+            continue
+        pre = grp[(grp.DAY >= 531) & (grp.DAY <= 586)]
+        if len(pre):
+            means[int(sid)] = float(pre.SALES_VALUE.mean())
+    cutoff = float(_np.quantile(list(means.values()), 1.0 / 3.0))
+    bottom = {sid for sid, mean in means.items() if mean <= cutoff}
+    assert bottom  # rule is non-vacuous
+    got = {c["store_id"] for c in body["matched_controls"]}
+    assert got <= bottom  # every control shares the low-band selection
+    assert "bottom-tercile" in body["methodology"]["matching"]
+
+
+def test_controls_rejects_bad_pool():
+    r = client.get(f"/controls/{STORE}", params={"pool": "everything"})
+    assert r.status_code == 400
+
+
+def test_controls_reports_uncertainty_diagnostics():
+    causal = _controls({"pre_start": 531, "pre_end": 586, "post_start": 587,
+                        "post_end": 642, "k": 5})["causal"]
+    assert causal["did_ci95"] is not None and len(causal["did_ci95"]) == 2
+    lo, hi = causal["did_ci95"]
+    assert lo <= causal["did_uplift_pct"] <= hi
+    assert causal["mde_pct"] is not None and causal["mde_pct"] >= 0
+    assert causal["placebo_did_pct"] is not None
+    assert causal["pre_trend_divergence"] is not None
+    assert causal["pre_trend_divergence"] >= 0
