@@ -12,8 +12,6 @@
 
 ## Project Summary
 
-Proving what actually grows underperforming stores: RFM segmentation, campaign ROI, and afternoon timing — validated causally with Difference-in-Differences before anything scales.
-
 This project analyzes **2.59M+ household-level transactions** from the Dunnhumby Retail Store dataset to drive a targeted intervention in underperforming stores. By combining **RFM customer segmentation**, **campaign ROI analysis**, and **time-of-day optimization**, the work delivers a prioritized, 60-day action plan.
 
 A **Difference-in-Differences (DiD) validation** with untreated control households and matched control stores then tests the campaign's *causal* impact, estimating **≈$14K in incremental revenue per 56-day cycle** (vs. $41K under forecast-based attribution) and recommending a randomized rollout before scaling.
