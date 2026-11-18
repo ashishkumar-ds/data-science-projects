@@ -14,6 +14,8 @@ This directory contains the Jupyter notebooks used throughout the project, cover
 
 **Key numbers to quote (from the canonical notebook):** forecast uplift +30.1% [+11.9%, +51.0%] is directional and absorbs +9.7% market drift; the causal answer is +2.84% household ITT (p=0.10) / −9.6% store-level DiD → ≈$14K causal incremental revenue per 56-day cycle. Scale-up gating in Parts 2–3 uses the causal 3% target.
 
+**Reproduce the causal estimate without Jupyter:** `python ../scripts/did_estimate.py --expect-uplift 2.84` re-runs the primary household ITT DiD from the raw CSVs (stdlib only). `--self-test` checks the estimator on a synthetic frame, and `--export-frame` / `--from-frame` let you save the household panel and re-estimate without the 140 MB transaction file.
+
 ---
 
 # Data Cleaning Notebook

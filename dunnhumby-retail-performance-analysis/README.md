@@ -116,6 +116,9 @@ dunnhumby-retail-performance/
 │   ├── campaign_table.csv
 │   └── hh_demographic.csv
 │
+├── scripts/                            # Re-runnable estimators (no notebook needed)
+│   └── did_estimate.py                 # Household ITT DiD, stdlib only
+│
 ├── api/                                # FastAPI service serving the forecast model
 │   ├── app/
 │   │   ├── __init__.py
