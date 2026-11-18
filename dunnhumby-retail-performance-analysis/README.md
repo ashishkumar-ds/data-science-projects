@@ -136,3 +136,7 @@ dunnhumby-retail-performance/
 3. dunnhumby — [How retail media accelerated premium ice-cream brands' growth](https://www.dunnhumby.com/case-studies/how-retail-media-accelerated-premium-ice-cream-brands-growth/) (16% coupon-at-till benchmark)
 4. dunnhumby — [Turning a tired loyalty programme into a growth engine](https://www.dunnhumby.com/case-studies/turning-tired-loyalty-programme-into-growth-engine/) (NA grocer: 36% loyalty redemption, customer concentration)
 5. IJBNPA (2018) — [Difference-in-Differences on the same 2,500-household Dunnhumby panel](https://link.springer.com/article/10.1186/s12966-018-0744-7) (external methodology validation)
+
+## License
+
+MIT — see [LICENSE](LICENSE).
