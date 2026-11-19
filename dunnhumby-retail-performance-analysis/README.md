@@ -12,7 +12,7 @@
 
 ## Project Summary
 
-This project analyzes **2.59M+ household-level transactions** from the Dunnhumby Retail Store dataset to drive a targeted intervention in underperforming stores. By combining **RFM customer segmentation**, **campaign ROI analysis**, and **time-of-day optimization**, the work delivers a prioritized, 60-day action plan.
+This project analyzes **2.59M+ household-level transactions** from the Dunnhumby Retail Store dataset to drive a targeted intervention in underperforming stores. By combining **RFM customer segmentation**, **campaign ROI analysis**, and **time-of-day optimization**, the work delivers a prioritized, 60-day action plan built around a 56-day campaign window.
 
 A **Difference-in-Differences (DiD) validation** with untreated control households and matched control stores then tests the campaign's *causal* impact, estimating **≈$14K in incremental revenue per 56-day cycle** (vs. $41K under forecast-based attribution).
 
@@ -22,7 +22,7 @@ An interactive **Tableau dashboard** enables monitoring of store performance, cu
 
 ## Problem Statement
 
-- **88% of stores (511 of 582)** are underperforming, generating only **20% of total sales**  
+- **87.8% of stores (511 of 582)** are underperforming, generating only **20% of total sales**  
 - These stores show **monthly sales growth below 9.3%**
 
 **Business Question**:  
@@ -72,7 +72,7 @@ How Campaign 18's measured results compare against dunnhumby's published campaig
 |--------|---------------------------|---------------------|------------|
 | **Total sales lift** (causal, DiD ITT) | **+2.84%** per targeted household / 56-day cycle (p=0.10) | +3.6% [1] to +11% [2] published campaign uplift | **Matches** the realistic band for well-targeted campaigns |
 | **Coupon redemption rate** | **18.9%** of targeted households (214 / 1,133) | 16% retail-media norm [3] · 36% mature loyalty program [4] | **Exceeds** the retail-media norm, below best-in-class loyalty |
-| **Return on spend** | **≈9.4:1** revenue ROAS (≈2.3:1 after 75% COGS) | £6:1 ROAS on featured products [1] | **Same order of magnitude** |
+| **Return on spend** | **≈9.4:1** revenue ROAS | £6:1 ROAS on featured products [1] | **Same order of magnitude** |
 | **Customer concentration** (Pareto) | Top 20.2% of customers = 41% of revenue | 17% of shoppers = 64% of sales [4] | **Same pattern**, flatter tail |
 | **Targeting precision** | Treated households spend 3.6× controls pre-campaign | Audiences built from previous category buyers [2] | **Consistent** with dunnhumby's targeting method |
 | **Featured-product uplift** | Not measurable (no product-level treatment data) | +45% on featured SKUs [1] | **Out of scope** |

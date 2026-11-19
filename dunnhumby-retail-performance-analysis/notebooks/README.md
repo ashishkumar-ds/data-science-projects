@@ -117,7 +117,7 @@ Afternoon is the highest customer engagement period, making it the preferred win
 | 17 | 1.8% | 5.0% | 199% | 22% | $2.6M |
 | **18** | **13.0%** | **9.1%** | **411.4%** | **47%** | **$5.5M** |
 
-> **Net ROI (Campaign 18): 278.7%** after deducting 75% cost of goods sold and a $1,500 campaign cost.
+> **Net ROI (Campaign 18): 278.7%** after deducting cost of goods sold and a $1,500 campaign cost.
 
 **Key Insight**
 
